@@ -163,7 +163,7 @@ td.low{color:var(--bad);font-weight:600}
 .ex .t,.keep .t,.case .t{background:var(--sky)}
 .case{border:1.5px solid var(--line);border-left:4px solid var(--ink);background:var(--paper)}
 .case .eyebrow{color:var(--muted)}
-.vd{font-family:var(--mono);font-size:.8em;font-weight:600;padding:1px 7px;border-radius:4px;white-space:nowrap;background:var(--blue-soft)}
+.vd{font-family:var(--mono);font-size:.8em;font-weight:600;padding:1px 7px;border-radius:4px;white-space:normal;-webkit-box-decoration-break:clone;box-decoration-break:clone;background:var(--blue-soft)}
 .vd.ok{background:var(--ok-soft);color:var(--ok)}
 .vd.no{background:var(--bad-soft);color:var(--bad)}
 .keep{border:2px solid var(--ink);background:var(--paper);border-radius:8px}
@@ -182,6 +182,11 @@ td.low{color:var(--bad);font-weight:600}
   .w{grid-template-columns:minmax(0,1fr) 50px 92px}
   .gl{grid-template-columns:minmax(0,1fr)}
   .gl dt{margin-top:6px}
+  #nums table{font-size:14px}
+  #nums th,#nums td{padding:7px 6px}
+  #nums th{font-size:11px;letter-spacing:.02em}
+  #nums .num{white-space:normal}
+  em.t,.t{white-space:normal;-webkit-box-decoration-break:clone;box-decoration-break:clone}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
@@ -222,10 +227,6 @@ td.low{color:var(--bad);font-weight:600}
     <tr><td>Model Act sur les adultes vulnérables (2016) ; règles sur les ventes dans les institutions financières (1998)</td><td>Règles FINRA : 2040, 2111, 2121, 2210, 2360, 3110, 3210, 4210, 4512 ; Regulatory Notice 10-22</td></tr>
     <tr><td>Model rules sur les investment advisers : pratiques, registres, contrat, custody, sécurité de l'information, examens des IAR</td><td>Autres sujets : test Howey, Regulation T, Uniform Prudent Investor Act, tombstone ads, valorisation des options, délit d'initié, SIPC, wrap fee programs</td></tr>
   </table></div>
-  <div class="box">
-    <div class="eyebrow">Comment lire une question</div>
-    <p>L'examen ne nomme pas toujours le texte testé. « Under the Uniform Securities Act » peut viser la loi elle-même ou une règle modèle NASAA ; « pursuant to the Securities Exchange Act » peut viser une règle de la SEC. Ce cours indique la source de chaque règle pour que tu saches laquelle s'applique quand deux niveaux divergent.</p>
-  </div>
 
   <h2>Comment utiliser ce cours</h2>
   <ol>
@@ -238,18 +239,18 @@ td.low{color:var(--bad);font-weight:600}
   <h2>Plan d'étude sur trois semaines</h2>
   <div class="tw"><table>
     <tr><th>Période</th><th>Travail</th><th>Durée</th></tr>
-    <tr><td>Jours 1 à 3</td><td>Chapitres 1 à 3 (fondations, broker-dealers, agents) et leurs quiz</td><td class="num">2 h / jour</td></tr>
-    <tr><td>Jours 4 à 6</td><td>Chapitres 4 à 7 (advisers, IAR, titres, remedies) et leurs quiz</td><td class="num">2 h / jour</td></tr>
-    <tr><td>Jours 7 à 11</td><td>Chapitres 8 et 9, les deux plus lourds : une section par séance, puis les séries de quiz</td><td class="num">2 h / jour</td></tr>
+    <tr><td>Jours 1 à 3</td><td>Le jour 1, la vue « L'examen en pratique » pour la routine de lecture d'une question, puis les chapitres 1 à 3 (fondations, broker-dealers, agents) et leurs quiz</td><td class="num">2 h / jour</td></tr>
+    <tr><td>Jours 4 à 7</td><td>Chapitres 4 à 7 (advisers, IAR, titres, remedies), un par jour, et leurs quiz</td><td class="num">2 h / jour</td></tr>
+    <tr><td>Jours 8 à 11</td><td>Chapitres 8 et 9, les deux plus lourds : deux jours chacun, une section par séance, puis les séries de quiz</td><td class="num">2 h / jour</td></tr>
     <tr><td>Jours 12 à 14</td><td>Chiffres clés, fiches « non connues », glossaire ; refaire les séries ratées</td><td class="num">1 h 30 / jour</td></tr>
     <tr><td>Jours 15 à 20</td><td>Examens blancs A, B et C, un jour sur deux ; le lendemain, relire les sections sous 70 %</td><td class="num">1 h 15 + revue</td></tr>
-    <tr><td>Veille</td><td>Chiffres clés une dernière fois, puis repos</td><td class="num">30 min</td></tr>
+    <tr><td>Veille</td><td>Chiffres clés une dernière fois, la section « Le jour J » de la vue « L'examen en pratique », puis repos</td><td class="num">30 min</td></tr>
   </table></div>
 
   <div class="box">
     <div class="eyebrow">Logistique</div>
-    <p>L'examen est créé par la NASAA et administré par FINRA. Aucun sponsor n'est requis et il n'y a pas de prérequis (ni SIE, ni Series 7) : un candidat sans firme s'inscrit lui-même par le système d'inscription aux examens de FINRA. Une fois inscrit, tu disposes d'une fenêtre de <strong>120 jours</strong> pour réserver et passer l'examen. C'est un examen à livre fermé ; du papier brouillon est fourni sur demande. Le résultat (réussite ou échec) est donné à la fin, avec le détail par section en cas d'échec.</p>
-    <p>En cas d'échec : <strong>30 jours</strong> d'attente après le premier et le deuxième échec, <strong>180 jours</strong> après le troisième et les suivants. Réussir l'examen ne donne pas à lui seul le droit d'exercer : il faut encore être enregistré dans chaque État concerné.</p>
+    <p>L'examen est créé par la NASAA et administré par FINRA dans les centres Prometric. Aucun sponsor n'est requis et il n'y a pas de prérequis (ni SIE, ni Series 7). Le réussir ne donne pas à lui seul le droit d'exercer : il faut encore être enregistré dans chaque État concerné.</p>
+    <p>L'inscription, la fenêtre de 120 jours, le déroulement du jour J et les délais après un échec sont décrits dans la vue <button class="lnk" data-go="guide">L'examen en pratique</button>.</p>
   </div>
   <div class="box trap">
     <div class="eyebrow">À vérifier avant de t'inscrire</div>
@@ -270,9 +271,10 @@ td.low{color:var(--bad);font-weight:600}
     <li><strong>Avec une firme.</strong> Si tu es recruté par un broker-dealer, c'est lui qui t'inscrit en déposant ton Form U4 dans le système CRD. Tu n'as rien à faire toi-même.</li>
     <li><strong>Sans firme.</strong> Tu ouvres toi-même une fenêtre d'examen par le <em>Test Enrollment Services System</em> (TESS) de FINRA, sur finra.org, et tu paies les frais ($147). Aucun prérequis : ni SIE, ni Series 7, ni parrainage.</li>
     <li><strong>La fenêtre.</strong> Une fois la demande traitée, FINRA t'ouvre une fenêtre de <strong>120 jours</strong>. Tu dois réserver ta date et passer l'examen à l'intérieur. Si elle expire, il faut se réinscrire et repayer.</li>
-    <li><strong>La réservation.</strong> Tu choisis un centre Prometric et un créneau sur le site de Prometric. Réserve tôt : les créneaux du matin partent vite. Vérifie que le nom de l'inscription est exactement celui de ta pièce d'identité.</li>
+    <li><strong>La réservation.</strong> Tu choisis un centre Prometric et un créneau sur le site de Prometric. Vérifie que le nom de l'inscription est exactement celui de ta pièce d'identité.</li>
   </ol>
-  <p>L'examen est en anglais et se passe dans un centre Prometric. L'examen en ligne n'est proposé que sur aménagement accordé, pour raison médicale. Un candidat qui ne vit pas aux États-Unis doit vérifier auprès de Prometric quels centres proposent les examens FINRA et NASAA.</p>
+  <p>L'examen est en anglais et se passe dans un centre Prometric. L'examen en ligne n'est proposé que sur aménagement accordé : la FAQ de la NASAA le réserve aux candidats immunodéprimés exposés à un risque de maladie grave.</p>
+  <p><strong>Si tu vis hors des États-Unis.</strong> La FAQ de la NASAA confirme que ses examens sont aussi donnés dans des centres situés hors des États-Unis, et renvoie au site de FINRA pour la liste des sites. FINRA précise que le déroulement y est, pour l'essentiel, le même qu'aux États-Unis, qu'un formulaire de consentement au traitement des données personnelles est à signer sur place, et qu'un supplément de $15 est facturé pour une session passée à l'étranger. La liste des villes change et n'est pas reprise ici : avant de payer l'inscription, vérifie sur le site de réservation de Prometric qu'un centre accessible pour toi propose bien la Series 63, et à quelles dates.</p>
 
   <h2>Le jour J</h2>
   <ul>
@@ -280,14 +282,14 @@ td.low{color:var(--bad);font-weight:600}
     <li><strong>Pièce d'identité</strong> : une pièce officielle <strong>en cours de validité</strong>, avec photo et signature (passeport, permis de conduire). Le nom doit correspondre exactement à celui de l'inscription.</li>
     <li><strong>Effets personnels</strong> : tout va dans un casier, téléphone, montre, portefeuille et notes compris. On te demandera de montrer que tes poches sont vides. La salle est filmée.</li>
     <li><strong>Fourni par le centre</strong> : une calculatrice simple à quatre opérations, des tablettes effaçables avec feutres pour les brouillons, un casque antibruit. Tu n'apportes ni calculatrice ni papier.</li>
-    <li><strong>Le temps</strong> : 75 minutes pour 65 questions. Un court tutoriel précède l'épreuve et ne compte pas dans les 75 minutes. Une pause toilettes est possible, mais <strong>le chronomètre ne s'arrête pas</strong>.</li>
+    <li><strong>Le temps</strong> : 75 minutes pour 65 questions. Le rendez-vous comprend en plus un bloc de 30 minutes pour le tutoriel informatique et l'enquête de fin de session : ce temps ne peut pas servir à l'épreuve et ne compte pas dans les 75 minutes. Une pause toilettes est possible, mais <strong>le chronomètre ne s'arrête pas</strong>.</li>
     <li><strong>Pendant l'épreuve</strong> : une question à la fois ; tu peux marquer une question et y revenir ; tu peux changer une réponse tant que tu n'as pas terminé. Il n'y a pas de point négatif : ne laisse aucune question sans réponse.</li>
     <li><strong>Le résultat</strong> s'affiche à l'écran peu après la fin, et un relevé imprimé t'est remis : réussite ou échec. En cas d'échec, tu reçois ton résultat par section, ce qui te dit quoi retravailler. Aucun diplôme n'est envoyé ensuite.</li>
   </ul>
   <div class="box">
     <div class="eyebrow">Après le résultat</div>
     <p><strong>Réussite</strong> : l'examen reste valable <strong>2 ans</strong> pour obtenir un enregistrement dans un État. Une fois enregistré, il reste valable tant que tu le restes. Rappelle-toi que la réussite ne donne pas le droit d'exercer : il faut une firme, un Form U4 et un enregistrement effectif dans chaque État.</p>
-    <p><strong>Échec</strong> : 30 jours d'attente après le premier et le deuxième échec, 180 jours après le troisième. La FAQ de la NASAA annonce que ce dernier délai passera à 60 jours à compter du 4 janvier 2027. Chaque nouvelle tentative se paie.</p>
+    <p><strong>Échec</strong> : 30 jours d'attente après le premier échec, 30 jours après le deuxième, 180 jours après le troisième et les suivants. Pour les fenêtres d'examen ouvertes à partir du 4 janvier 2027, ce dernier délai est ramené à <strong>60 jours</strong> (troisième échec sur une période de deux ans). La règle suit la date d'ouverture de ta fenêtre d'examen, pas la date de l'échec : une fenêtre ouverte avant le 4 janvier 2027 reste soumise aux 180 jours. Chaque nouvelle tentative se paie. Source : FAQ de la NASAA.</p>
   </div>
 
   <h2>Comment aborder une question NASAA</h2>
@@ -296,7 +298,7 @@ td.low{color:var(--bad);font-weight:600}
     <li><strong>Lis la dernière phrase en premier.</strong> C'est elle qui pose la question. Tu liras ensuite le scénario en sachant ce que tu cherches.</li>
     <li><strong>Repère le mot qui inverse</strong> : <em>EXCEPT</em>, <em>NOT</em>, <em>LEAST</em>, <em>false</em>. Dans une question en EXCEPT, trois réponses sont vraies et tu cherches la fausse. Écris « V / F » sur ta tablette à côté de chaque lettre si nécessaire.</li>
     <li><strong>Identifie qui est qui.</strong> Agent d'un broker-dealer ou d'un issuer ? Adviser d'État ou federal covered ? Client particulier ou institutionnel ? Avec ou sans bureau dans l'État ? La même situation change de réponse selon ces qualités.</li>
-    <li><strong>Identifie le texte visé.</strong> « Under the Uniform Securities Act » ou « under NASAA's Statement of Policy » appelle la règle d'État ; « under FINRA rules » ou « under Regulation Best Interest » appelle la règle fédérale. Quand les deux diffèrent (emprunt à un client, durée d'un retard de décaissement), c'est ce mot qui tranche.</li>
+    <li><strong>Identifie le texte visé.</strong> « Under the Uniform Securities Act » ou « under NASAA's Statement of Policy » appelle la règle d'État ; « under FINRA rules » ou « under Regulation Best Interest » appelle la règle fédérale. Quand les deux diffèrent (emprunt à un client, durée d'un retard de décaissement), c'est ce mot qui tranche. L'examen ne nomme pas toujours le texte exact : « under the Uniform Securities Act » peut viser la loi elle-même ou une règle modèle NASAA, et « pursuant to the Securities Exchange Act » peut viser une règle de la SEC. Ce cours indique la source de chaque règle pour que tu saches à quel niveau elle appartient.</li>
     <li><strong>Réponds avant de lire les choix</strong>, de tête, puis cherche ta réponse parmi eux. Tu te laisseras moins séduire par un distracteur bien tourné.</li>
     <li><strong>Élimine.</strong> Deux choix sont en général clairement faux. Entre les deux restants, méfie-toi des absolus (<em>always</em>, <em>never</em>, <em>automatically</em>, <em>under any circumstances</em>) : ils sont souvent faux, sauf pour l'antifraude et les garanties, où l'absolu est la règle.</li>
   </ol>
@@ -304,6 +306,7 @@ td.low{color:var(--bad);font-weight:600}
   <p>Elles donnent quatre affirmations numérotées, et les choix sont des combinaisons (« I and III only », « II, III and IV only »). Ne cherche pas la combinaison : juge chaque affirmation séparément, vraie ou fausse, puis regarde quelle combinaison correspond. Astuce : dès que tu es sûr qu'une affirmation est fausse, raye tous les choix qui la contiennent ; il n'en reste souvent qu'un ou deux.</p>
   <div class="box ex">
     <div class="eyebrow">Exemple déroulé · une question, de la lecture à la réponse</div>
+    <p>Si tu débutes, tu comprendras le fond de cet exemple après le chapitre 5 ; retiens ici seulement la routine, c'est-à-dire l'ordre des cinq étapes.</p>
     <p><em>« An investment adviser representative employed by a federal covered adviser has her only office in State A. She has 14 retail clients in State B, whom she advises by telephone. In State B, she: »</em></p>
     <ol>
       <li><strong>Ce qu'on demande</strong> : son obligation dans l'État B.</li>
@@ -334,7 +337,7 @@ td.low{color:var(--bad);font-weight:600}
     <tr><td>Explication</td><td>Tu peux expliquer à voix haute, sans notes, les distinctions de la liste ci-dessous</td></tr>
     <tr><td>Temps</td><td>Tu finis un examen blanc avec au moins 10 minutes d'avance</td></tr>
   </table></div>
-  <p>Les distinctions à savoir expliquer sans hésiter :</p>
+  <p>Les distinctions à savoir expliquer sans hésiter. Cette liste est un contrôle de fin de parcours : si tu n'as pas encore lu le cours, ces mots te sont inconnus, et c'est normal. Reviens-y après le chapitre 9.</p>
   <ul>
     <li>exclusion et exemption ; exempt security et exempt transaction ;</li>
     <li>agent d'un broker-dealer et agent d'un issuer ;</li>
@@ -379,10 +382,12 @@ td.low{color:var(--bad);font-weight:600}
   <ul>
     <li><strong>Action</strong> (<em class="t">stock</em>, <em>share</em>, <em>equity</em>) : une part de propriété d'une société (<em>corporation</em>). L'actionnaire touche un <em>dividend</em> si la société en verse, vote en assemblée, et gagne ou perd selon le cours. La <em>common stock</em> est l'action ordinaire ; la <em>preferred stock</em> donne un dividende fixe payé avant celui des actions ordinaires, en général sans droit de vote. La <em class="t">treasury stock</em> est une action que la société a rachetée et détient elle-même.</li>
     <li><strong>Obligation</strong> (<em class="t">bond</em>) : un prêt fait à l'émetteur. Le porteur reçoit des intérêts (le coupon) et le remboursement du principal à l'échéance. Une <em class="t">debenture</em> est une obligation de société sans garantie particulière ; une <em class="t">note</em> est un titre de dette à échéance plus courte. Un <em>municipal bond</em> est émis par un État ou une collectivité locale ; les <em>Treasury securities</em> sont émises par l'État fédéral.</li>
-    <li><strong>Fonds</strong> (<em class="t">investment company</em>) : une société qui réunit l'argent de nombreux investisseurs pour l'investir dans un portefeuille de titres. Le <em>mutual fund</em> (<em>open-end investment company</em>) émet et rachète ses parts chaque jour à leur valeur d'inventaire. Les frais et les classes de parts sont expliqués au chapitre 9.</li>
+    <li><strong>Fonds</strong> (<em class="t">investment company</em>) : une société qui réunit l'argent de nombreux investisseurs pour l'investir dans un portefeuille de titres. Le <em>mutual fund</em> (<em>open-end investment company</em> : « ouvert », parce qu'il crée des parts nouvelles à chaque souscription) émet et rachète ses parts chaque jour à leur valeur d'inventaire. Un <em>closed-end fund</em> émet un nombre fixe de parts, qui se négocient ensuite en bourse. Un <em>exchange-traded fund</em> (ETF) est un fonds dont les parts se négocient en bourse en cours de séance, comme une action ; il suit le plus souvent un indice. Un <em>unit investment trust</em> (UIT) est un fonds à portefeuille fixe, que personne ne gère après sa constitution. Les frais et les classes de parts sont expliqués au chapitre 9.</li>
     <li><strong>Produits dérivés</strong> : une <em>option</em> donne le droit d'acheter (<em>call</em>) ou de vendre (<em>put</em>) un titre à un prix fixé pendant une durée limitée (chapitre 8). Un <em>warrant</em> est un droit de longue durée, émis par la société elle-même, d'acheter ses actions à un prix fixé. Un <em>right</em> (droit de souscription) est un droit de courte durée donné aux actionnaires existants pour souscrire à une nouvelle émission.</li>
-    <li><strong>Produits d'assurance</strong> : une <em>annuity</em> est un contrat par lequel un assureur verse une rente contre une prime. Dans la <em>fixed annuity</em>, l'assureur garantit le montant ; dans la <em class="t">variable annuity</em>, le montant dépend de fonds choisis par le client.</li>
-    <li><strong>Comptes de retraite</strong> : l'<em>IRA</em> (compte individuel), le <em>401(k)</em> (plan d'entreprise) et le <em>Keogh</em> (plan des indépendants) sont des enveloppes fiscales. On y loge des titres, mais l'enveloppe n'est pas un titre.</li>
+    <li><strong>Produits d'assurance</strong> : une <em>annuity</em> est un contrat par lequel un assureur verse une rente contre une prime. Dans la <em>fixed annuity</em>, l'assureur garantit le montant ; dans la <em class="t">variable annuity</em>, le montant dépend de fonds choisis par le client. L'assurance vie classique existe en trois formes : <em>whole life</em> (vie entière, à prime et capital fixes), <em>term life</em> (assurance décès temporaire, limitée à une durée) et <em>endowment</em> (capital fixé, versé à une date donnée ou au décès). Dans les trois, c'est l'assureur qui porte le risque.</li>
+    <li><strong>Produits bancaires</strong> : le compte d'épargne et le <em>certificate of deposit</em> (CD), un dépôt à terme à taux fixe. Ils sont assurés par la FDIC, l'organisme fédéral de garantie des dépôts, dans la limite légale.</li>
+    <li><strong>Comptes de retraite</strong> : l'<em>IRA</em> (compte individuel), le <em>401(k)</em> (plan d'entreprise) et le <em>Keogh</em> (plan des indépendants) sont des enveloppes fiscales. On y loge des titres, mais l'enveloppe n'est pas un titre. Le <em>Roth IRA</em> est un IRA alimenté par des versements déjà imposés, dont les retraits sont ensuite libres d'impôt. Un <em>rollover</em> est le transfert des avoirs d'un plan vers un autre, par exemple d'un 401(k) vers un IRA au moment de quitter un employeur.</li>
+    <li><strong>Sociétés de personnes</strong> : dans un <em>partnership</em>, des associés exploitent une affaire en commun. Dans un <em>general partnership</em>, tous gèrent et tous répondent des dettes. Dans un <em>limited partnership</em>, un <em>general partner</em> gère et répond des dettes sans limite, tandis que les <em>limited partners</em> apportent des capitaux, ne gèrent pas et ne risquent que leur mise. La part d'un limited partner est un placement passif : c'est ce qui en fera une security.</li>
   </ul>
   <h3>Les marchés</h3>
   <ul>
@@ -411,12 +416,11 @@ td.low{color:var(--bad);font-weight:600}
     <tr><td>Investment Advisers Act of 1940</td><td>Investment advisers</td><td>Ch. 4 : § 203, § 203A</td></tr>
     <tr><td>Règles FINRA</td><td>Conduite des broker-dealers membres et de leurs représentants</td><td>Ch. 2, 3, 8, 9</td></tr>
   </table></div>
-  <p>La <em class="t">SEC</em> est le régulateur fédéral. <em class="t">FINRA</em> est un organisme d'autorégulation (<em>self-regulatory organization</em>, SRO) qui encadre les broker-dealers sous le contrôle de la SEC. <em class="t">SIPC</em> protège les clients d'un broker-dealer en faillite (chapitre 7).</p>
   <h3>Qui fait quoi</h3>
   <div class="tw"><table>
     <tr><th>Organisme</th><th>Nature</th><th>Rôle</th></tr>
     <tr><td>SEC (Securities and Exchange Commission)</td><td>Agence fédérale, créée par l'Exchange Act de 1934</td><td>Applique les lois fédérales sur les titres : enregistre les offres publiques, les broker-dealers et les grands advisers ; surveille les marchés et les SRO</td></tr>
-    <tr><td>FINRA (Financial Industry Regulatory Authority)</td><td>Organisme privé d'autorégulation (SRO), sous contrôle de la SEC</td><td>Écrit et applique les règles de conduite des broker-dealers membres ; fait passer les examens (dont la Series 63, pour le compte de la NASAA) ; tient le système CRD et BrokerCheck</td></tr>
+    <tr><td>FINRA (Financial Industry Regulatory Authority)</td><td>Organisme privé d'autorégulation (<em>self-regulatory organization</em>, SRO), sous contrôle de la SEC</td><td>Écrit et applique les règles de conduite des broker-dealers membres ; fait passer les examens (dont la Series 63, pour le compte de la NASAA) ; tient le système CRD et BrokerCheck</td></tr>
     <tr><td>Administrator</td><td>Autorité de l'État</td><td>Applique la loi de son État : enregistre les firmes, les individus et les titres ; enquête ; sanctionne</td></tr>
     <tr><td>NASAA (North American Securities Administrators Association)</td><td>Association des Administrators</td><td>Rédige les textes modèles et l'examen. Elle n'enregistre personne et ne sanctionne personne.</td></tr>
     <tr><td>Federal Reserve Board</td><td>Banque centrale</td><td>Fixe le crédit que les broker-dealers peuvent accorder à leurs clients (Regulation T, chapitre 8)</td></tr>
@@ -431,7 +435,7 @@ td.low{color:var(--bad);font-weight:600}
     <li>exiger l'<strong>enregistrement</strong> des advisers enregistrés auprès de la SEC, les <em>federal covered advisers</em> ;</li>
     <li>imposer aux broker-dealers des exigences de <strong>capital, de marge et de registres</strong> différentes des exigences fédérales.</li>
   </ol>
-  <p>Ce que NSMIA a laissé aux États tient en une phrase qu'il faut savoir par cœur : l'État peut toujours exiger un <em class="t">notice filing</em> et des frais, enregistrer les broker-dealers, les agents et les IAR, et surtout <strong>poursuivre la fraude</strong>, quel que soit le titre et quelle que soit la personne.</p>
+  <p>Ce que NSMIA a laissé aux États tient en une phrase qu'il faut savoir par cœur : l'État peut toujours exiger un <em class="t">notice filing</em> et des frais (un simple dépôt d'information, sans autorisation à obtenir ; détail aux chapitres 4 et 6, où tu verras aussi que les titres cotés en sont dispensés), enregistrer les broker-dealers, les agents et les IAR, et surtout <strong>poursuivre la fraude</strong>, quel que soit le titre et quelle que soit la personne.</p>
   <div class="box ex">
     <div class="eyebrow">Exemple déroulé · un titre coté vendu avec un mensonge</div>
     <p>Karim, agent d'un broker-dealer à Denver (Colorado), vend à un retraité des actions d'une société cotée au NYSE en lui affirmant que le dividende est « garanti par l'État ».</p>
@@ -445,7 +449,7 @@ td.low{color:var(--bad);font-weight:600}
 
   <h2>Person</h2>
   <p>La loi dit sans cesse « any person ». Le mot ne désigne pas seulement un être humain : il couvre toute entité capable d'avoir des droits et des obligations. Quand la loi veut parler d'un être humain, elle dit <em>individual</em>. La nuance compte : un broker-dealer est une <em>person</em> (le plus souvent une société), alors qu'un agent est forcément un <em>individual</em>.</p>
-  <p>USA § 401(j) : une <em class="t">person</em> est un individu, une corporation, un partnership, une association, une joint-stock company, un trust dont les intérêts des bénéficiaires sont représentés par un titre, une organisation non constituée, un gouvernement ou une subdivision politique d'un gouvernement.</p>
+  <p>USA § 401(j) : une <em class="t">person</em> est un individu, une corporation, un partnership, une association, une <em>joint-stock company</em> (forme ancienne de société par actions, dont les associés restent responsables des dettes), un trust dont les intérêts des bénéficiaires sont représentés par un titre, une organisation non constituée, un gouvernement ou une subdivision politique d'un gouvernement.</p>
   <div class="box">
     <div class="eyebrow">Convention d'examen</div>
     <p>Les manuels et les banques de questions ajoutent que trois catégories ne sont <strong>pas</strong> des persons, faute de capacité à contracter : le <strong>mineur</strong>, le <strong>défunt</strong> et la personne déclarée <strong>mentalement incapable</strong>. Cette exclusion ne figure pas dans le texte de la loi. Retiens-la comme une convention : si une question demande qui n'est pas une person, c'est la réponse attendue.</p>
@@ -490,13 +494,14 @@ td.low{color:var(--bad);font-weight:600}
   <p>La question à se poser est toujours la même : le profit attendu vient-il des efforts d'un tiers ? Si oui, c'est une security, soumise à l'enregistrement (sauf exemption) et à l'antifraude, quelle que soit sa forme ou sa technologie.</p>
   <div class="tw"><table>
     <tr><th>Security</th><th>Pas une security</th></tr>
-    <tr><td>Stocks, treasury stock, bonds, debentures, notes</td><td>Fixed annuities, assurance vie whole/term, endowment</td></tr>
+    <tr><td>Stocks, treasury stock, bonds, debentures, notes</td><td>Fixed annuities, assurance vie <em>whole life</em> et <em>term life</em>, <em>endowment policies</em></td></tr>
     <tr><td>Variable annuities, variable life</td><td>Comptes de retraite (IRA, Keogh, 401k) en tant que tels</td></tr>
     <tr><td>Options, warrants, rights sur des titres ou des indices de titres</td><td>Commodity futures, matières premières physiques</td></tr>
     <tr><td>Limited partnership interests, investment contracts</td><td>Immobilier détenu en direct, condos habités</td></tr>
     <tr><td>Whiskey warehouse receipts, intérêts dans du bétail ou des cultures gérés par un tiers</td><td>Objets de collection, métaux précieux, devises</td></tr>
-    <tr><td>Pre-organization certificates, intérêts pétrole/gaz/mines</td><td>Dépôts bancaires, CD assurés</td></tr>
+    <tr><td>Pre-organization certificates, intérêts pétrole/gaz/mines</td><td>Dépôts bancaires, CD (<em>certificates of deposit</em>) assurés</td></tr>
   </table></div>
+  <p>Un <em>whiskey warehouse receipt</em> est un récépissé d'entrepôt représentant des fûts de whisky en cours de vieillissement, vendu comme placement : l'acheteur ne touchera jamais les fûts et compte sur le distillateur pour les faire vieillir et les revendre. C'est l'exemple classique d'un produit qui ne ressemble pas à un titre et qui en est un. Un <em>pre-organization certificate</em> est l'engagement de souscrire aux titres d'une société qui n'est pas encore constituée.</p>
   <div class="box trap">
     <div class="eyebrow">Piège classique</div>
     <p>Une option sur un <strong>titre</strong> ou sur un indice de titres est une security. Un contrat à terme sur matières premières (<em>commodity future</em>) n'en est pas une : il relève de la CFTC. Et « variable » signifie toujours security ; « fixed » signifie produit d'assurance, parce que c'est l'assureur qui porte le risque.</p>
@@ -658,7 +663,7 @@ td.low{color:var(--bad);font-weight:600}
     </ol>
     <p>Le coût est le même, mais le conflit d'intérêts diffère : en principal, la firme est la contrepartie de sa cliente et gagne d'autant plus qu'elle vend cher. Une firme ne peut pas facturer à la fois un markup et une commission sur la même opération. Quand elle achète un titre à un client pour son stock, l'écart s'appelle un <em>markdown</em>. Une firme qui affiche en permanence un prix d'achat et un prix de vente sur un titre est un <em>market maker</em>.</p>
   </div>
-  <p>Deux autres termes que tu croiseras. Une <em>introducing firm</em> tient la relation avec le client mais confie l'exécution, le règlement et la garde des titres à une <em>clearing firm</em> (ou <em>carrying firm</em>), qui détient réellement les actifs ; l'accord entre les deux est l'<em>arrangement de clearing</em> déclaré sur le Form BD. Et un <em>place of business</em> est un bureau, ou tout lieu présenté au public comme un endroit où la firme exerce : une adresse sur une carte de visite suffit.</p>
+  <p>Deux autres termes que tu croiseras. Une <em>introducing firm</em> tient la relation avec le client mais confie l'exécution, le règlement et la garde des titres à une <em>clearing firm</em> (ou <em>carrying firm</em>), qui détient réellement les actifs ; l'accord entre les deux est l'<em>arrangement de clearing</em> déclaré sur le Form BD. Et un <em>place of business</em> est un bureau, ou tout lieu présenté au public comme tel (par exemple une adresse sur une carte de visite) ; la définition écrite vient de la règle SEC sur les IAR, voir chapitre 5.</p>
 
   <h2>Qui n'est pas un broker-dealer</h2>
   <p>La définition est large : toute person dont le métier est de faire des transactions sur titres. La loi en retire ensuite cinq catégories. Pour chacune, demande-toi pourquoi : soit la personne est déjà régulée ailleurs, soit elle est régulée sous un autre nom, soit ses clients n'ont pas besoin de la protection de cet État.</p>
@@ -721,7 +726,7 @@ td.low{color:var(--bad);font-weight:600}
   <h3>Form BD</h3>
   <ul>
     <li>Contenu : forme juridique, propriétaires directs et indirects, personnes de contrôle, types d'activité, arrangements de clearing, antécédents pénaux, réglementaires, civils et financiers de la firme et de ses affiliés de contrôle.</li>
-    <li>Toute information devenue inexacte est corrigée <strong>promptly</strong> par un amendement (USA § 203(d)) ; les règles de dépôt fixent 30 jours.</li>
+    <li>Toute information devenue inexacte est corrigée <strong>promptly</strong> (sans délai, sans nombre de jours fixé par la loi ; le mot est expliqué au chapitre 3) par un amendement (USA § 203(d)) ; les règles de dépôt fixent 30 jours.</li>
     <li>Il n'y figure aucune donnée sur les clients.</li>
   </ul>
 
@@ -861,7 +866,7 @@ td.low{color:var(--bad);font-weight:600}
   <p>La définition tient en trois éléments : un <strong>individu</strong> ; qui <strong>représente</strong> un broker-dealer ou un issuer ; pour <strong>effectuer ou tenter d'effectuer</strong> des transactions sur titres. Le troisième élément est le plus large : la tentative suffit. Celui qui sollicite sans rien vendre est déjà un agent. Ni le titre du poste, ni le mode de rémunération, ni le temps de travail ne comptent : ce qui compte est la <strong>fonction</strong>.</p>
 
   <h2>Agent d'un broker-dealer</h2>
-  <p>Pour celui qui représente un broker-dealer, la règle est sans nuance : s'il participe à la vente, il est agent, quel que soit le titre vendu et quel que soit l'acheteur. Il n'y a pas d'exclusion à chercher.</p>
+  <p>Pour celui qui représente un broker-dealer, la règle est sans nuance : s'il participe à la vente, il est agent, quel que soit le titre vendu et quel que soit l'acheteur. Seule réserve : si la firme elle-même n'est pas un broker-dealer dans l'État (pas de bureau dans l'État, et clients institutionnels seulement ou client existant de passage, voir chapitre 2), son représentant n'y est pas un agent, puisque la loi définit l'agent comme celui qui représente « a broker-dealer or issuer » (USA § 401(b)).</p>
   <ul>
     <li>Quiconque vend pour un BD est un agent, <strong>même si les titres ou les transactions sont exemptés</strong>.</li>
     <li>Le personnel administratif n'est pas agent, sauf s'il prend des ordres, sollicite des comptes, relaie des recommandations ou reçoit une rémunération liée aux ventes.</li>
@@ -877,7 +882,8 @@ td.low{color:var(--bad);font-weight:600}
       <li>Un salarié au salaire fixe, sans aucune commission, appelle des prospects pour leur proposer d'ouvrir un compte. <span class="vd">Agent</span> Solliciter, c'est tenter d'effectuer des transactions ; l'absence de commission n'y change rien.</li>
       <li>Un administrateur de la firme siège au conseil quatre fois par an et n'a aucun contact avec les clients. <span class="vd ok">Pas agent</span> Le titre de director ne suffit pas.</li>
       <li>Le président de la firme appelle lui-même trois gros clients pour leur recommander une émission. <span class="vd">Agent</span> Il vend. Son enregistrement est toutefois automatique avec celui de la firme (chapitre 2).</li>
-      <li>Un agent ne vend que des obligations du Trésor américain, à des banques uniquement. <span class="vd">Agent</span> Titre exempté, acheteur institutionnel : peu importe, il représente un broker-dealer.</li>
+      <li>Un agent d'un broker-dealer enregistré dans l'État ne vend que des obligations du Trésor américain, à des banques uniquement. <span class="vd">Agent</span> Titre exempté, acheteur institutionnel : peu importe, il représente un broker-dealer de cet État.</li>
+      <li>Le représentant d'une firme qui n'a aucun bureau dans l'État et n'y traite qu'avec des banques et des assureurs. <span class="vd ok">Pas agent dans cet État</span> Sa firme n'y est pas un broker-dealer (USA § 401(c)) : il ne représente donc ni un broker-dealer ni un issuer au sens de la loi de cet État.</li>
       <li>Un étudiant en stage d'été distribue des brochures dans un salon et recueille les coordonnées des visiteurs intéressés, contre une prime par compte ouvert. <span class="vd">Agent</span> Rémunération liée aux ventes et sollicitation de comptes.</li>
     </ul>
   </div>
@@ -887,8 +893,8 @@ td.low{color:var(--bad);font-weight:600}
   <p>L'individu qui représente un issuer n'est <strong>pas</strong> un agent quand il effectue des transactions :</p>
   <ul>
     <li>sur l'une de ces cinq <strong>exempt securities</strong> : titres du gouvernement US, des États et des municipalités ; titres du Canada et des gouvernements étrangers reconnus ; titres de banques, savings institutions et trust companies ; commercial paper exempté ; investment contracts de plans d'avantages aux employés ;</li>
-    <li>dans une <strong>exempt transaction</strong> (§ 402(b)) ;</li>
-    <li>sur certaines <strong>federal covered securities</strong> : ventes à des qualified purchasers et placements sous Rule 506 ;</li>
+    <li>dans une <strong>exempt transaction</strong> (§ 402(b)), c'est-à-dire une vente dispensée d'enregistrement à cause de ses circonstances (liste au chapitre 6) ;</li>
+    <li>sur certaines <strong>federal covered securities</strong> : ventes à des <em>qualified purchasers</em> (investisseurs très fortunés ou institutionnels, catégorie définie au niveau fédéral) et placements privés sous Rule 506 (chapitre 6) ;</li>
     <li>avec les <strong>employés, partners ou directors</strong> de l'issuer, si aucune commission ni rémunération n'est versée pour la sollicitation.</li>
   </ul>
   <div class="box">
@@ -987,7 +993,7 @@ td.low{color:var(--bad);font-weight:600}
       <li>Un agent enregistré en Oregon envoie un e-mail de prospection à cinquante habitants de l'Idaho, où il n'est pas enregistré. Personne ne répond. <span class="vd no">Violation</span> L'offre a été dirigée vers l'Idaho et reçue : il y a tenté d'effectuer des transactions.</li>
       <li>Un agent enregistré dans l'État A et l'État B, depuis son bureau de A, appelle un client résident de B. <span class="vd ok">Permis</span> Il est enregistré aux deux bouts du trajet de l'offre.</li>
       <li>Un agent enregistré seulement dans l'État où il a son bureau ne vend que des titres exemptés à des résidents de l'État voisin. <span class="vd no">Violation</span> L'exemption du titre ne dispense pas l'agent d'un broker-dealer de s'enregistrer.</li>
-      <li>Un agent passe ses vacances dans un État où il n'est pas enregistré et, depuis la plage, appelle un client résident de son propre État pour lui proposer un titre. <span class="vd no">Violation</span> Selon la lettre du § 414, l'offre provient de l'État des vacances : elle y est « faite », et l'agent devrait y être enregistré. C'est le piège de l'origine de l'offre.</li>
+      <li>Un agent passe ses vacances dans un État où il n'est pas enregistré et, depuis la plage, appelle un client résident de son propre État pour lui proposer un titre. <span class="vd">Compétence des deux États</span> L'offre provient de l'État des vacances et elle est dirigée vers l'État du client : les deux Administrators sont compétents. Selon la lettre du § 414, l'agent devrait donc être enregistré dans les deux. C'est le piège de l'origine de l'offre.</li>
     </ul>
   </div>
 
@@ -1193,7 +1199,7 @@ td.low{color:var(--bad);font-weight:600}
   </div>
   <div class="tw"><table>
     <tr><th>Sans bureau dans l'État</th><th>Broker-dealer</th><th>Agent</th><th>Investment adviser et IAR</th></tr>
-    <tr><td>Clients institutionnels seulement</td><td>Hors de la définition</td><td>Agent, à enregistrer</td><td>Exempté</td></tr>
+    <tr><td>Clients institutionnels seulement</td><td>Hors de la définition</td><td>Pas agent dans cet État : sa firme n'y est pas un broker-dealer (USA § 401(b) et (c))</td><td>Exempté</td></tr>
     <tr><td>Quelques particuliers résidents</td><td>Enregistrement dès le premier</td><td>Enregistrement dès le premier</td><td>Exempté jusqu'à 5 sur 12 mois</td></tr>  </table></div>
   <p>Le <em class="t">Form ADV</em> est à l'adviser ce que le Form BD est au broker-dealer, avec une différence : une partie est écrite pour le client. La Part 1 est un questionnaire à cases pour les régulateurs. La Part 2 est rédigée en langage courant et remise au client : c'est la <em>brochure</em>, qui lui dit avant de signer ce que la firme fait, combien elle coûte, quels conflits d'intérêts elle a et si elle a été sanctionnée.</p>
   <ul>
@@ -1374,7 +1380,7 @@ td.low{color:var(--bad);font-weight:600}
       <li>Un comptable salarié de l'adviser établit les factures d'honoraires et les rapports de performance à partir des données du système. <span class="vd ok">Pas IAR</span> Tâche administrative.</li>
       <li>La directrice de la conformité supervise les IAR et valide leurs recommandations. <span class="vd">IAR</span> Elle supervise des personnes qui conseillent.</li>
       <li>Un standardiste répond à un client inquiet : « À votre place, je garderais vos actions, le marché va remonter. » <span class="vd no">Fonction d'IAR exercée sans enregistrement</span> Il vient de donner un conseil sur des titres pour le compte de la firme.</li>
-      <li>Une personne exerce seule, en nom propre, comme investment adviser enregistré. <span class="vd">Adviser et IAR à la fois</span> L'enregistrement de la firme couvre l'individu qui la dirige et conseille.</li>
+      <li>Une personne exerce seule, en nom propre, comme investment adviser enregistré. <span class="vd">Adviser et IAR à la fois</span> L'enregistrement de la firme couvre l'individu qui la dirige et conseille. Différence avec le courtage : la définition de l'agent exclut expressément le broker-dealer lui-même (un sole proprietor du courtage est broker-dealer, pas agent) ; celle de l'IAR n'a pas cette exclusion.</li>
     </ul>
   </div>
   <h3>Agent et IAR côte à côte</h3>
@@ -1448,7 +1454,7 @@ td.low{color:var(--bad);font-weight:600}
     <li>L'IAR supervisé par un IA enregistré n'a pas à présenter les mêmes qualifications qu'un IA.</li>
     <li>Les règles d'éthique des advisers (chapitre 4) s'appliquent à l'IAR personnellement : pas d'emprunt à un client, pas de garantie de résultat, divulgation des conflits.</li>
   </ul>
-  <p>Les sigles des dispenses désignent des titres professionnels privés, obtenus après des examens exigeants : <em>CFP</em> (Certified Financial Planner), <em>ChFC</em> (Chartered Financial Consultant), <em>PFS</em> (Personal Financial Specialist, réservé aux experts-comptables), <em>CFA</em> (Chartered Financial Analyst), <em>CIC</em> (Chartered Investment Counsel). L'Administrator estime que leur titulaire a déjà prouvé ses connaissances. Le <em>CPA</em> (Certified Public Accountant) est l'expert-comptable : son titre prouve des compétences en comptabilité, pas en placements, d'où l'absence de dispense sans le PFS. La dispense porte sur l'examen seulement : le titulaire doit quand même s'enregistrer.</p>
+  <p>Les sigles des dispenses désignent des titres professionnels privés, obtenus après des examens exigeants : <em>CFP</em> (Certified Financial Planner), <em>ChFC</em> (Chartered Financial Consultant), <em>PFS</em> (Personal Financial Specialist, réservé aux experts-comptables), <em>CFA</em> (Chartered Financial Analyst), <em>CIC</em> (Chartered Investment Counselor). L'Administrator estime que leur titulaire a déjà prouvé ses connaissances. Le <em>CPA</em> (Certified Public Accountant) est l'expert-comptable : son titre prouve des compétences en comptabilité, pas en placements, d'où l'absence de dispense sans le PFS. La dispense porte sur l'examen seulement : le titulaire doit quand même s'enregistrer.</p>
 
   <h2>L'agent qui glisse vers le conseil</h2>
   <p>C'est le scénario que l'examen préfère, parce qu'il te concerne directement. Un agent de broker-dealer donne des conseils tous les jours : recommander un titre fait partie de son métier. Tant que ce conseil est l'accessoire du courtage et qu'il n'est payé que par la commission de l'ordre, l'agent reste un agent. Il change de catégorie quand le client paie <strong>pour le conseil</strong>.</p>
@@ -1528,7 +1534,7 @@ td.low{color:var(--bad);font-weight:600}
   <h3>Filing (§ 302)</h3>
   <ul>
     <li>Critères principaux : émetteur en activité aux États-Unis depuis au moins <strong>36 mois</strong> ; classe de titres enregistrée sous l'Exchange Act et détenue par 500 personnes ou plus ; net worth de $4M (ou $2M avec des bénéfices sur 2 des 3 derniers exercices) ; au moins 4 market makers ; prix d'offre d'au moins $5 par action ; commissions d'underwriting de 10 % au plus ; aucun défaut de paiement récent.</li>
-    <li>Également ouvert aux fonds (open-end investment companies, unit investment trusts) qui ont déjà enregistré leurs titres dans l'État au cours des 24 derniers mois.</li>
+    <li>Également ouvert aux fonds (<em>open-end investment companies</em>, c'est-à-dire les mutual funds, et <em>unit investment trusts</em>, les fonds à portefeuille fixe) qui ont déjà enregistré leurs titres dans l'État au cours des 24 derniers mois.</li>
     <li>Dossier léger : preuve d'éligibilité, description de l'émetteur et du titre, dernier prospectus fédéral.</li>
   </ul>
 
@@ -1586,11 +1592,11 @@ td.low{color:var(--bad);font-weight:600}
   <p>NSMIA (Securities Act § 18) retire à l'État le pouvoir d'exiger leur enregistrement :</p>
   <ul>
     <li>titres cotés sur NYSE, Nasdaq et autres bourses nationales, et titres de rang égal ou supérieur du même émetteur ;</li>
-    <li>titres de <strong>registered investment companies</strong> (fonds mutuels, ETF, UIT) ;</li>
-    <li>ventes à des <em>qualified purchasers</em> ;</li>
+    <li>titres de <strong>registered investment companies</strong> (fonds mutuels, <em>exchange-traded funds</em> ou ETF, <em>unit investment trusts</em> ou UIT) ;</li>
+    <li>ventes à des <em>qualified purchasers</em> : des acheteurs très fortunés ou institutionnels, catégorie que la loi fédérale charge la SEC de définir. À ne pas confondre avec l'<em>accredited investor</em> de Regulation D ni avec le <em>qualified client</em> des honoraires de performance ;</li>
     <li>placements privés sous <em class="t">Rule 506</em> de Regulation D, et certaines autres offres exemptées au niveau fédéral.</li>
   </ul>
-  <p><em class="t">Notice filing</em> (USA § 307) : ce n'est <strong>pas</strong> un enregistrement. L'Administrator peut exiger les documents déposés à la SEC, un consent to service of process et des frais. Pour la Rule 506 : notice sur <strong>Form D</strong> au plus tard <strong>15 jours après la première vente</strong> dans l'État. En cas de défaut, il peut émettre un stop order suspendant l'offre (sauf pour les titres cotés). L'antifraude reste entière.</p>
+  <p><em class="t">Notice filing</em> (USA § 307) : ce n'est <strong>pas</strong> un enregistrement. L'Administrator peut exiger les documents déposés à la SEC, un consent to service of process et des frais. Pour la Rule 506 : notice sur <strong>Form D</strong> au plus tard <strong>15 jours après la première vente</strong> dans l'État. En cas de défaut, il peut émettre un stop order suspendant l'offre (sauf pour les titres cotés). Pour les <strong>titres cotés</strong> (et les titres de rang égal ou supérieur du même émetteur), l'État ne peut exiger ni dépôt ni frais : le notice filing concerne en pratique les fonds et la Rule 506 (Securities Act § 18(c)(2)(D)). L'antifraude reste entière.</p>
   <div class="tw"><table>
     <tr><th></th><th>Registration (titre non couvert)</th><th>Notice filing (federal covered security)</th></tr>
     <tr><td>Ce que fait l'émetteur</td><td>Il demande l'enregistrement, par filing, coordination ou qualification</td><td>Il informe l'État : copie des documents déposés à la SEC, consent to service of process, frais</td></tr>
@@ -1650,7 +1656,7 @@ td.low{color:var(--bad);font-weight:600}
   <p>L'exemption tient à la <strong>façon dont la vente se fait</strong>. Le titre, lui, reste non exempté : une autre vente du même titre peut exiger l'enregistrement.</p>
   <ul>
     <li><strong>Isolated non-issuer</strong> transactions, par un BD ou non ;</li>
-    <li><strong>Manual exemption</strong> : transaction non-issuer par un agent enregistré d'un BD enregistré, sur un titre en circulation dans le public depuis au moins 90 jours, dont l'émetteur est en activité (ni blank check ni shell) et dont les informations financières figurent dans un manuel de titres reconnu ou sur EDGAR ;</li>
+    <li><strong>Manual exemption</strong> : transaction non-issuer par un agent enregistré d'un BD enregistré, sur un titre en circulation dans le public depuis au moins 90 jours, dont l'émetteur est en activité (ni <em>blank check company</em>, société sans projet précis créée pour fusionner avec une cible encore inconnue, ni <em>shell company</em>, coquille sans activité réelle) et dont les informations financières figurent dans un manuel de titres reconnu ou sur <em>EDGAR</em>, la base publique de la SEC où les émetteurs déposent leurs documents ;</li>
     <li><strong>Unsolicited</strong> orders non-issuer exécutés par un BD enregistré (l'Administrator peut exiger que le client reconnaisse par écrit le caractère non sollicité) ;</li>
     <li>transactions entre issuer et <strong>underwriters</strong>, ou entre underwriters ;</li>
     <li>obligations garanties par une <strong>hypothèque</strong> ou un acte de fiducie, si l'ensemble est offert et vendu <strong>en bloc</strong> ;</li>
@@ -1742,7 +1748,7 @@ td.low{color:var(--bad);font-weight:600}
   </div>
 
   <h2>L'antifraude et les titres : ce que l'État garde toujours</h2>
-  <p>Le plan d'examen range dans cette section l'autorité antifraude de l'État, et la raison est simple : toutes les portes décrites plus haut (exemption du titre, exemption de la transaction, federal covered) concernent l'<strong>enregistrement</strong>. Aucune ne concerne la <strong>fraude</strong>. Un agent qui vend un bon du Trésor, le titre le plus exempté qui soit, en mentant sur son rendement, commet une fraude sur titres au sens de l'USA § 101, et l'Administrator peut enquêter, ordonner de cesser, sanctionner l'agent et transmettre le dossier au procureur. Il en va de même pour un placement privé sous Rule 506 ou pour une action cotée. Le détail de ces pouvoirs est au chapitre 7.</p>
+  <p>Le plan d'examen range dans cette section l'autorité antifraude de l'État : toutes les portes décrites plus haut (exemption du titre, exemption de la transaction, federal covered) concernent l'<strong>enregistrement</strong>, aucune ne concerne la <strong>fraude</strong>. Mentir en vendant un bon du Trésor, un placement sous Rule 506 ou une action cotée reste une fraude au sens de l'USA § 101 ; les pouvoirs de l'Administrator sont détaillés au chapitre 7.</p>
 
   <h2>Regulation D et le devoir d'enquête du broker-dealer</h2>
   <p>Une offre publique enregistrée coûte cher et prend des mois. Le Securities Act permet donc à un émetteur de lever des fonds sans enregistrement fédéral s'il ne s'adresse pas au public : c'est le <em>private placement</em>, dont <em class="t">Regulation D</em> fixe les conditions. L'idée est la même que pour les exempt transactions de l'USA : des acheteurs fortunés ou avertis peuvent exiger eux-mêmes l'information dont ils ont besoin et supporter une perte. La notion centrale est l'<em>accredited investor</em>, défini par sa richesse ou sa qualité professionnelle. Le document d'information d'un placement privé s'appelle un <em>private placement memorandum</em> (PPM) : il est rédigé par l'émetteur et n'est examiné par aucun régulateur.</p>
@@ -1750,7 +1756,7 @@ td.low{color:var(--bad);font-weight:600}
     <li><em class="t">Accredited investor</em> (Rule 501) : personne physique ayant un revenu supérieur à <span class="num">$200,000</span> (<span class="num">$300,000</span> avec le conjoint) sur les 2 dernières années, ou un net worth supérieur à <span class="num">$1M</span> <strong>hors résidence principale</strong> ; banques, assureurs, investment companies, BD ; entités de plus de $5M d'actifs ; dirigeants de l'émetteur ; titulaires en règle des Series 7, 65 ou 82.</li>
     <li><strong>Rule 506(b)</strong> : pas de sollicitation générale ; accrédités sans limite, plus <strong>35 acheteurs non accrédités</strong> au plus, qui doivent être avertis (<em>sophisticated</em>) et reçoivent une information détaillée.</li>
     <li><strong>Rule 506(c)</strong> : sollicitation générale permise ; tous les acheteurs sont accrédités, et l'émetteur prend des mesures raisonnables pour le <strong>vérifier</strong>.</li>
-    <li><strong>Form D</strong> : déposé à la SEC dans les <strong>15 jours</strong> de la première vente. Les titres sont <em>restricted</em> (revente limitée). Disqualification des <em>bad actors</em>.</li>
+    <li><strong>Form D</strong> : déposé à la SEC dans les <strong>15 jours</strong> de la première vente. Les titres sont des <em>restricted securities</em> : achetés hors offre publique, ils ne peuvent pas être revendus librement au public avant un délai de détention. Disqualification des <em>bad actors</em> : l'exemption tombe si l'émetteur, l'un de ses dirigeants ou un intermédiaire rémunéré a déjà été condamné ou sanctionné pour une infraction liée aux titres (Rule 506(d)).</li>
     <li>FINRA <strong>Regulatory Notice 10-22</strong> : le BD qui recommande un placement privé doit mener une <strong>enquête raisonnable</strong> sur l'émetteur et sa direction, ses perspectives, ses actifs, ses affirmations et l'usage prévu des fonds. Il ne peut pas se reposer aveuglément sur le mémorandum de l'émetteur. L'exemption d'enregistrement ne dispense ni de l'antifraude ni de la suitability.</li>
   </ul>
   <div class="tw"><table>
@@ -1787,7 +1793,7 @@ td.low{color:var(--bad);font-weight:600}
       <li>Trois portes : titre enregistré, exemption (du titre ou de la transaction), federal covered security. Sinon, vente illégale.</li>
       <li>Filing : émetteur établi, effet avec le fédéral après 5 jours ouvrables. Coordination : dépôt à la SEC, effet avec le fédéral (10 jours, prix depuis 2 jours ouvrables, pas de stop order). Qualification : toute security, seule voie sans dépôt fédéral, effet sur ordre de l'Administrator.</li>
       <li>Enregistrement d'un titre : 1 an à partir de l'effet. Rapports au plus trimestriels. Escrow et impound possibles.</li>
-      <li>Federal covered : titres cotés, fonds, Rule 506. Notice filing et frais, pas d'enregistrement ; antifraude intacte.</li>
+      <li>Federal covered : titres cotés, fonds, Rule 506. Notice filing et frais (fonds, Rule 506 ; rien pour les titres cotés), pas d'enregistrement ; antifraude intacte.</li>
       <li>Exempt security : l'émetteur (gouvernements, Canada, banques, assureurs, services publics, sans but lucratif, commercial paper 270 jours et $50,000). Exempt transaction : la vente (isolée, non sollicitée, institutionnelle, fiduciaire, pledgee, 10 offres sur 12 mois).</li>
       <li>L'exemption du titre ou de la transaction n'exempte ni l'agent d'un BD, ni de l'antifraude. Preuve à la charge de celui qui l'invoque.</li>
       <li>Processus fédéral : pre-filing (rien), cooling-off de 20 jours au moins (offres, red herring, indications of interest, tombstone ; pas de vente), post-effective (ventes avec prospectus). Jamais « approved ».</li>
@@ -1902,7 +1908,7 @@ td.low{color:var(--bad);font-weight:600}
       <li>L'Administrator ne peut pas fonder une suspension ou une révocation sur le seul fait d'un ordre judiciaire ou administratif définitif que le candidat lui avait fait connaître avant l'effet de l'enregistrement, sauf à agir dans les <strong>90 jours</strong>. Pour un titre, le délai équivalent est de 30 jours (§ 306).</li>
     </ul>
   </div>
-  <p><strong>Procédure.</strong> Avant un ordre définitif, l'intéressé (et son employeur s'il est agent ou IAR) a droit à : un <strong>préavis</strong>, une <strong>possibilité d'audience</strong>, et des <strong>conclusions écrites</strong> en fait et en droit. L'Administrator peut suspendre <em>summarily</em> en attendant ; si une audience est demandée par écrit, elle se tient dans les <strong>15 jours</strong>. Recours devant un tribunal : dans les <strong>60 jours</strong>, et le recours <strong>ne suspend pas</strong> l'ordre, sauf décision du tribunal (§ 411).</p>
+  <p><strong>Procédure.</strong> Avant un ordre définitif, l'intéressé (et son employeur s'il est agent ou IAR) a droit à : un <strong>préavis</strong>, une <strong>possibilité d'audience</strong>, et des <strong>conclusions écrites</strong> en fait et en droit. L'Administrator peut suspendre <em>summarily</em> en attendant ; si une audience est demandée par écrit, elle se tient dans les <strong>15 jours</strong>. Recours devant un tribunal : dans les <strong>60 jours</strong>, et le recours <strong>ne suspend pas</strong> l'ordre, sauf décision du tribunal (§ 411). Celui qui forme le recours est la personne lésée par l'ordre (<em>aggrieved</em>) ; le sursis éventuel s'appelle un <em>stay</em>. Le tribunal peut confirmer, modifier ou annuler l'ordre, en tout ou en partie ; les constatations de fait de l'Administrator s'imposent à lui si elles reposent sur des preuves suffisantes (<em>competent, material and substantial evidence</em>).</p>
   <p>Les deux conditions sont cumulatives, et l'examen aime les séparer. Un motif légal sans intérêt public ne suffit pas ; l'intérêt public sans motif de la liste non plus. L'Administrator ne peut donc pas refuser un candidat parce qu'il le trouve antipathique, ni parce que le marché local compte déjà trop d'agents. Et la procédure protège l'intéressé : retirer à quelqu'un son métier est grave, la loi exige donc qu'il soit prévenu, entendu, et que la décision soit motivée par écrit. La seule entorse est la suspension sommaire, qui répond à l'urgence ; elle est compensée par le droit à une audience rapide.</p>
   <div class="box ex">
     <div class="eyebrow">Exemple déroulé · le calendrier d'une sanction</div>
@@ -2046,7 +2052,7 @@ td.low{color:var(--bad);font-weight:600}
   </ul>
   <div class="box">
     <div class="eyebrow">Exemple de calcul</div>
-    <p>Compte contenant $200,000 de titres et $300,000 d'espèces chez un BD en faillite : titres couverts $200,000 ; espèces plafonnées à $250,000 ; total <strong>$450,000</strong>. Les $50,000 restants deviennent une créance ordinaire dans la liquidation.</p>
+    <p>Compte contenant $150,000 de titres et $290,000 d'espèces chez un BD en faillite : titres couverts $150,000 ; espèces plafonnées à $250,000 ; total <strong>$400,000</strong>. Les $40,000 restants deviennent une créance ordinaire dans la liquidation.</p>
   </div>
   <p>La méthode de calcul tient en trois étapes : (1) regroupe les comptes détenus au même titre ; (2) pour chaque groupe, plafonne les espèces à $250,000 ; (3) additionne titres et espèces retenues, et plafonne le total à $500,000.</p>
   <div class="box ex">
@@ -2143,7 +2149,7 @@ td.low{color:var(--bad);font-weight:600}
   <h2>Informations obligatoires</h2>
   <p>Ne pas mentir ne suffit pas : certaines informations doivent être données sans que le client ait à les demander. Elles répondent à des questions qu'il ne penserait pas à poser. Combien ai-je payé, et à qui ? Ma firme était-elle mon intermédiaire ou mon vendeur ? A-t-elle un intérêt dans ce titre ? Le plan d'examen appelle cela <em>required product disclosures</em>.</p>
   <ul>
-    <li><strong>Confirmation</strong> (SEC Rule 10b-10), au plus tard à l'exécution de la transaction : date, titre, quantité, prix, <strong>capacity</strong> (la firme a agi en <em>agent</em>, rémunérée par une commission, ou en <em>principal</em>, rémunérée par un markup ou un markdown), et montant de la commission en agency.</li>
+    <li><strong>Confirmation</strong> (SEC Rule 10b-10), au plus tard au dénouement de la transaction (<em>at or before completion</em>, c'est-à-dire le paiement et la livraison) : date, titre, quantité, prix, <strong>capacity</strong> (la firme a agi en <em>agent</em>, rémunérée par une commission, ou en <em>principal</em>, rémunérée par un markup ou un markdown), et montant de la commission en agency.</li>
     <li><strong>Relevés de compte</strong> (FINRA Rule 2231) : au moins <strong>une fois par trimestre civil</strong> pour tout compte ayant une position, un solde ou une activité.</li>
     <li><strong>Conflits d'intérêts</strong> : la firme est market maker, détient le titre, participe au placement, ou est liée à l'issuer par une relation de contrôle. À divulguer avant la transaction ; si la divulgation est orale, elle est complétée par écrit au plus tard à l'exécution.</li>
     <li><strong>Frais</strong> : tout frais de service doit être raisonnable et divulgué.</li>
@@ -2180,7 +2186,7 @@ td.low{color:var(--bad);font-weight:600}
     <ol>
       <li><strong>L'agent recueille</strong> son nom, son adresse, sa date de naissance (elle est majeure), puis s'efforce d'obtenir son Social Security number, sa profession (retraitée) et le fait qu'elle n'est pas associée à un autre broker-dealer. Il recueille aussi son profil d'investisseur (objectifs, situation financière, expérience), nécessaire pour toute recommandation.</li>
       <li><strong>Il lui demande un trusted contact.</strong> Elle hésite et préfère ne nommer personne. L'agent a fait des efforts raisonnables : le compte peut être ouvert. Il n'a pas à insister ni à refuser le compte. Si elle avait désigné sa fille, la firme l'aurait informée par écrit des cas où elle pourrait la contacter.</li>
-      <li><strong>Un principal examine le dossier et signe</strong> pour accepter le compte. Sans cette signature, le compte n'est pas ouvert, quel que soit l'empressement du client.</li>
+      <li><strong>Un principal examine le dossier et signe</strong> pour accepter le compte. La firme doit conserver cette signature ; l'acceptation intervient avant le premier ordre ou promptement après, selon ses procédures.</li>
       <li><strong>Dans les 30 jours</strong>, la firme envoie à Mme Garnier une copie de sa fiche de compte pour qu'elle la vérifie ; elle la lui renverra au moins tous les 36 mois.</li>
       <li><strong>Deux ans plus tard</strong>, le neveu de Mme Garnier appelle pour vendre des titres « de la part de sa tante ». Sans procuration écrite au dossier, l'agent refuse l'ordre.</li>
     </ol>
@@ -2189,7 +2195,7 @@ td.low{color:var(--bad);font-weight:600}
     <div class="eyebrow">Cas pratiques · l'ouverture de compte</div>
     <ul>
       <li>Un prospect refuse de donner sa profession et son employeur. L'agent le note et ouvre le compte après accord du principal. <span class="vd ok">Permis</span> La règle demande des efforts raisonnables pour obtenir ces informations.</li>
-      <li>Un agent ouvre un compte et exécute un premier ordre le jour même ; le principal ne voit le dossier qu'une semaine après. <span class="vd no">Non conforme</span> Le compte doit être accepté par un partner, officer ou manager.</li>
+      <li>Un agent ouvre un compte et y exécute des ordres ; aucun principal ne voit jamais le dossier. <span class="vd no">Non conforme</span> Le compte doit être accepté par un partner, officer ou manager.</li>
       <li>Un jeune de 16 ans veut ouvrir un compte à son nom avec ses économies. <span class="vd no">Refusé</span> Mineur : il faut un custodial account tenu par un adulte.</li>
       <li>Une cliente désigne son frère comme trusted contact ; le frère appelle pour connaître le solde. <span class="vd no">Refusé</span> Le trusted contact n'a aucun droit d'accès ni pouvoir sur le compte.</li>
       <li>Pour aider un client qui ne veut pas que sa femme connaisse ses placements, un agent ouvre le compte au nom d'un cousin du client. <span class="vd no">Violation</span> Compte fictif.</li>
@@ -2294,44 +2300,33 @@ td.low{color:var(--bad);font-weight:600}
     <li><strong>Covered call</strong> (actions détenues + call vendu) : gain max = (strike − prix d'achat) + prime ; point mort = prix d'achat − prime.</li>
     <li><strong>Protective put</strong> (actions détenues + put acheté) : perte max = (prix d'achat − strike) + prime ; point mort = prix d'achat + prime.</li>
   </ul>
-  <div class="box">
-    <div class="eyebrow">Exemples travaillés</div>
-    <ul>
-      <li>Achat de 1 XYZ 50 call à 3 : point mort 53 ; perte max $300 ; gain illimité.</li>
-      <li>Achat de 1 ABC 40 put à 2 : point mort 38 ; perte max $200 ; gain max (40 − 2) × 100 = $3,800.</li>
-      <li>XYZ cote 54 ; le 50 call vaut 6 : valeur intrinsèque 4, valeur temps 2.</li>
-      <li>XYZ cote 48 ; le 50 call à trois mois vaut 1.50 : valeur intrinsèque 0 (out of the money), valeur temps 1.50. Le même call à neuf mois vaudrait plus cher.</li>
-      <li>Vente de 1 ABC 30 put à 2.50 : gain max $250 ; perte max (30 − 2.50) × 100 = $2,750 ; point mort 27.50.</li>
-      <li>100 actions achetées à 40 + vente du 45 call à 2 : gain max (45 − 40 + 2) × 100 = $700.</li>
-    </ul>
-  </div>
   <p>Pour comprendre d'où viennent ces formules, suis une position jusqu'à l'échéance en faisant varier le cours. La méthode est toujours la même : (1) que vaut le droit à l'échéance ? (2) retranche ou ajoute la prime ; (3) multiplie par 100.</p>
   <div class="box ex">
     <div class="eyebrow">Exemple déroulé · quatre positions à l'échéance</div>
-    <p><strong>Achat de 1 XYZ 50 call à 3</strong> (coût : $300).</p>
+    <p><strong>Achat de 1 XYZ 70 call à 5</strong> (coût : $500).</p>
     <ol>
-      <li>XYZ finit à 45 : acheter à 50 ce qui vaut 45 n'a aucun intérêt. L'option expire sans valeur. Perte : la prime, $300.</li>
-      <li>XYZ finit à 51 : le droit vaut 1, mais la prime a coûté 3. Résultat : (1 − 3) × 100 = − $200.</li>
-      <li>XYZ finit à 53 : le droit vaut 3, égal à la prime. Résultat nul : c'est le point mort, 50 + 3.</li>
-      <li>XYZ finit à 60 : le droit vaut 10. Résultat : (10 − 3) × 100 = + $700. Plus l'action monte, plus le gain grandit, sans plafond.</li>
+      <li>XYZ finit à 62 : acheter à 70 ce qui vaut 62 n'a aucun intérêt. L'option expire sans valeur. Perte : la prime, $500.</li>
+      <li>XYZ finit à 72 : le droit vaut 2, mais la prime a coûté 5. Résultat : (2 − 5) × 100 = − $300.</li>
+      <li>XYZ finit à 75 : le droit vaut 5, égal à la prime. Résultat nul : c'est le point mort, 70 + 5.</li>
+      <li>XYZ finit à 88 : le droit vaut 18. Résultat : (18 − 5) × 100 = + $1,300. Plus l'action monte, plus le gain grandit, sans plafond.</li>
     </ol>
-    <p><strong>Vente à découvert de 1 XYZ 60 call à 4</strong> (prime reçue : $400). C'est le miroir exact de l'acheteur.</p>
+    <p><strong>Vente à découvert de 1 XYZ 80 call à 6</strong> (prime reçue : $600). C'est le miroir exact de l'acheteur.</p>
     <ol>
-      <li>XYZ finit à 55 : le call n'est pas exercé. Gain : la prime, $400. C'est le maximum.</li>
-      <li>XYZ finit à 64 : le vendeur doit livrer à 60 des actions qui en valent 64, perte de 4, compensée par la prime de 4. Point mort : 60 + 4.</li>
-      <li>XYZ finit à 70 : perte de 10 à la livraison, moins la prime de 4 : (4 − 10) × 100 = − $600. Si XYZ finit à 150, la perte est de $8,600. Il n'y a pas de limite.</li>
+      <li>XYZ finit à 74 : le call n'est pas exercé. Gain : la prime, $600. C'est le maximum.</li>
+      <li>XYZ finit à 86 : le vendeur doit livrer à 80 des actions qui en valent 86, perte de 6, compensée par la prime de 6. Point mort : 80 + 6.</li>
+      <li>XYZ finit à 95 : perte de 15 à la livraison, moins la prime de 6 : (6 − 15) × 100 = − $900. Si XYZ finit à 200, la perte est de $11,400. Il n'y a pas de limite.</li>
     </ol>
-    <p><strong>Achat de 1 ABC 40 put à 2</strong> (coût : $200).</p>
+    <p><strong>Achat de 1 ABC 25 put à 1.50</strong> (coût : $150).</p>
     <ol>
-      <li>ABC finit à 45 : vendre à 40 ce qui vaut 45 n'a aucun intérêt. Perte : $200.</li>
-      <li>ABC finit à 38 : le droit vaut 2, égal à la prime. Point mort : 40 − 2.</li>
-      <li>ABC finit à 30 : le droit vaut 10. Résultat : (10 − 2) × 100 = + $800. Au mieux, ABC tombe à zéro : (40 − 2) × 100 = $3,800.</li>
+      <li>ABC finit à 28 : vendre à 25 ce qui vaut 28 n'a aucun intérêt. Perte : $150.</li>
+      <li>ABC finit à 23.50 : le droit vaut 1.50, égal à la prime. Point mort : 25 − 1.50.</li>
+      <li>ABC finit à 18 : le droit vaut 7. Résultat : (7 − 1.50) × 100 = + $550. Au mieux, ABC tombe à zéro : (25 − 1.50) × 100 = $2,350.</li>
     </ol>
-    <p><strong>Vente de 1 ABC 30 put à 2.50</strong> (prime reçue : $250).</p>
+    <p><strong>Vente de 1 ABC 35 put à 3</strong> (prime reçue : $300).</p>
     <ol>
-      <li>ABC finit à 32 : le put n'est pas exercé. Gain : $250, le maximum.</li>
-      <li>ABC finit à 25 : le vendeur doit acheter à 30 des actions qui en valent 25, perte de 5, moins la prime : (2.50 − 5) × 100 = − $250.</li>
-      <li>Au pire, ABC tombe à zéro : il paie 30 pour un titre sans valeur, moins la prime : (30 − 2.50) × 100 = $2,750. La perte est grande, mais plafonnée, parce qu'une action ne descend pas sous zéro.</li>
+      <li>ABC finit à 37 : le put n'est pas exercé. Gain : $300, le maximum.</li>
+      <li>ABC finit à 28 : le vendeur doit acheter à 35 des actions qui en valent 28, perte de 7, moins la prime : (3 − 7) × 100 = − $400.</li>
+      <li>Au pire, ABC tombe à zéro : il paie 35 pour un titre sans valeur, moins la prime : (35 − 3) × 100 = $3,200. La perte est grande, mais plafonnée, parce qu'une action ne descend pas sous zéro.</li>
     </ol>
   </div>
   <div class="box">
@@ -2347,26 +2342,26 @@ td.low{color:var(--bad);font-weight:600}
     <div class="eyebrow">Exemple déroulé · décomposer une prime</div>
     <p>La prime se partage toujours en deux : ce que l'option vaudrait si on l'exerçait tout de suite (valeur intrinsèque), et ce que le marché paie en plus pour le temps qui reste (valeur temps).</p>
     <ol>
-      <li><strong>DEF cote 42. Le 45 put vaut 4.25.</strong> Un put est in the money quand le cours est sous le strike : valeur intrinsèque 45 − 42 = 3. Valeur temps : 4.25 − 3 = 1.25.</li>
-      <li><strong>DEF cote 42. Le 40 put vaut 0.80.</strong> Le cours est au-dessus du strike : out of the money. Valeur intrinsèque 0 (jamais − 2). Valeur temps : 0.80, toute la prime.</li>
-      <li><strong>DEF cote 42. Le 40 call vaut 3.10.</strong> Call in the money de 42 − 40 = 2. Valeur temps : 3.10 − 2 = 1.10.</li>
-      <li><strong>Le jour de l'échéance, DEF cote 42.</strong> Il ne reste plus de temps : le 40 call vaut exactement 2, le 45 put exactement 3, le 40 put et le 45 call ne valent rien.</li>
+      <li><strong>DEF cote 67. Le 70 put vaut 4.75.</strong> Un put est in the money quand le cours est sous le strike : valeur intrinsèque 70 − 67 = 3. Valeur temps : 4.75 − 3 = 1.75.</li>
+      <li><strong>DEF cote 67. Le 65 put vaut 0.90.</strong> Le cours est au-dessus du strike : out of the money. Valeur intrinsèque 0 (jamais − 2). Valeur temps : 0.90, toute la prime. La même option à échéance plus lointaine vaudrait plus cher, puisqu'elle n'a que de la valeur temps.</li>
+      <li><strong>DEF cote 67. Le 65 call vaut 3.40.</strong> Call in the money de 67 − 65 = 2. Valeur temps : 3.40 − 2 = 1.40.</li>
+      <li><strong>Le jour de l'échéance, DEF cote 67.</strong> Il ne reste plus de temps : le 65 call vaut exactement 2, le 70 put exactement 3, le 65 put et le 70 call ne valent rien.</li>
     </ol>
     <p>À cours inchangé, une option perd donc de la valeur chaque jour qui passe : le temps joue contre l'acheteur et pour le vendeur.</p>
   </div>
   <div class="box ex">
     <div class="eyebrow">Exemple déroulé · deux stratégies avec des actions</div>
-    <p><strong>Covered call.</strong> Un client possède 100 actions DEF achetées à 40 et vend 1 DEF 45 call à 2. Il encaisse $200 et s'engage à livrer ses actions à 45 si on le lui demande.</p>
+    <p><strong>Covered call.</strong> Un client possède 100 actions DEF achetées à 62 et vend 1 DEF 70 call à 3. Il encaisse $300 et s'engage à livrer ses actions à 70 si on le lui demande.</p>
     <ol>
-      <li>DEF finit à 50 : ses actions sont appelées à 45. Gain : (45 − 40) + 2 = 7 par action, soit $700. Il ne profite pas de la hausse au-delà de 45 : c'est le prix de la prime.</li>
-      <li>DEF finit à 38 : le call expire. Il a perdu 2 sur l'action et gagné 2 de prime. Point mort : 40 − 2 = 38.</li>
-      <li>DEF finit à 30 : perte de 10 sur l'action, moins la prime : (10 − 2) × 100 = $800. La prime amortit la baisse, elle ne la supprime pas.</li>
+      <li>DEF finit à 78 : ses actions sont appelées à 70. Gain : (70 − 62) + 3 = 11 par action, soit $1,100. Il ne profite pas de la hausse au-delà de 70 : c'est le prix de la prime.</li>
+      <li>DEF finit à 59 : le call expire. Il a perdu 3 sur l'action et gagné 3 de prime. Point mort : 62 − 3 = 59.</li>
+      <li>DEF finit à 50 : perte de 12 sur l'action, moins la prime : (12 − 3) × 100 = $900. La prime amortit la baisse, elle ne la supprime pas.</li>
     </ol>
-    <p><strong>Protective put.</strong> Un client achète 100 actions GHI à 50 et, pour se protéger, 1 GHI 45 put à 2. C'est une assurance : il peut toujours vendre à 45.</p>
+    <p><strong>Protective put.</strong> Un client achète 100 actions GHI à 84 et, pour se protéger, 1 GHI 80 put à 2.50. C'est une assurance : il peut toujours vendre à 80.</p>
     <ol>
-      <li>GHI finit à 30 : il exerce et vend à 45. Perte : (50 − 45) + 2 = 7 par action, soit $700, quoi qu'il arrive en dessous de 45.</li>
-      <li>GHI finit à 52 : le put expire. Gain de 2 sur l'action, coût de 2 pour le put. Point mort : 50 + 2 = 52.</li>
-      <li>GHI finit à 60 : gain de 10 sur l'action, moins la prime : (10 − 2) × 100 = $800. Le gain reste illimité.</li>
+      <li>GHI finit à 60 : il exerce et vend à 80. Perte : (84 − 80) + 2.50 = 6.50 par action, soit $650, quoi qu'il arrive en dessous de 80.</li>
+      <li>GHI finit à 86.50 : le put expire. Gain de 2.50 sur l'action, coût de 2.50 pour le put. Point mort : 84 + 2.50 = 86.50.</li>
+      <li>GHI finit à 95 : gain de 11 sur l'action, moins la prime : (11 − 2.50) × 100 = $850. Le gain reste illimité.</li>
     </ol>
   </div>
   <h3>Le compte d'options : FINRA Rule 2360</h3>
@@ -2415,37 +2410,35 @@ td.low{color:var(--bad);font-weight:600}
     <li>Ne sont pas marginables à l'achat : options (prime payée en entier), nouvelles émissions pendant 30 jours.</li>
   </ul>
   <div class="box">
-    <div class="eyebrow">Exemple travaillé</div>
-    <p>Achat de $20,000 d'actions sur marge : dépôt $10,000, débit $10,000. Le cours tombe à $16,000 : equity = 16,000 − 10,000 = $6,000, soit 37,5 %. Pas d'appel. Le seuil est 10,000 ÷ 0,75 = <strong>$13,333</strong> : en dessous, l'equity passe sous 25 % et la firme appelle des fonds ou vend.</p>
-    <p>Premier achat de $3,000 : Reg T demande $1,500, mais le minimum de $2,000 s'applique. Premier achat de $1,600 : le client paie les $1,600 en entier.</p>
-    <p>Vente à découvert de 1,000 actions à $20 : produit $20,000, dépôt Reg T $10,000, solde créditeur $30,000, equity $10,000 (50 %). Le cours monte à $24 : equity = 30,000 − 24,000 = $6,000, soit 25 % de 24,000, sous le minimum de 30 %. Le seuil est 30,000 ÷ 1,30 = <strong>$23,077</strong> : au-dessus, la firme appelle des fonds ou rachète.</p>
+    <div class="eyebrow">Exemple travaillé · le minimum de $2,000</div>
+    <p>Premier achat de $3,400 : Reg T demande 50 %, soit $1,700, mais le minimum de $2,000 s'applique : dépôt de $2,000. Premier achat de $1,500 : le client paie les $1,500 en entier. Premier achat de $6,000 : Reg T demande $3,000, au-dessus du minimum : dépôt de $3,000.</p>
   </div>
   <div class="box ex">
     <div class="eyebrow">Exemple déroulé · un compte long, pas à pas</div>
-    <p>Une cliente achète 1,000 actions à $20 sur marge, soit $20,000.</p>
+    <p>Une cliente achète 800 actions à $30 sur marge, soit $24,000.</p>
     <ol>
-      <li><strong>À l'achat.</strong> Reg T : elle dépose 50 %, soit $10,000. La firme prête $10,000 : c'est le solde débiteur. Equity : 20,000 − 10,000 = $10,000 (50 %).</li>
-      <li><strong>Le cours monte à $25.</strong> Valeur de marché $25,000 ; débit inchangé $10,000 ; equity $15,000, soit 60 %.</li>
-      <li><strong>Le cours tombe à $16.</strong> Valeur $16,000 ; débit $10,000 ; equity $6,000, soit 6,000 ÷ 16,000 = 37,5 %. Au-dessus de 25 % : pas d'appel.</li>
-      <li><strong>Le cours tombe à $12.</strong> Valeur $12,000 ; débit $10,000 ; equity $2,000, soit 16,7 %. Le minimum est 25 % × 12,000 = $3,000. Il manque 3,000 − 2,000 = <strong>$1,000</strong> : c'est le montant de l'appel de marge.</li>
-      <li><strong>À partir de quel cours l'appel se déclenche-t-il ?</strong> Quand l'equity vaut exactement 25 % de la valeur, le débit en vaut 75 % : valeur = 10,000 ÷ 0,75 = $13,333, soit $13.33 par action.</li>
+      <li><strong>À l'achat.</strong> Reg T : elle dépose 50 %, soit $12,000. La firme prête $12,000 : c'est le solde débiteur. Equity : 24,000 − 12,000 = $12,000 (50 %).</li>
+      <li><strong>Le cours monte à $36.</strong> Valeur de marché $28,800 ; débit inchangé $12,000 ; equity $16,800, soit 58,3 %.</li>
+      <li><strong>Le cours tombe à $25.</strong> Valeur $20,000 ; débit $12,000 ; equity $8,000, soit 8,000 ÷ 20,000 = 40 %. Au-dessus de 25 % : pas d'appel.</li>
+      <li><strong>Le cours tombe à $19.</strong> Valeur $15,200 ; débit $12,000 ; equity $3,200, soit 21,1 %. Le minimum est 25 % × 15,200 = $3,800. Il manque 3,800 − 3,200 = <strong>$600</strong> : c'est le montant de l'appel de marge.</li>
+      <li><strong>À partir de quel cours l'appel se déclenche-t-il ?</strong> Quand l'equity vaut exactement 25 % de la valeur, le débit en vaut 75 % : valeur = 12,000 ÷ 0,75 = $16,000, soit $20 par action.</li>
     </ol>
-    <p>Le débit ne bouge pas quand le cours bouge : retiens cela, et tous les calculs en découlent. Vérification du seuil : à $13,333, l'equity est de 3,333, et 3,333 ÷ 13,333 = 25 %.</p>
+    <p>Le débit ne bouge pas quand le cours bouge : retiens cela, et tous les calculs en découlent. Vérification du seuil : à $16,000, l'equity est de 4,000, et 4,000 ÷ 16,000 = 25 %. Le résultat ne tombe pas toujours rond : avec un débit de $7,000, le seuil serait 7,000 ÷ 0,75 = $9,333.</p>
   </div>
   <p>La <strong>vente à découvert</strong> (<em>short sale</em>) est le pari inverse. Le client pense qu'une action va baisser : il l'emprunte par l'intermédiaire de sa firme, la vend tout de suite, et devra la racheter plus tard pour la rendre. Si le cours a baissé, il rachète moins cher et garde la différence. Si le cours a monté, il rachète plus cher et perd, sans limite puisqu'un cours peut monter indéfiniment. Une vente à découvert se fait toujours dans un compte sur marge. Le produit de la vente reste bloqué chez la firme, avec le dépôt du client : c'est le <em>solde créditeur</em>, qui ne bouge pas. Ce qui bouge, c'est le coût du rachat.</p>
   <div class="box ex">
     <div class="eyebrow">Exemple déroulé · un compte short, pas à pas</div>
-    <p>Un client vend à découvert 1,000 actions à $20.</p>
+    <p>Un client vend à découvert 600 actions à $50.</p>
     <ol>
-      <li><strong>À la vente.</strong> Produit : $20,000. Dépôt Reg T de 50 % : $10,000. Solde créditeur : $30,000. Equity : 30,000 − 20,000 = $10,000 (50 % de la valeur vendue).</li>
-      <li><strong>Le cours baisse à $15.</strong> Racheter coûterait $15,000. Equity : 30,000 − 15,000 = $15,000. Le client gagne.</li>
-      <li><strong>Le cours monte à $24.</strong> Equity : 30,000 − 24,000 = $6,000, soit 25 % de 24,000. Sous le minimum de 30 %.</li>
-      <li><strong>Montant de l'appel à $24.</strong> Minimum : 30 % × 24,000 = $7,200. Il manque 7,200 − 6,000 = <strong>$1,200</strong>.</li>
-      <li><strong>Seuil.</strong> Quand l'equity vaut exactement 30 % de la valeur, le crédit en vaut 130 % : valeur = 30,000 ÷ 1,30 = $23,077, soit $23.08 par action.</li>
+      <li><strong>À la vente.</strong> Produit : $30,000. Dépôt Reg T de 50 % : $15,000. Solde créditeur : $45,000. Equity : 45,000 − 30,000 = $15,000 (50 % de la valeur vendue).</li>
+      <li><strong>Le cours baisse à $40.</strong> Racheter coûterait $24,000. Equity : 45,000 − 24,000 = $21,000. Le client gagne.</li>
+      <li><strong>Le cours monte à $60.</strong> Equity : 45,000 − 36,000 = $9,000, soit 25 % de 36,000. Sous le minimum de 30 %.</li>
+      <li><strong>Montant de l'appel à $60.</strong> Minimum : 30 % × 36,000 = $10,800. Il manque 10,800 − 9,000 = <strong>$1,800</strong>.</li>
+      <li><strong>Seuil.</strong> Quand l'equity vaut exactement 30 % de la valeur, le crédit en vaut 130 % : valeur = 45,000 ÷ 1,30 = $34,615, soit $57.69 par action.</li>
     </ol>
     <p>Compare les deux comptes : dans un compte long, c'est le <strong>débit</strong> qui est fixe et l'on divise par 0,75 ; dans un compte short, c'est le <strong>crédit</strong> qui est fixe et l'on divise par 1,30. Le compte long souffre de la baisse, le compte short de la hausse.</p>
   </div>
-  <p>Deux autres notions de la liste. L'<em class="t">hypothecation</em> est le nantissement : le client donne ses titres en garantie du prêt, par l'accord qu'il signe. La <em>rehypothecation</em> est le fait, pour la firme, de redonner ces titres en garantie à une banque pour financer le prêt qu'elle consent. La limite de 140 % empêche la firme d'engager plus de titres du client que nécessaire : pour un débit de $10,000, elle peut renantir au plus $14,000 de titres ; le reste est mis à part. Quant au délai de paiement : depuis mai 2024, les opérations sur actions se règlent le jour ouvrable suivant (T+1) ; un achat fait un lundi doit donc être payé au plus tard le jeudi, soit T+3.</p>
+  <p>Deux autres notions de la liste. L'<em class="t">hypothecation</em> est le nantissement : le client donne ses titres en garantie du prêt, par l'accord qu'il signe. La <em>rehypothecation</em> est le fait, pour la firme, de redonner ces titres en garantie à une banque pour financer le prêt qu'elle consent. La limite de 140 % empêche la firme d'engager plus de titres du client que nécessaire : pour un débit de $12,000, elle peut renantir au plus 12,000 × 1,40 = $16,800 de titres ; le reste est mis à part. Quant au délai de paiement : depuis mai 2024, les opérations sur actions se règlent le jour ouvrable suivant (T+1) ; un achat fait un lundi doit donc être payé au plus tard le jeudi, soit T+3.</p>
   <div class="box case">
     <div class="eyebrow">Cas pratiques · le compte sur marge</div>
     <ul>
@@ -2468,11 +2461,11 @@ td.low{color:var(--bad);font-weight:600}
   <ul>
     <li><em class="t">Nonpublic personal information</em> : information financière permettant d'identifier une personne (soldes, opérations, numéro de compte, listes de clients), hors ce qui est publiquement disponible.</li>
     <li><em>Consumer</em> : personne physique qui obtient un produit ou service financier à des fins personnelles. <em>Customer</em> : consumer avec lequel la relation est continue.</li>
-    <li><strong>Avis de confidentialité initial</strong> au customer, au plus tard à l'établissement de la relation ; <strong>avis annuel</strong> pendant la relation, sauf exception quand la firme ne partage que dans les cas permis et n'a pas modifié ses pratiques.</li>
-    <li><strong>Opt-out</strong> : avant de partager avec un tiers <strong>non affilié</strong>, la firme donne un avis et un délai raisonnable pour refuser (exemple de la règle : <strong>30 jours</strong>). Exceptions : exécuter une opération demandée, prestataires sous accord de confidentialité, obligations légales et régulateurs.</li>
+    <li><strong>Avis de confidentialité initial</strong> (<em>initial privacy notice</em>) au customer, au plus tard à l'établissement de la relation ; <strong>avis annuel</strong> pendant la relation, sauf exception quand la firme ne partage que dans les cas permis et n'a pas modifié ses pratiques.</li>
+    <li><strong>Opt-out</strong> : avant de partager avec un tiers <strong>non affilié</strong> (<em>nonaffiliated third party</em>), la firme donne un avis et un délai raisonnable pour refuser (exemple de la règle : <strong>30 jours</strong>). Exceptions : exécuter une opération demandée, prestataires sous accord de confidentialité, obligations légales et régulateurs.</li>
     <li><strong>Safeguards rule</strong> : politiques écrites comportant des garanties administratives, techniques et physiques.</li>
     <li><strong>Disposal rule</strong> : destruction des informations par des moyens empêchant tout accès non autorisé.</li>
-    <li>Amendements de 2024 : programme écrit de <strong>réponse aux incidents</strong>, et notification des personnes dont les informations sensibles ont été, ou ont probablement été, consultées sans autorisation, dès que possible et <strong>au plus tard 30 jours</strong> après en avoir eu connaissance. Les prestataires préviennent la firme sous 72 heures.</li>
+    <li>Amendements de 2024 : programme écrit de <strong>réponse aux incidents</strong> (<em>incident response</em>), et notification des personnes dont les informations sensibles ont été, ou ont probablement été, consultées sans autorisation, dès que possible et <strong>au plus tard 30 jours</strong> après en avoir eu connaissance. Les prestataires préviennent la firme sous 72 heures.</li>
   </ul>
   <div class="box case">
     <div class="eyebrow">Cas pratiques · les données du client</div>
@@ -2578,7 +2571,7 @@ td.low{color:var(--bad);font-weight:600}
 
   <h2>Regulation Best Interest (SEC Rule 15l-1)</h2>
   <p>C'est la norme de conduite (<em>standard of care</em>) du broker-dealer envers les particuliers, en vigueur depuis 2020. Avant elle, il suffisait qu'une recommandation soit « adaptée » (<em>suitable</em>) au client. Entre deux produits adaptés, l'agent pouvait donc choisir celui qui le payait le mieux. Reg BI a fermé cette marge : la recommandation doit être dans le meilleur intérêt du client, et l'agent ne peut pas faire passer sa rémunération avant. Elle ne va pas jusqu'au devoir fiduciaire de l'adviser : elle s'applique au moment de la recommandation, sans obligation de suivre le compte ensuite, et elle admet que l'agent soit payé à la commission.</p>
-  <p>Quand un broker-dealer ou son agent <strong>recommande</strong> à un <em class="t">retail customer</em> une transaction, une stratégie ou un type de compte (rollover compris), il doit agir dans le <strong>meilleur intérêt</strong> du client au moment de la recommandation, sans placer son intérêt financier ou autre avant celui du client. Le <em>retail customer</em> est une personne physique (ou son représentant légal) qui utilise la recommandation à des fins personnelles, familiales ou domestiques.</p>
+  <p>Quand un broker-dealer ou son agent <strong>recommande</strong> à un <em class="t">retail customer</em> une transaction, une stratégie ou un type de compte (y compris un <em>rollover</em>, le transfert d'un plan de retraite d'entreprise vers un IRA), il doit agir dans le <strong>meilleur intérêt</strong> du client au moment de la recommandation, sans placer son intérêt financier ou autre avant celui du client. Le <em>retail customer</em> est une personne physique (ou son représentant légal) qui utilise la recommandation à des fins personnelles, familiales ou domestiques.</p>
   <div class="tw"><table>
     <tr><th>Obligation</th><th>Contenu</th></tr>
     <tr><td><strong>Disclosure</strong></td><td>Par écrit, au plus tard à la recommandation : capacité (la firme agit comme broker-dealer), frais et coûts, type et étendue des services, limites de la gamme de produits, et tous les faits importants sur les conflits d'intérêts</td></tr>
@@ -2626,7 +2619,7 @@ td.low{color:var(--bad);font-weight:600}
   <p>La suitability reste la norme pour les clients qui ne sont pas des particuliers, et sa logique à trois étages structure aussi l'obligation de care de Reg BI. Chaque étage répond à une question : ce produit convient-il à quelqu'un ? convient-il à ce client ? et l'ensemble des opérations, mis bout à bout, lui convient-il ?</p>
   <ul>
     <li><strong>Reasonable-basis</strong> : après une diligence raisonnable, comprendre le produit et croire qu'il convient à au moins certains investisseurs. Recommander un produit qu'on ne comprend pas viole déjà la règle.</li>
-    <li><strong>Customer-specific</strong> : croire que la recommandation convient à <em>ce</em> client, au vu de son <em>investment profile</em> : âge, autres placements, situation et besoins financiers, statut fiscal, objectifs, expérience, horizon, besoins de liquidité, tolérance au risque.</li>
+    <li><strong>Customer-specific</strong> : croire que la recommandation convient à <em>ce</em> client, au vu de son <em>investment profile</em> : âge, autres placements, situation et besoins financiers, statut fiscal (<em>tax status</em>), objectifs, expérience, horizon de placement (<em>time horizon</em> : la durée avant que le client ait besoin de son argent), besoins de liquidité (<em>liquidity needs</em> : ce qu'il doit pouvoir récupérer vite en espèces), tolérance au risque (<em>risk tolerance</em>).</li>
     <li><strong>Quantitative</strong> : une série de transactions, même adaptées une à une, ne doit pas être excessive. Indicateurs : <em>turnover rate</em>, <em>cost-equity ratio</em>, <em>in-and-out trading</em>.</li>
     <li>Client institutionnel : l'obligation customer-specific est satisfaite si la firme croit raisonnablement qu'il sait évaluer les risques seul et s'il déclare exercer un jugement indépendant.</li>
     <li>Côté État (NASAA 1983) : recommander sans motifs raisonnables, après une enquête raisonnable sur les <strong>objectifs, la situation financière et les besoins</strong> du client, est une pratique malhonnête.</li>
@@ -2674,7 +2667,7 @@ td.low{color:var(--bad);font-weight:600}
 
   <h2>Le compte du client</h2>
   <p>Deuxième famille : ce que l'agent peut faire <strong>dans</strong> le compte. Le principe est que le compte appartient au client et que chaque opération procède de sa volonté. L'agent propose, le client décide. Toutes les règles de cette section organisent les exceptions : quand, et à quelles conditions, quelqu'un d'autre que le client peut décider.</p>
-  <p>La <em class="t">discretion</em> est le pouvoir de décider sans consulter le client avant chaque ordre. Elle se reconnaît aux trois « A » : l'agent choisit l'<strong>A</strong>sset (quel titre), l'<strong>A</strong>mount (combien) ou l'<strong>A</strong>ction (acheter ou vendre). S'il ne choisit que le moment ou le prix, alors que le client a fixé les trois A, ce n'est pas de la discrétion. Une <em class="t">trading authorization</em> (procuration) est le document par lequel le client autorise un <strong>tiers</strong> à passer des ordres dans son compte : limitée (ordres seulement) ou complète (ordres et retraits).</p>
+  <p>La <em class="t">discretion</em> est le pouvoir de décider sans consulter le client avant chaque ordre. Elle se reconnaît aux trois « A » : l'agent choisit l'<strong>A</strong>sset (quel titre), l'<strong>A</strong>mount (combien) ou l'<strong>A</strong>ction (acheter ou vendre). S'il ne choisit que le moment ou le prix, alors que le client a fixé les trois A, ce n'est pas de la discrétion. Une <em class="t">trading authorization</em> (procuration, en anglais courant <em>power of attorney</em>) est le document par lequel le client autorise un <strong>tiers</strong> à passer des ordres dans son compte : limitée (ordres seulement) ou complète (ordres et retraits).</p>
   <div class="tw"><table>
     <tr><th>Pratique</th><th>Règle</th></tr>
     <tr><td>Unauthorized trading</td><td>Interdit. Il faut l'ordre ou l'accord du client avant chaque transaction, même « dans son intérêt ».</td></tr>
@@ -2756,7 +2749,7 @@ td.low{color:var(--bad);font-weight:600}
     <li>toute <strong>manipulation</strong> (voir ci-dessous) ;</li>
     <li>publier une transaction ou une cotation qui n'est pas <em>bona fide</em> ;</li>
     <li>une publicité ou une présentation <strong>trompeuse</strong> ;</li>
-    <li>ne pas divulguer que la firme <strong>contrôle l'émetteur, est contrôlée par lui ou sous contrôle commun</strong>, avant la transaction, par écrit au plus tard à son exécution ;</li>
+    <li>ne pas divulguer que la firme <strong>contrôle l'émetteur, est contrôlée par lui ou sous contrôle commun</strong>, avant la transaction, par écrit au plus tard au dénouement de la transaction (<em>at or before completion</em>) ;</li>
     <li>ne pas faire une <strong>offre publique bona fide</strong> de tous les titres qui lui sont alloués : garder pour soi ou ses proches une partie d'une émission très demandée (<em>free-riding and withholding</em>) ;</li>
     <li>ne pas fournir une information due au client, ou ne pas répondre à une <strong>plainte écrite</strong>.</li>
   </ul>
@@ -2771,7 +2764,7 @@ td.low{color:var(--bad);font-weight:600}
       <li>Un client envoie une lettre de réclamation ; l'agent la range dans son tiroir en espérant que le client se calmera. <span class="vd no">Pratique malhonnête</span> Une plainte écrite se transmet à la firme, qui y répond.</li>
       <li>Une firme affiche une offre d'achat à $8 sur un titre, mais refuse d'acheter quand un vendeur se présente à ce prix. <span class="vd no">Pratique malhonnête</span> Cotation qu'elle n'est pas prête à honorer.</li>
       <li>Un agent sait que sa firme va exécuter dans l'heure un ordre d'achat de 400,000 actions pour un fonds de pension. Il achète 1,000 actions pour lui juste avant. <span class="vd no">Front running</span></li>
-      <li>Une firme vend à ses clients les obligations d'une société dont elle détient 60 % du capital, sans le leur dire. <span class="vd no">Pratique malhonnête</span> Relation de contrôle à divulguer avant la transaction, par écrit au plus tard à l'exécution.</li>
+      <li>Une firme vend à ses clients les obligations d'une société dont elle détient 60 % du capital, sans le leur dire. <span class="vd no">Pratique malhonnête</span> Relation de contrôle à divulguer avant la transaction, par écrit au plus tard à son dénouement (<em>completion</em>).</li>
     </ul>
   </div>
 
@@ -2808,7 +2801,7 @@ td.low{color:var(--bad);font-weight:600}
     <li>Éléments : une information <strong>material</strong> (qu'un investisseur raisonnable jugerait importante) et <strong>nonpublic</strong> (pas encore diffusée au marché), utilisée pour négocier ou transmise <strong>en violation d'un devoir de confiance</strong>.</li>
     <li>Sont responsables : l'initié classique (dirigeant, employé, conseil) ; le <strong>tipper</strong> qui transmet et le <strong>tippee</strong> qui négocie en sachant d'où vient l'information ; celui qui <strong>détourne</strong> une information confiée (<em>misappropriation theory</em>), même sans lien avec l'émetteur.</li>
     <li>Sanctions fédérales : pénalité civile jusqu'à <strong>trois fois</strong> le profit réalisé ou la perte évitée ; au pénal, jusqu'à 20 ans de prison et $5 millions d'amende pour un individu ($25 millions pour une entité). Les investisseurs ayant négocié au même moment en sens inverse (<em>contemporaneous traders</em>) ont une action privée. La firme qui n'a pas prévenu la fraude peut aussi être sanctionnée.</li>
-    <li>Les BD et les advisers doivent avoir des procédures écrites pour prévenir l'usage abusif d'informations privilégiées : barrières d'information entre services, <em>restricted list</em>, <em>watch list</em>.</li>
+    <li>Les BD et les advisers doivent avoir des procédures écrites pour prévenir l'usage abusif d'informations privilégiées : barrières d'information entre services ; <em>restricted list</em>, la liste diffusée dans la firme des titres sur lesquels plus personne ne peut négocier ni recommander ; <em>watch list</em>, la liste confidentielle, connue de la seule conformité, des titres dont les opérations sont surveillées.</li>
     <li>Conduite attendue de l'agent : ne pas négocier, ne pas transmettre, signaler au superviseur ou au compliance.</li>
   </ul>
   <div class="box ex">
@@ -2842,14 +2835,14 @@ td.low{color:var(--bad);font-weight:600}
   </table></div>
   <div class="box ex">
     <div class="eyebrow">Exemple déroulé · un breakpoint manqué</div>
-    <p>Barème supposé d'un fonds, à titre d'illustration : load de 5 % jusqu'à $49,999, 4 % de $50,000 à $99,999, 3 % au-delà. Le load se calcule sur le montant versé.</p>
+    <p>Barème supposé d'un fonds, à titre d'illustration : load de 5 % jusqu'à $99,999, 3,5 % de $100,000 à $249,999, 2,5 % au-delà. Le load se calcule sur le montant versé.</p>
     <ol>
-      <li><strong>Mme Petit verse $48,000.</strong> Load : 48,000 × 5 % = $2,400. Montant réellement investi : $45,600.</li>
-      <li><strong>Si elle versait $50,000.</strong> Load : 50,000 × 4 % = $2,000. Montant investi : $48,000. Pour $2,000 de plus, elle aurait $2,400 de plus au travail, et paierait $400 de frais en moins.</li>
-      <li><strong>Elle n'a que $48,000 aujourd'hui, mais versera $5,000 dans six mois.</strong> Une <em>letter of intent</em> lui donne le taux de 4 % dès le premier versement, puisqu'elle s'engage à atteindre $50,000 dans les 13 mois.</li>
-      <li><strong>Elle détient déjà $40,000 de parts de la même famille de fonds et ajoute $12,000.</strong> Par les <em>rights of accumulation</em>, son total de $52,000 lui donne le taux de 4 % sur le nouvel achat.</li>
+      <li><strong>Mme Petit verse $95,000.</strong> Load : 95,000 × 5 % = $4,750. Montant réellement investi : $90,250.</li>
+      <li><strong>Si elle versait $100,000.</strong> Load : 100,000 × 3,5 % = $3,500. Montant investi : $96,500. Pour $5,000 de plus, elle aurait $6,250 de plus au travail, et paierait $1,250 de frais en moins.</li>
+      <li><strong>Elle n'a que $95,000 aujourd'hui, mais versera $10,000 dans six mois.</strong> Une <em>letter of intent</em> lui donne le taux de 3,5 % dès le premier versement, puisqu'elle s'engage à atteindre $100,000 dans les 13 mois.</li>
+      <li><strong>Elle détient déjà $80,000 de parts de la même famille de fonds et ajoute $25,000.</strong> Par les <em>rights of accumulation</em>, son total de $105,000 lui donne le taux de 3,5 % sur le nouvel achat.</li>
     </ol>
-    <p>L'agent qui encaisse les $48,000 sans rien dire de tout cela touche une commission plus élevée aux dépens de sa cliente : c'est la <em>breakpoint sale</em>. Répartir $90,000 entre trois familles de fonds à $30,000 chacune, sans raison de diversification, produit le même effet et se juge de la même façon.</p>
+    <p>L'agent qui encaisse les $95,000 sans rien dire de tout cela touche une commission plus élevée aux dépens de sa cliente : c'est la <em>breakpoint sale</em>. Répartir $180,000 entre trois familles de fonds à $60,000 chacune, sans raison de diversification, produit le même effet et se juge de la même façon.</p>
   </div>
   <p>Sont des pratiques malhonnêtes selon la liste de 1997 :</p>
   <ul>
@@ -2859,7 +2852,7 @@ td.low{color:var(--bad);font-weight:600}
     <li>recommander une <strong>classe de parts</strong> (A, B, C) sans motifs raisonnables de croire que sa structure de frais convient au client ;</li>
     <li>faire détenir plusieurs fonds aux objectifs similaires, ou recommander un <strong>switch</strong> d'un fonds vers un autre semblable, sans justification au vu des frais ;</li>
     <li>citer le <strong>rendement courant</strong> sans donner le rendement total annuel moyen sur 1, 5 et 10 ans et expliquer la différence ;</li>
-    <li><strong>comparer</strong> un fonds à un compte d'épargne ou un CD sans préciser l'absence d'assurance FDIC et les différences de risque ;</li>
+    <li><strong>comparer</strong> un fonds à un compte d'épargne ou un CD (<em>certificate of deposit</em>, dépôt bancaire à terme) sans préciser l'absence d'assurance FDIC et les différences de risque ;</li>
     <li>invoquer l'assurance ou la qualité des titres en portefeuille sans exposer les autres risques (taux, marché, liquidité, change) ;</li>
     <li><strong>selling dividends</strong> : présenter l'achat juste avant la date ex-dividende comme avantageux ; ou présenter une distribution de plus-values comme un rendement ;</li>
     <li>projeter la performance future, ou s'appuyer sur une information non publique.</li>
@@ -2928,11 +2921,12 @@ td.low{color:var(--bad);font-weight:600}
   <ul>
     <li>La prudence se juge sur le <strong>portefeuille dans son ensemble</strong> et la stratégie globale, pas titre par titre.</li>
     <li>L'arbitrage entre <strong>risque et rendement</strong> est au centre : objectifs adaptés au trust.</li>
+    <li>Les <strong>circonstances à considérer</strong>, que le texte énumère : les conditions économiques générales ; l'effet possible de l'inflation ou de la déflation ; les conséquences fiscales attendues des décisions ; le rôle de chaque placement dans l'ensemble du portefeuille ; le rendement total attendu (revenu et plus-value) ; les autres ressources des bénéficiaires ; les besoins de liquidité, de revenu régulier et de préservation ou d'appréciation du capital ; le lien particulier d'un actif avec l'objet du trust ou avec un bénéficiaire. Une question qui propose ces éléments attend « tous ».</li>
     <li><strong>Diversifier</strong> est un devoir, sauf circonstances particulières.</li>
-    <li><strong>Aucun type de placement n'est interdit en soi</strong> ; plus de « liste légale ».</li>
+    <li><strong>Aucun type de placement n'est interdit en soi</strong> ; plus de « liste légale » (<em>legal list</em>, l'ancienne liste de placements autorisés aux trustees).</li>
     <li>La <strong>délégation</strong> de la gestion est permise, avec soin dans le choix de l'agent, la définition de sa mission et son suivi.</li>
     <li>Devoirs de <strong>loyauté</strong>, d'<strong>impartialité</strong> entre bénéficiaires, et de limiter les <strong>coûts</strong> à ce qui est raisonnable. Le fiduciaire doté de compétences particulières doit les utiliser.</li>
-    <li>Le respect de la règle se juge <strong>au moment de la décision</strong>, pas avec le recul des résultats.</li>
+    <li>Le respect de la règle se juge <strong>au moment de la décision</strong>, pas avec le recul des résultats (<em>hindsight</em>).</li>
   </ul>
 
   <div class="box case">
@@ -2948,7 +2942,7 @@ td.low{color:var(--bad);font-weight:600}
   <h2>Soft dollars : Exchange Act § 28(e)</h2>
   <p>Un adviser qui gère des comptes choisit le broker-dealer qui exécute les ordres de ses clients, et ce sont les clients qui paient les commissions. Certains broker-dealers offrent à l'adviser, en échange de ce flux d'ordres, des services de recherche. L'adviser paie donc sa recherche avec l'argent de ses clients : d'où le nom de <em>soft dollars</em>, par opposition aux <em>hard dollars</em> qu'il sortirait de sa propre caisse. C'est un conflit d'intérêts évident. La loi le tolère dans une limite précise : ce que l'adviser reçoit doit servir à mieux gérer les comptes des clients, pas à faire tourner son entreprise.</p>
   <ul>
-    <li>Un gérant qui exerce une discrétion peut faire payer à ses clients une commission <strong>supérieure à la plus basse disponible</strong> sans manquer à son devoir fiduciaire, s'il juge de bonne foi qu'elle est raisonnable au regard des <strong>services de courtage et de recherche</strong> reçus. C'est un <em>safe harbor</em>.</li>
+    <li>Un gérant qui exerce une discrétion peut faire payer à ses clients une commission <strong>supérieure à la plus basse disponible</strong> sans manquer à son devoir fiduciaire, s'il juge de bonne foi qu'elle est raisonnable au regard des <strong>services de courtage et de recherche</strong> reçus. C'est un <em>safe harbor</em>. L'appréciation se fait sur la transaction ou sur l'ensemble des comptes que le gérant gère avec discrétion : la recherche peut profiter à tous ses comptes, pas seulement à celui qui a payé la commission. Un client ne peut donc pas objecter que son propre compte ne détient pas les titres étudiés.</li>
     <li>Dans le safe harbor : rapports de recherche, analyses, logiciels d'analyse de portefeuille, données de marché, frais d'inscription à une conférence de recherche.</li>
     <li>Hors du safe harbor : loyer, mobilier, matériel de bureau général, salaires, voyages, hôtel, repas, frais de marketing.</li>
     <li>Produit à <strong>usage mixte</strong> : seule la part recherche est payée en soft dollars ; le reste est payé par l'adviser.</li>
@@ -2970,7 +2964,7 @@ td.low{color:var(--bad);font-weight:600}
   <p>Un conflit d'intérêts existe chaque fois que l'agent ou la firme a une raison personnelle de préférer une solution à une autre. Il n'est pas toujours interdit : il doit être connu. De la firme d'abord, qui doit pouvoir le surveiller ; du client ensuite, qui doit pouvoir en tenir compte. D'où le mot qui revient dans toute cette section : une notification <strong>écrite</strong> et <strong>préalable</strong>.</p>
   <ul>
     <li><strong>Divulgation de la rémunération</strong> : commission ou markup sur la confirmation ; frais de compte ; frais de fonds (loads, 12b-1) ; paiements de tiers qui incitent à recommander (<em>revenue sharing</em>, commissions différenciées). Sous Reg BI, ces conflits sont divulgués par écrit et atténués.</li>
-    <li><strong>Outside business activity</strong> (FINRA Rule 3270) : toute activité rémunérée hors de la firme exige une <strong>notification écrite préalable</strong> à la firme.</li>
+    <li><strong>Outside business activity</strong> (FINRA Rule 3270) : exige une <strong>notification écrite préalable</strong> à la firme toute activité rémunérée hors de la firme, <strong>ou</strong> tout poste d'employé, de prestataire indépendant, d'entrepreneur individuel, de dirigeant (<em>officer</em>), d'administrateur (<em>director</em>) ou d'associé d'une autre entité, même non rémunéré. Les deux cas sont reliés par « or » : l'un ou l'autre suffit. Un placement purement passif n'est pas visé.</li>
     <li><strong>Private securities transaction</strong> (FINRA Rule 3280) : notification écrite préalable détaillée ; si l'associé est rémunéré, la firme <strong>approuve ou refuse par écrit</strong>, et en cas d'approbation enregistre et supervise l'opération. Sans cela, c'est du selling away.</li>
     <li><strong>Cadeaux</strong> (FINRA Rule 3220) : pas plus de <span class="num">$300</span> par personne et par an en lien avec l'activité de l'employeur du bénéficiaire (plafond relevé le 30 mars 2026 ; il était de $100 auparavant).</li>
     <li><strong>Plaintes écrites</strong> : à transmettre à la firme sans délai ; la firme les consigne et y répond.</li>
@@ -2980,7 +2974,8 @@ td.low{color:var(--bad);font-weight:600}
     <div class="eyebrow">Cas pratiques · activités et comptes hors de la firme</div>
     <ul>
       <li>Un agent donne le week-end des cours de tennis rémunérés, sans en informer sa firme. <span class="vd no">Violation</span> Toute activité rémunérée extérieure se notifie par écrit, à l'avance, même sans rapport avec les titres.</li>
-      <li>Un agent est bénévole, sans rémunération, au conseil d'une association caritative. <span class="vd ok">Hors de la Rule 3270</span> Elle vise les activités rémunérées. La firme peut tout de même exiger une déclaration.</li>
+      <li>Un agent sert des repas le week-end dans une association caritative, sans rémunération ni fonction de dirigeant. <span class="vd ok">Hors de la Rule 3270</span> Ni rémunération, ni poste dans une autre entité. La firme peut tout de même exiger une déclaration.</li>
+      <li>Un agent siège bénévolement, sans rémunération, au conseil d'administration de la même association. <span class="vd no">Notification écrite préalable</span> La règle vise tout poste d'officer ou de director d'une autre entité, rémunéré ou non.</li>
       <li>Un agent vend à des clients, contre commission, les parts d'un placement privé que sa firme ne distribue pas, après l'avoir seulement prévenue par oral. <span class="vd no">Selling away</span> Il fallait une notification écrite détaillée et, puisqu'il est rémunéré, l'approbation écrite de la firme.</li>
       <li>Un agent reçoit d'un gérant de fonds, pour le remercier de ses ventes, une montre de $1,200. <span class="vd no">Violation</span> Au-dessus du plafond annuel des cadeaux ($300 depuis 2026, $100 auparavant).</li>
       <li>Un agent ouvre un compte de bourse chez un concurrent pour y négocier sans que sa firme le voie. <span class="vd no">Violation</span> FINRA 3210 : consentement écrit préalable de l'employeur (chapitre 3).</li>
@@ -3054,7 +3049,7 @@ td.low{color:var(--bad);font-weight:600}
     <tr><td class="num">43 sur 60</td><td>Seuil de réussite (72 %)</td><td>NASAA</td></tr>
     <tr><td class="num">75 minutes</td><td>Durée</td><td>NASAA</td></tr>
     <tr><td class="num">120 jours</td><td>Fenêtre pour passer l'examen après l'inscription</td><td>NASAA / FINRA</td></tr>
-    <tr><td class="num">30 / 30 / 180 jours</td><td>Attente après le 1<sup>er</sup>, le 2<sup>e</sup>, puis le 3<sup>e</sup> échec et les suivants</td><td>NASAA</td></tr>
+    <tr><td class="num">30 / 30 / 180 jours</td><td>Attente après le 1<sup>er</sup>, le 2<sup>e</sup>, puis le 3<sup>e</sup> échec et les suivants ; 60 jours au lieu de 180 pour les fenêtres d'examen ouvertes à partir du 4 janvier 2027</td><td>NASAA</td></tr>
     <tr><td class="num">2 ans</td><td>Validité de l'examen sans enregistrement</td><td>Model rule NASAA</td></tr>
   </table></div>
 
@@ -3475,7 +3470,7 @@ const Q=[
 {"i":238,"s":"com","c":8,"x":0,"q":"The Administrator's power under USA § 403 to require the filing of sales and advertising literature does NOT apply when:","o":["The literature is distributed only by mail and not through the internet","The offering is registered by qualification, since the prospectus is then already on file","The security or transaction is exempt, or the security is a federal covered security","The issuer is located in another state and has no office in this one"],"a":2,"e":"USA § 403 : « unless the security or transaction is exempted by Section 402 or is a federal covered security ».","w":["Le mode de diffusion est indifférent.","Une offre enregistrée par qualification est le cas type où le dépôt est exigible.","","La localisation de l'issuer est indifférente."]},
 {"i":239,"s":"com","c":8,"x":0,"q":"A broker-dealer knowingly includes a false statement about its disciplinary history in a document filed with the Administrator. Under the USA, this is:","o":["Lawful if corrected within one year","Lawful if no customer relied on it","Unlawful as a misleading filing","A matter for the SEC only"],"a":2,"e":"USA § 404 : il est illégal de faire, dans un document déposé auprès de l'Administrator ou dans une procédure, une déclaration fausse ou trompeuse sur un point important. C'est aussi un motif de refus ou de révocation (§ 204(a)(2)(A)).","w":["Aucun délai de régularisation n'efface la violation.","La violation existe sans qu'un client s'y soit fié.","","L'Administrator est directement compétent."]},
 {"i":240,"s":"com","c":8,"x":2,"q":"A trade confirmation sent by a broker-dealer must disclose which of the following?\n I. Whether the firm acted as agent or as principal\n II. The agent's total commissions for the year\n III. The date of the transaction and the identity, price and number of shares of the security\n IV. The commission charged, in an agency trade","o":["I only","I and III only","I, III and IV only","I, II, III and IV"],"a":2,"e":"SEC Rule 10b-10 : capacité (agent ou principal, I), date, heure (ou mention qu'elle est disponible), titre, prix, quantité (III), et la rémunération en agency (IV). II est faux : la rémunération annuelle de l'agent n'y figure pas.","f":1},
-{"i":241,"s":"com","c":8,"x":0,"q":"A broker-dealer is under common control with the issuer of a stock it recommends. Under NASAA's Statement of Policy, the firm must disclose this relationship:","o":["Before entering into any contract with the customer, and in writing by completion of the trade","Only in its annual report and in the footnotes of its financial statements","Only if the customer asks whether the firm is affiliated with the issuer","In writing, on the confirmation or within 30 days after settlement of the customer's first purchase"],"a":0,"e":"NASAA (1983), 1.r : divulgation du contrôle (par, de, ou commun avec l'issuer) avant la conclusion ; si elle est orale, elle est complétée par écrit au plus tard à l'exécution de la transaction.","w":["","La divulgation doit précéder la transaction.","L'obligation existe sans demande du client.","La divulgation précède le contrat ; l'écrit est dû au plus tard à l'exécution de la transaction, pas après le règlement."]},
+{"i":241,"s":"com","c":8,"x":0,"q":"A broker-dealer is under common control with the issuer of a stock it recommends. Under NASAA's Statement of Policy, the firm must disclose this relationship:","o":["Before entering into any contract with the customer, and in writing by completion of the trade","Only in its annual report and in the footnotes of its financial statements","Only if the customer asks whether the firm is affiliated with the issuer","In writing, on the confirmation or within 30 days after settlement of the customer's first purchase"],"a":0,"e":"NASAA (1983), 1.r : divulgation du contrôle (par, de, ou commun avec l'issuer) avant la conclusion ; si elle est orale, elle est complétée par écrit au plus tard au dénouement de la transaction (at or before completion).","w":["","La divulgation doit précéder la transaction.","L'obligation existe sans demande du client.","La divulgation précède le contrat ; l'écrit est dû au plus tard à l'exécution de la transaction, pas après le règlement."]},
 {"i":242,"s":"com","c":8,"x":3,"q":"A customer of a general securities firm holds stock in her account but has made no trades this year. Under FINRA Rule 2231, the firm must send her an account statement at least:","o":["Only upon the customer's request","Once every calendar year, in January","Once every calendar quarter","Once every month, in all cases"],"a":2,"e":"FINRA Rule 2231(a) : au moins une fois par trimestre civil pour tout compte ayant une position, un solde ou une activité sur la période.","w":["L'envoi est obligatoire.","Annuel est insuffisant.","","Le relevé mensuel est une pratique courante, pas le minimum réglementaire."]},
 {"i":243,"s":"com","c":8,"x":0,"q":"A customer leaving for a five-month expedition asks her broker-dealer to hold her mail. Under FINRA Rule 3150, the firm may do so if it receives written instructions stating the time period and, since the period exceeds three consecutive months:","o":["An acceptable reason for the request, such as safety or security concerns","Nothing more, since the customer's convenience is always sufficient for any period","The written approval of the state Administrator","A power of attorney in favor of her agent, covering the whole five-month period"],"a":0,"e":"FINRA Rule 3150 : instructions écrites indiquant la durée ; au-delà de trois mois consécutifs, il faut un motif acceptable (sécurité), la simple commodité ne suffisant pas. La firme doit pouvoir joindre le client et protéger le courrier.","w":["","Au-delà de trois mois, la commodité seule ne suffit pas.","L'Administrator n'intervient pas.","Une procuration à l'agent n'est ni exigée ni souhaitable."]},
 {"i":244,"s":"com","c":8,"x":0,"q":"An agent, to avoid upsetting a customer whose account is down, stops sending her the firm's confirmations and tells her verbally that 'everything is fine'. This is:","o":["A violation, since confirmations may not be withheld and the oral statement is misleading","Acceptable if he resumes mailing the confirmations as soon as the account recovers its value","Acceptable for long-standing customers who trust the agent's judgment","Acceptable if the losses are unrealized and no position has been sold"],"a":0,"e":"Les confirmations et relevés sont dus au client (SEC Rule 10b-10, FINRA Rule 2231) ; les retenir et rassurer faussement le client est une omission et une déclaration trompeuse (USA § 101).","w":["","La reprise ultérieure n'efface pas la violation.","L'ancienneté du client ne dispense de rien.","Une perte latente reste un fait important."]},
@@ -3893,7 +3888,7 @@ const CARDS=[
 [8,"USA § 403","L'Administrator peut exiger le dépôt de la publicité, sauf titres ou transactions exemptés et federal covered securities."],
 [8,"Confirmation","Capacité (agent ou principal), date, titre, prix, quantité, commission en agency."],
 [8,"Relevés de compte du BD","Au moins trimestriels."],
-[8,"Control relationship","À divulguer avant la transaction ; par écrit au plus tard à son exécution."],
+[8,"Control relationship","À divulguer avant la transaction ; par écrit au plus tard au dénouement de la transaction (at or before completion)."],
 [8,"Trusted contact person","Efforts raisonnables pour l'obtenir à l'ouverture ; 18 ans ou plus ; aucun pouvoir sur le compte."],
 [8,"SEC 17a-4 : durées","6 ans : blotters, ledgers, comptes. 3 ans : communications, ordres, confirmations. Vie de la firme : statuts."],
 [8,"Fiche de compte au client","Dans les 30 jours de l'ouverture, puis tous les 36 mois."],
@@ -3927,7 +3922,7 @@ const CARDS=[
 [9,"Garantie contre les pertes","Interdite, y compris rembourser une perte de sa poche."],
 [9,"Selling away","Transactions hors des livres du BD sans autorisation écrite préalable."],
 [9,"Private securities transaction (FINRA 3280)","Notification écrite préalable ; approbation écrite si rémunérée ; la firme supervise. (Rule 3290 approuvée en 2026 pour la remplacer, date d'effet non fixée.)"],
-[9,"Outside business activity (FINRA 3270)","Notification écrite préalable à la firme. (Rule 3290 approuvée en 2026 pour la remplacer, date d'effet non fixée.)"],
+[9,"Outside business activity (FINRA 3270)","Notification écrite préalable à la firme pour toute activité rémunérée, et pour tout poste d'employé, de dirigeant ou d'administrateur d'une autre entité, même bénévole. (Rule 3290 approuvée en 2026 pour la remplacer, date d'effet non fixée.)"],
 [9,"Reverse churning","Compte peu actif placé dans un wrap fee program : le client paie un honoraire continu pour des transactions qu'il ne fait pas."],
 [9,"Virement demandé par e-mail","Signal d'alerte : vérifier par un rappel au numéro du dossier avant tout traitement, jamais en répondant à l'e-mail."],
 [8,"Valeur temps : ce qui la fait monter","Plus de temps restant ou plus de volatilité = prime plus élevée (calls et puts). Elle s'érode à l'approche de l'échéance. Option out of the money : valeur temps seulement."],
@@ -3958,30 +3953,46 @@ const CARDS=[
 
 const GLOSS=[
 ["12b-1 fee","Frais annuel prélevé sur l'actif d'un fonds pour financer sa commercialisation."],
+["401(k) plan","Plan d'épargne retraite d'entreprise, alimenté par des retenues sur salaire. Enveloppe fiscale : ce n'est pas une security en soi."],
 ["Accredited investor","Investisseur accrédité (Regulation D) : revenu de plus de $200,000 ($300,000 avec le conjoint) ou net worth de plus de $1M hors résidence principale."],
+["Acquitted","Acquitté : déclaré non coupable par le tribunal."],
+["Adjudged","Déclaré tel par un tribunal (par exemple adjudged mentally incompetent : déclaré incapable)."],
 ["Administrator","Autorité de régulation des titres de l'État."],
 ["Adoption","Fait pour une firme d'endosser un contenu de tiers (like, partage), qui devient sa propre communication."],
 ["Advisory contract","Contrat de conseil en placements."],
+["Advisory fee","Honoraires de conseil ou de gestion d'un investment adviser, en général un pourcentage annuel des actifs gérés (aussi : management fee)."],
 ["Affiliate","Société du même groupe (qui contrôle, est contrôlée ou sous contrôle commun)."],
 ["Agency cross transaction","Opération où l'adviser conseille un client et sert de courtier à l'autre partie."],
 ["Agent","Individu qui représente un broker-dealer ou un issuer dans des transactions sur titres."],
+["Aggrieved person","Personne lésée par un ordre définitif de l'Administrator ; elle peut demander un judicial review dans les 60 jours."],
 ["All-or-none","Placement best efforts annulé si toute l'émission n'est pas vendue."],
+["Allotment","Quantité de titres d'une nouvelle émission attribuée à une firme du syndicat ou du selling group pour qu'elle la place auprès du public."],
 ["Annual compliance meeting","Réunion ou entretien de conformité annuel de chaque représentant (FINRA 3110)."],
 ["Antifraud provisions","Dispositions antifraude (USA § 101 et § 102), applicables sans exception."],
 ["Arbitrage","Achat et vente simultanés sur deux marchés pour profiter d'un écart de prix ; légal."],
 ["Arbitration","Arbitrage (au sens procédural) : règlement des litiges devant FINRA."],
 ["Assessable stock","Action pour laquelle l'émetteur peut exiger des versements supplémentaires."],
+["Asset-based fee","Frais calculés en pourcentage des actifs (honoraires de gestion, 12b-1 fee), par opposition à une commission par transaction. Un compte ainsi facturé est dit fee-based."],
 ["Assets under management (AUM)","Actifs gérés par un adviser ; critère du partage SEC / État."],
 ["Assignment","Cession d'un contrat de conseil ; aussi : désignation du vendeur d'une option qui doit s'exécuter."],
 ["Assignment (options)","Désignation du vendeur d'une option pour exécuter son obligation quand l'acheteur exerce."],
 ["Associated person","Terme FINRA et fédéral pour l'individu rattaché à un broker-dealer ; l'agent du droit des États."],
 ["At the market","Au prix du marché ; suppose un marché indépendant de la firme."],
 ["At the money","Option dont le prix d'exercice est égal au cours."],
+["Attorneys' fees","Honoraires d'avocat ; l'acheteur les récupère dans l'action civile de l'USA, avec le prix, les intérêts et les frais."],
+["Audit trail","Piste d'audit : historique horodaté de toute modification ou suppression d'un document électronique, avec son auteur. Alternative au format non-rewriteable sous SEC Rule 17a-4."],
+["Bad actor","Personne déjà condamnée ou sanctionnée pour une infraction liée aux titres. Si l'émetteur, un de ses dirigeants ou un intermédiaire rémunéré en est un, la Rule 506 n'est plus disponible (Rule 506(d))."],
+["Balance sheet","Bilan : actifs, dettes et capitaux propres à une date donnée."],
 ["Bar","Interdiction d'exercer prononcée contre une personne."],
 ["Bear raid","Manœuvre pour faire baisser un cours par des ventes concertées ou des rumeurs."],
+["Beneficial interest","Intérêt économique dans un compte ou un titre : en tirer le profit, même sans en être le titulaire. Sous FINRA Rule 3210, l'associé est présumé en avoir un dans le compte de son conjoint."],
+["Beneficial ownership","Propriété économique réelle d'un titre. Une transaction sans changement de beneficial ownership (wash trade) est une manipulation."],
 ["Best efforts","Placement « au mieux » : l'underwriter agit comme agent, sans garantir l'émission."],
+["Blank check company","Société sans projet d'activité précis, ou dont le projet est de fusionner avec une société encore inconnue. Exclue de la manual exemption."],
+["Block trade","Transaction portant sur une très grande quantité de titres, en général entre institutions. Légitime en soi."],
 ["Blotter","Journal quotidien des achats, ventes, entrées et sorties de titres et d'espèces."],
 ["Blue sky laws","Lois des États sur les titres."],
+["Blue-chip stock","Action d'une grande société solide et établie."],
 ["Bona fide","De bonne foi, réel."],
 ["Books and records","Livres et registres."],
 ["Branch office","Succursale."],
@@ -3991,24 +4002,37 @@ const GLOSS=[
 ["Brochure","Document d'information de l'adviser (Form ADV Part 2A)."],
 ["Brochure supplement","Supplément sur les personnes qui conseillent le client (Form ADV Part 2B)."],
 ["Broker-dealer","Personne dont le métier est d'exécuter des transactions sur titres pour autrui ou pour son compte."],
+["Brokerage account","Compte de courtage ouvert chez un broker-dealer."],
 ["BrokerCheck","Base publique de FINRA sur les firmes et les représentants."],
+["Bullish / bearish","Haussier / baissier : qui anticipe une hausse / une baisse des cours."],
 ["Burden of proof","Charge de la preuve."],
+["Business day","Jour ouvrable (hors week-ends et jours fériés). À distinguer de calendar day."],
+["Calendar day","Jour calendaire : tous les jours comptent, week-ends compris."],
+["Calendar quarter","Trimestre civil (janvier à mars, avril à juin, etc.)."],
 ["Call","Option d'achat."],
 ["Cancellation","Annulation administrative d'un enregistrement, sans caractère de sanction."],
 ["Capacity","Qualité dans laquelle la firme agit : agent ou principal."],
+["Capital gain","Plus-value : gain réalisé à la revente d'un titre."],
+["Capitalization","Structure du capital d'un émetteur : actions et dettes en circulation."],
 ["Capping","Empêcher un cours de monter."],
 ["Cash account","Compte où le client paie chaque achat en entier, sans crédit de la firme."],
 ["Cease and desist order","Ordre de cesser une pratique."],
 ["Censure","Blâme."],
 ["Central Registration Depository (CRD)","Base de données commune où sont déposés les Form BD, U4 et U5 ; sert à la SEC, à FINRA et aux États."],
+["Certificate of deposit (CD)","Dépôt bancaire à terme, à taux fixe, assuré par la FDIC dans la limite légale. Pas une security."],
 ["Churning","Multiplication abusive des transactions dans le compte d'un client."],
 ["Class A / B / C shares","Classes de parts d'un fonds : A, frais d'entrée et breakpoints ; B, frais de sortie dégressifs et frais annuels élevés ; C, frais annuels élevés sans diminution."],
 ["Clearing firm","Firme qui exécute, règle et conserve les titres pour le compte d'une introducing firm."],
+["Clerical / ministerial","Tâches administratives ou d'exécution, sans sollicitation ni prise d'ordres : celui qui s'y limite n'est pas un agent."],
+["Closed-end fund","Fonds qui émet un nombre fixe de parts, ensuite négociées en bourse au prix du marché ; il ne les rachète pas."],
+["Collateral","Garantie, sûreté : bien affecté au remboursement d'un prêt. Dans un compte sur marge, ce sont les titres du client."],
 ["Commercial paper","Billets de trésorerie à court terme."],
 ["Commingling","Mélange des actifs des clients avec ceux de la firme ou de l'agent."],
 ["Commission","Rémunération d'une opération exécutée en qualité d'agent."],
 ["Common enterprise","Entreprise commune (critère du test Howey)."],
+["Common law","Droit issu des décisions des tribunaux, par opposition à la loi écrite. La fraude de l'USA n'est pas limitée au dol de common law (common-law deceit)."],
 ["Common stock","Action ordinaire : part de propriété avec droit de vote et dividende éventuel."],
+["Compensatory damages","Dommages-intérêts compensatoires : ils réparent la perte subie, sans plus."],
 ["Confirmation","Avis d'opéré envoyé au client après chaque transaction."],
 ["Consent to service of process","Consentement à recevoir les actes de procédure par l'intermédiaire de l'Administrator."],
 ["Conservator","Curateur, administrateur des biens."],
@@ -4016,12 +4040,15 @@ const GLOSS=[
 ["Contempt of court","Outrage au tribunal."],
 ["Contingent deferred sales load (CDSC)","Frais de sortie dégressifs d'un fonds."],
 ["Contribution","Droit du coresponsable qui a payé de se retourner contre les autres."],
+["Control affiliate","Sur le Form BD : toute personne qui contrôle la firme, est contrôlée par elle ou est sous contrôle commun. Les sanctions qui la visent se déclarent par amendement."],
 ["Control person","Personne qui contrôle une firme ou un émetteur."],
 ["Contumacy","Refus d'obéir à un subpoena."],
+["Conviction","Condamnation pénale. Motif de refus ou de révocation si elle date de moins de 10 ans et porte sur un misdemeanor lié aux titres ou sur tout felony."],
 ["Cooling-off period","Période d'attente entre le dépôt de la déclaration à la SEC et son entrée en vigueur."],
 ["Coordination","Enregistrement d'un titre auprès de l'État en parallèle de l'enregistrement fédéral."],
 ["Correspondence","Communication écrite à 25 investisseurs particuliers ou moins sur 30 jours."],
 ["Cost-equity ratio","Coûts annuels d'un compte rapportés à sa valeur moyenne : le rendement nécessaire pour couvrir les frais. Indice de churning."],
+["Court order","Décision d'un tribunal. Seul un tribunal émet une injunction ; l'Administrator, lui, émet des ordres administratifs."],
 ["Covered call","Vente d'un call sur des actions détenues."],
 ["Credit agreement","Accord fixant les conditions du prêt dans un compte sur marge."],
 ["Custodial account","Compte tenu par un adulte (custodian) au bénéfice d'un mineur."],
@@ -4031,17 +4058,27 @@ const GLOSS=[
 ["Dealer","Firme qui négocie pour son propre compte."],
 ["Debenture","Obligation de société sans garantie particulière."],
 ["Debit balance","Solde débiteur : montant prêté par la firme dans un compte sur marge."],
+["Defendant","Défendeur (au civil) ou prévenu (au pénal)."],
+["Denomination","Coupure : valeur nominale unitaire d'un titre de dette (par exemple $50,000 au minimum pour le commercial paper exempté)."],
 ["Deny","Refuser un enregistrement."],
+["Deposit-taking area","Zone d'une banque où sont reçus les dépôts des particuliers (les guichets). Le broker-dealer installé dans la banque doit, si possible, exercer dans un espace distinct."],
+["Disciplinary history","Antécédents disciplinaires : sanctions des régulateurs, condamnations, à déclarer sur les formulaires et dans la brochure."],
 ["Discretion","Pouvoir de décider du titre, de la quantité ou du sens d'une transaction sans consulter le client."],
 ["Disgorgement","Restitution des profits illicites."],
 ["Disposal rule","Règle de destruction sécurisée des informations sur les clients (Regulation S-P)."],
 ["Due diligence","Vérifications raisonnables."],
+["Easily accessible place","Lieu d'accès facile : où les registres doivent être conservés pendant les deux premières années de leur durée de conservation."],
+["EDGAR","Base de données électronique publique de la SEC, où les émetteurs déposent leurs documents (Electronic Data Gathering, Analysis, and Retrieval)."],
 ["Effective date","Date de prise d'effet."],
 ["Eligible adult","Adulte protégé par le Model Act : 65 ans ou plus, ou relevant de la loi de protection des adultes."],
+["Encryption","Chiffrement : rend les données illisibles sans la clé."],
+["Endowment policy","Contrat d'assurance qui verse un capital fixé à une date donnée ou au décès. Pas une security."],
+["Enjoin","Interdire par injunction : un tribunal ordonne à quelqu'un de cesser ou de ne pas commettre un acte. « Enjoined » : frappé d'une telle interdiction."],
 ["Entanglement","Participation d'une firme à la préparation d'un contenu de tiers, dont elle devient responsable."],
 ["Equity","Valeur nette du compte : valeur de marché moins solde débiteur."],
 ["Escrow","Séquestre."],
 ["Ex-dividend date","Date à partir de laquelle l'acheteur d'une part n'a plus droit au dividende annoncé ; le cours baisse d'autant."],
+["Exchange-traded fund (ETF)","Fonds enregistré dont les parts se négocient en bourse en cours de séance, comme une action ; il suit le plus souvent un indice. Federal covered security."],
 ["Executor","Exécuteur testamentaire ; la person qui agit pour une succession."],
 ["Exempt reporting adviser","Adviser dispensé d'enregistrement SEC mais tenu de déposer des rapports."],
 ["Exempt security","Titre dispensé d'enregistrement en raison de sa nature ou de son émetteur."],
@@ -4051,10 +4088,15 @@ const GLOSS=[
 ["Federal covered adviser","Adviser enregistré auprès de la SEC."],
 ["Federal covered security","Titre dont l'enregistrement relève du seul droit fédéral."],
 ["Felony","Crime ou délit grave."],
+["Fictitious account","Compte ouvert avec de fausses informations ; pratique malhonnête."],
 ["Fiduciary","Fiduciaire : personne tenue d'agir dans l'intérêt d'autrui."],
 ["Filing","Dépôt ; aussi méthode d'enregistrement de l'USA § 302."],
+["Final order","Ordre définitif de l'Administrator, rendu après préavis, possibilité d'audience et conclusions écrites."],
+["Financial statements","États financiers (bilan, compte de résultat). Audited : certifiés par un expert-comptable indépendant."],
 ["Findings of fact and conclusions of law","Constatations de fait et conclusions de droit."],
 ["Firm commitment","Prise ferme : l'underwriter achète l'émission."],
+["Fiscal year","Exercice comptable de la firme, qui peut différer de l'année civile. L'adviser met à jour son Form ADV dans les 90 jours de sa clôture."],
+["Foreign finder","Apporteur d'affaires étranger non enregistré. FINRA Rule 2040 permet de le rémunérer pour l'envoi de clients étrangers, sous conditions (il n'est ni américain ni établi aux États-Unis, les clients sont étrangers, la rémunération leur est divulguée par écrit)."],
 ["Form ADV","Formulaire d'enregistrement de l'investment adviser."],
 ["Form BD","Formulaire d'enregistrement du broker-dealer."],
 ["Form BDW","Formulaire de retrait de l'enregistrement d'un broker-dealer."],
@@ -4062,29 +4104,44 @@ const GLOSS=[
 ["Form D","Avis de vente d'une offre sous Regulation D."],
 ["Form U4","Demande d'enregistrement d'un individu."],
 ["Form U5","Avis de fin d'enregistrement d'un individu."],
+["Forthwith","Immédiatement, sans délai."],
 ["Free credit balance","Solde créditeur disponible du client."],
 ["Free-riding and withholding","Rétention par un BD de titres d'une émission très demandée."],
 ["Front running","Négocier pour soi avant un ordre client important."],
 ["Front-end load","Frais d'entrée d'un fonds."],
 ["Fully paid securities","Titres entièrement payés par le client, que la firme doit ségréguer et ne peut pas nantir."],
+["General ledger","Grand livre comptable de la firme : actifs, dettes, produits, charges, capital."],
+["General obligation bond","Obligation municipale garantie par le pouvoir de lever l'impôt de la collectivité émettrice. Exempt security, comme tout titre municipal."],
+["General partner","Associé commandité : il gère le limited partnership et répond de ses dettes sur tout son patrimoine. Pour un adviser, cette qualité vaut custody."],
+["General partnership","Société de personnes où tous les associés gèrent et répondent des dettes ; leur part n'est en principe pas une security."],
 ["General solicitation","Sollicitation générale du public."],
+["Good faith","Bonne foi."],
+["Good standing","En règle : sans suspension ni manquement en cours."],
+["Grace period","Délai de grâce. L'USA n'en prévoit aucun : un enregistrement non renouvelé expire le 31 décembre, et celui d'un agent sans firme cesse d'avoir effet."],
 ["Guaranteed","Garanti par un tiers quant au paiement du principal, des intérêts ou des dividendes."],
+["Guarantor","Garant : tiers qui s'engage à payer le principal, les intérêts ou les dividendes si l'émetteur fait défaut."],
 ["Hard dollars","Argent que l'adviser paie de sa propre caisse, par opposition aux soft dollars."],
 ["Hearing","Audience où l'intéressé peut se défendre avant un ordre définitif."],
+["Hindsight","Recul, connaissance après coup. Sous l'Uniform Prudent Investor Act, la décision du trustee se juge au moment où elle est prise, pas avec le recul."],
 ["Hold mail","Retenue du courrier d'un client à sa demande."],
 ["Holder","Acheteur d'une option (position long) : il détient un droit."],
+["Holders of record","Détenteurs inscrits au registre des titres de l'émetteur."],
 ["Hypothecation","Nantissement des titres du client en garantie d'un prêt."],
 ["IARD","Investment Adviser Registration Depository : système de dépôt des Form ADV et des enregistrements des advisers et IAR."],
 ["Impound","Blocage du produit d'une offre."],
 ["In the money","Option ayant une valeur intrinsèque."],
 ["In-and-out trading","Achats suivis de reventes rapides, de façon répétée ; signe de churning."],
+["Incident response","Procédures de réaction à un incident de sécurité (perte d'un appareil, intrusion) : signaler, contenir, évaluer, notifier."],
 ["Indication of interest","Manifestation d'intérêt non contraignante pendant la cooling-off period."],
+["Indictment","Mise en accusation pénale formelle, avant tout jugement. Le Form U4 demande de déclarer les inculpations pour felony."],
 ["Information barrier","Barrière d'information entre services d'une firme."],
 ["Initial public offering (IPO)","Première vente d'actions d'une société au public."],
 ["Injunction","Injonction rendue par un tribunal."],
 ["Insider trading","Délit d'initié."],
 ["Insolvent","Insolvable."],
 ["Institutional investor","Investisseur institutionnel."],
+["Interpretative opinion","Avis par lequel l'Administrator, sur demande, dit comment la loi s'applique à une situation donnée (USA § 413(e)). Il ne lie ni la SEC ni les autres États."],
+["Interstate commerce","Commerce entre États : son usage fonde la compétence fédérale, donc celle de la SEC."],
 ["Intrastate offering","Offre limitée aux résidents d'un seul État par un émetteur de cet État ; sans dépôt à la SEC, enregistrée par qualification."],
 ["Intrinsic value","Valeur intrinsèque d'une option."],
 ["Introducing firm","Broker-dealer qui tient la relation client et confie exécution et garde à une clearing firm."],
@@ -4092,35 +4149,52 @@ const GLOSS=[
 ["Investment adviser representative","Individu qui conseille, gère, sollicite ou supervise pour un adviser."],
 ["Investment company","Société d'investissement : fonds mutuel, ETF, UIT."],
 ["Investment contract","Contrat d'investissement au sens du test Howey."],
+["Investment grade","Notation de crédit parmi les meilleures catégories d'une agence reconnue (BBB / Baa ou mieux). Unrated : sans notation."],
 ["Investment profile","Profil d'investissement du client."],
+["IRA (individual retirement account)","Compte de retraite individuel. Enveloppe fiscale : ce n'est pas une security en soi. Qualité distincte pour SIPC."],
 ["Isolated non-issuer transaction","Transaction isolée entre investisseurs."],
 ["Issuer","Émetteur."],
 ["Joint account","Compte à plusieurs titulaires ; chacun peut donner des ordres."],
 ["Joint and several liability","Responsabilité conjointe et solidaire."],
+["Joint-stock company","Forme ancienne de société par actions : capital divisé en actions cessibles, mais associés responsables des dettes. Citée dans la définition de person."],
 ["Judicial review","Recours devant un tribunal contre un ordre."],
+["Keogh plan","Plan de retraite des travailleurs indépendants. Enveloppe fiscale : ce n'est pas une security en soi."],
 ["Layering","Empilement d'ordres fictifs à plusieurs prix."],
 ["Ledger","Grand livre, compte."],
+["Legal age","Majorité légale. La fiche de compte doit indiquer si le client est majeur."],
+["Legal list","Liste légale : ancienne liste de placements autorisés aux trustees. L'Uniform Prudent Investor Act l'abandonne : aucun placement n'est interdit en soi."],
 ["Letter of intent","Engagement d'investir un montant sur 13 mois pour bénéficier d'un breakpoint."],
 ["Leverage","Effet de levier : acheter avec de l'argent emprunté amplifie gains et pertes."],
 ["Lien","Privilège d'un créancier sur les biens d'un débiteur ; à déclarer sur le Form U4 tant qu'il est impayé."],
+["Limited partner","Associé commanditaire : investisseur passif d'un limited partnership, responsable à hauteur de sa mise seulement."],
+["Limited partnership","Société en commandite : un general partner gère et répond des dettes sans limite ; les limited partners apportent des capitaux et ne gèrent pas. La part d'un limited partner est une security."],
+["Liquidity needs","Besoins de liquidité : part de ses avoirs que le client doit pouvoir convertir vite en espèces sans perte notable."],
 ["Loan consent agreement","Accord autorisant la firme à prêter les titres du client."],
+["Maintenance call","Appel de marge de maintien : demande de fonds quand l'equity passe sous le minimum de maintien (25 % long, 30 % short)."],
 ["Maintenance margin","Marge de maintien."],
 ["Manual exemption","Exemption pour les titres d'émetteurs décrits dans un manuel reconnu."],
 ["Margin","Achat de titres à crédit."],
 ["Margin account","Compte où la firme prête au client une partie du prix d'achat, les titres servant de garantie."],
 ["Margin call","Appel de marge."],
 ["Mark-up / mark-down","Marge du dealer à la vente / à l'achat."],
+["Market letter","Lettre de marché : commentaire périodique d'une firme sur les marchés ou des titres, envoyé à des clients. Diffusée à plus de 25 particuliers en 30 jours, c'est une retail communication."],
 ["Market maker","Teneur de marché."],
+["Marketable securities","Titres facilement négociables sur un marché."],
 ["Marking the close","Ordres en fin de séance pour influencer le cours de clôture."],
 ["Matched orders","Ordres coordonnés en sens opposés pour simuler l'activité."],
 ["Material fact","Fait important pour un investisseur raisonnable."],
 ["Material nonpublic information","Information importante et non publique."],
+["Merger","Fusion de deux sociétés."],
 ["Mid-size adviser","Adviser gérant de $25M à $100M : enregistré auprès de l'État, sauf exception."],
 ["Mini-max","Placement best efforts avec un montant minimum et un maximum."],
+["Minute books","Registres des procès-verbaux des assemblées et du conseil d'une société."],
 ["Misappropriation","Détournement d'une information confidentielle pour négocier."],
 ["Misdemeanor","Infraction mineure."],
 ["Misrepresentation","Fausse déclaration."],
+["Money market fund","Fonds monétaire : mutual fund investi en dette à très court terme, visant une valeur de part stable. C'est une security, non assurée par la FDIC ; SIPC le traite comme un titre."],
+["Multi-factor authentication","Authentification à plusieurs facteurs : un mot de passe plus un second élément (code, appareil)."],
 ["Mutual fund","Fonds ouvert (open-end investment company) : émet et rachète ses parts chaque jour à la NAV."],
+["Natural person","Personne physique, être humain (synonyme d'individual)."],
 ["Net asset value (NAV)","Valeur d'inventaire d'une part de fonds, calculée chaque jour."],
 ["Net capital","Capital net réglementaire d'un broker-dealer."],
 ["Net worth","Actif net."],
@@ -4128,77 +4202,120 @@ const GLOSS=[
 ["No-action letter","Lettre indiquant que le régulateur n'engagera pas de poursuite."],
 ["No-load","Fonds sans frais de vente."],
 ["Non-issuer","Qui ne profite pas à l'émetteur."],
+["Non-rewriteable, non-erasable","Format d'archivage électronique qui empêche de modifier ou d'effacer un document (WORM). SEC Rule 17a-4 l'exige, ou à défaut un audit trail complet."],
+["Nonaffiliated third party","Tiers sans lien de contrôle avec la firme. Regulation S-P : avant de lui communiquer des nonpublic personal information, la firme donne au client un avis et la possibilité de refuser (opt-out)."],
 ["Nonpublic personal information","Information personnelle non publique (Regulation S-P)."],
+["Notarized","Certifié devant notaire. Aucune règle du programme n'exige une renonciation notariée du client."],
 ["Notice filing","Dépôt d'information et de frais, sans enregistrement."],
 ["NSMIA","National Securities Markets Improvement Act (1996) : répartit les compétences entre SEC et États ; crée les federal covered securities et advisers."],
 ["Offer","Tentative de céder un titre, ou sollicitation d'une offre d'achat, contre valeur."],
+["Offeror","Auteur de l'offre. Offeree : celui à qui elle est adressée."],
 ["Office of supervisory jurisdiction (OSJ)","Bureau de supervision."],
 ["Omission","Fait de taire un fait important."],
+["Open-end investment company","Nom légal du mutual fund : il émet des parts nouvelles en continu et les rachète à leur net asset value."],
 ["Opt-out","Droit de refuser le partage de ses informations."],
 ["Options Disclosure Document (ODD)","Document d'information sur les risques des options."],
 ["Order memorandum (order ticket)","Fiche d'un ordre : titre, quantité, sens, heures, caractère sollicité ou discrétionnaire."],
 ["Out of the money","Option sans valeur intrinsèque."],
-["Outside business activity","Activité rémunérée hors de la firme."],
+["Outside business activity","Toute activité rémunérée hors de la firme, ou tout poste d'employé, de dirigeant (officer), d'administrateur (director) ou d'associé d'une autre entité, même bénévole. Notification écrite préalable à la firme (FINRA Rule 3270)."],
+["Oversubscribed","Se dit d'une émission dont la demande dépasse le nombre de titres offerts."],
 ["Painting the tape","Série de transactions pour simuler l'activité."],
+["Par value","Valeur nominale d'un titre : pour une obligation, le principal remboursé à l'échéance. Ce n'est pas le prix de marché, et ce n'est pas la base de calcul d'un markup."],
+["Partnership","Société de personnes : des associés exploitent une affaire en commun. C'est une person au sens de l'USA."],
 ["Pegging","Maintenir artificiellement un cours."],
 ["Performance fee","Honoraire lié aux plus-values."],
+["Perjury","Parjure : mentir sous serment. Le témoin contraint de déposer est protégé contre l'usage de son témoignage, sauf poursuite pour perjury ou contempt."],
 ["Person","Personne au sens de la loi : individu ou entité."],
+["Phishing","Hameçonnage : faux message visant à obtenir des identifiants ou un virement."],
 ["Place of business","Établissement, bureau."],
 ["Pledge","Nantissement."],
 ["Pledgee","Créancier nanti."],
+["Power of attorney","Procuration : écrit par lequel une personne en autorise une autre à agir en son nom. Dans un compte de titres, elle prend la forme d'une trading authorization. Pour un adviser, une procuration générale vaut custody."],
 ["Pre-organization certificate","Certificat de souscription avant la constitution de la société."],
+["Predispute arbitration clause","Clause d'arbitrage signée avant tout litige, dans le contrat de compte : le client accepte l'arbitrage FINRA au lieu du tribunal. Elle doit être mise en évidence."],
 ["Preferred stock","Action de préférence : dividende fixe prioritaire, en général sans droit de vote."],
 ["Preliminary prospectus (red herring)","Prospectus provisoire."],
 ["Premium","Prime d'une option."],
+["Prevailing market price","Prix de marché du moment, base de calcul d'un markup ; le coût contemporain du dealer en est le meilleur indice."],
 ["Primary market","Marché des émissions nouvelles : le produit va à l'émetteur."],
 ["Principal","Firme agissant pour son propre compte ; aussi : superviseur enregistré ; aussi : capital d'une obligation."],
+["Principal office","Siège, bureau principal de la firme. Pour un adviser d'État, c'est l'État de son principal office qui fixe les exigences de registres et de capital."],
+["Privacy notice","Avis de confidentialité (Regulation S-P) : dit au client quelles informations la firme collecte et avec qui elle les partage. Initial à l'entrée en relation, puis annuel sauf exception."],
 ["Private placement","Placement privé."],
 ["Private placement memorandum (PPM)","Document d'information d'un placement privé, rédigé par l'émetteur, sans examen d'un régulateur."],
 ["Private securities transaction","Transaction sur titres hors du cadre de l'emploi dans la firme."],
+["Pro rata","Au prorata : en proportion de la part de chacun."],
+["Promissory note","Billet à ordre : promesse écrite de payer une somme à une date donnée. Une note est en principe une security."],
 ["Promptly","Sans délai."],
 ["Prospectus","Document d'offre."],
 ["Protective put","Achat d'un put pour protéger des actions détenues."],
+["Public interest","Intérêt public : seconde condition, avec un motif légal, de tout ordre de refus, de suspension ou de révocation."],
 ["Public offering price (POP)","Prix payé pour une part de fonds : NAV plus frais d'entrée."],
 ["Pump and dump","Faire monter un cours par de fausses affirmations, puis vendre."],
+["Punitive damages","Dommages-intérêts punitifs, au-delà de la réparation du préjudice. L'action civile de l'USA n'en prévoit pas."],
 ["Put","Option de vente."],
 ["Qualification","Enregistrement complet d'un titre auprès de l'État."],
 ["Qualified client","Client pouvant payer un performance fee."],
 ["Qualified custodian","Dépositaire qualifié : banque, broker-dealer."],
 ["Qualified individual","Personne tenue de signaler l'exploitation d'un adulte vulnérable."],
+["Qualified purchaser","Acheteur qualifié : catégorie d'investisseurs très fortunés ou institutionnels que la loi fédérale charge la SEC de définir (Securities Act § 18(b)(3)). Les ventes à ces acheteurs portent sur des federal covered securities. À ne pas confondre avec accredited investor ni qualified client."],
 ["Quantitative suitability","Caractère non excessif d'une série de transactions."],
+["Real estate","Immobilier. Détenu en direct, ce n'est pas une security."],
+["Reasonable grounds","Motifs raisonnables : base sérieuse et vérifiée d'une recommandation ou d'une conviction."],
 ["Reasonable-basis suitability","Fondement raisonnable d'une recommandation pour au moins certains investisseurs."],
+["Rebate","Ristourne : restitution d'une partie d'une commission ou d'un prix."],
 ["Receiver","Administrateur judiciaire."],
 ["Red flags","Signaux d'alerte de vol d'identité."],
 ["Redemption","Rachat de ses parts par un fonds, à la NAV."],
 ["Registered Options Principal","Principal habilité à approuver les comptes d'options."],
 ["Registered representative","Terme FINRA pour le vendeur individuel d'un broker-dealer ; l'agent du droit des États."],
+["Registrant","Personne enregistrée (broker-dealer, agent, adviser, IAR) ou, pour un titre, celui qui a déposé la demande."],
 ["Registration statement","Déclaration d'enregistrement."],
 ["Regulation Best Interest","Norme de conduite des BD envers les particuliers."],
 ["Regulation D","Exemptions fédérales pour les placements privés."],
 ["Regulation S-P","Règlement de la SEC sur la confidentialité des données des clients."],
 ["Regulation T","Règlement de la Fed sur le crédit consenti par les broker-dealers."],
 ["Rehypothecation","Renantissement par la firme des titres nantis par le client."],
+["Remuneration","Rémunération, sous toute forme : commission, markup, honoraires, prime."],
+["Reprimand","Blâme, réprimande."],
+["Rescind","Annuler une vente en remettant les parties dans leur état initial ; voir Rescission."],
 ["Rescission","Annulation de la vente avec restitution du prix."],
+["Research report","Analyse écrite d'un titre ou d'un émetteur, qui donne de quoi fonder une décision d'investissement. Entre dans le safe harbor des soft dollars."],
 ["Restitution","Restitution."],
-["Restricted securities","Titres à revente limitée."],
+["Restricted list","Liste, diffusée dans la firme, des titres sur lesquels la firme et ses employés ne peuvent plus négocier ni recommander."],
+["Restricted securities","Titres acquis hors offre publique (placement privé) : ils ne peuvent pas être revendus librement au public avant un délai de détention."],
 ["Retail communication","Communication à plus de 25 investisseurs particuliers sur 30 jours."],
 ["Retail customer","Client particulier."],
+["Revenue bond","Obligation municipale remboursée par les seules recettes d'un ouvrage (péage, eau, aéroport). Exempt security."],
 ["Revenue sharing","Partage de revenus versé par un fonds au distributeur."],
 ["Reverse churning","Compte peu actif placé dans un programme à honoraire global (wrap fee) : le client paie pour des transactions qu'il ne fait pas."],
 ["Revoke","Révoquer un enregistrement."],
 ["Right (subscription right)","Droit de courte durée donné aux actionnaires existants pour souscrire à une nouvelle émission."],
 ["Rights of accumulation","Droit de cumuler ses achats pour atteindre un breakpoint."],
+["Risk tolerance","Tolérance au risque : capacité et volonté du client d'accepter une perte pour espérer un gain."],
+["Riskless principal transaction","La firme, ayant reçu l'ordre d'un client, achète le titre pour son propre compte et le lui revend aussitôt : elle agit en principal sans prendre de risque de marché."],
+["Rollover","Transfert des avoirs d'un plan de retraite vers un autre (par exemple d'un 401(k) vers un IRA). Le recommander est une recommandation soumise à Reg BI."],
+["Roth IRA","Compte de retraite individuel alimenté par des versements déjà imposés ; les retraits sont ensuite libres d'impôt. Qualité distincte de l'IRA ordinaire pour SIPC."],
 ["Safe harbor","Régime de protection : conduite réputée conforme si les conditions sont remplies."],
 ["Safeguards rule","Règle de protection des informations des clients (Regulation S-P)."],
+["Safekeeping","Conservation de titres pour le compte d'un client. Elle revient à la firme, jamais à l'agent personnellement."],
 ["Sale","Vente, ou toute cession d'un titre contre valeur."],
+["Sales assistant","Assistant commercial d'un agent. S'il prend des ordres ou sollicite, il doit être enregistré comme agent."],
+["Sales charge","Synonyme de sales load : frais de vente d'un fonds."],
+["Sales literature","Documentation commerciale remise aux investisseurs. L'Administrator peut en exiger le dépôt pour un titre enregistré."],
 ["Sales load","Frais de vente d'un fonds, à l'entrée (front-end) ou à la sortie (back-end, CDSC)."],
+["Savings institution","Établissement d'épargne (savings and loan) : assimilé à une banque par l'USA."],
+["Secondary distribution","Vente au public de titres déjà émis, par un gros actionnaire et non par l'émetteur : le produit va au vendeur. La demande d'enregistrement peut être déposée par l'issuer, par le détenteur ou par un broker-dealer enregistré."],
 ["Secondary market","Marché où les investisseurs s'échangent des titres déjà émis ; l'émetteur ne reçoit rien."],
 ["Security","Titre, valeur mobilière."],
+["Self-directed","Se dit d'un compte ou d'un plan de retraite dont le titulaire choisit lui-même les placements."],
+["Self-incrimination","Fait de s'accuser soi-même. Un témoin ne peut pas l'invoquer pour refuser de déposer devant l'Administrator ; en échange, son témoignage contraint ne peut pas servir à le poursuivre."],
 ["Self-regulatory organization (SRO)","Organisme d'autorégulation."],
 ["Selling away","Vente hors des livres de la firme."],
 ["Selling dividends","Inciter à acheter un fonds juste avant un dividende."],
 ["Selling group","Groupe de placement."],
 ["Separate capacity","Qualité distincte du titulaire de compte, couverte séparément par SIPC."],
+["Shell company","Société coquille : sans activité réelle ni actifs significatifs. Exclue de la manual exemption."],
 ["Short sale","Vente à découvert : vendre des titres empruntés en espérant les racheter moins cher ; perte potentielle illimitée."],
 ["SIPC","Organisme protégeant les clients d'un broker-dealer défaillant."],
 ["Soft dollars","Recherche et services reçus en contrepartie de commissions de courtage."],
@@ -4214,21 +4331,31 @@ const GLOSS=[
 ["Standby commission","Commission versée à un underwriter qui s'engage à prendre les titres non souscrits."],
 ["Statute of limitations","Délai de prescription."],
 ["Statutory disqualification","Disqualification prévue par la loi."],
+["Stay","Sursis à l'exécution d'un ordre. Le recours en justice ne suspend pas automatiquement l'ordre de l'Administrator ; seul le tribunal peut l'accorder."],
 ["Stock dividend","Dividende payé en actions nouvelles ; pas une sale."],
 ["Stock power","Document signé permettant de transférer un certificat d'actions ; l'agent n'en garde jamais."],
 ["Stop order","Ordre refusant, suspendant ou révoquant l'enregistrement d'un titre."],
 ["Strike price","Prix d'exercice."],
 ["Subpoena","Assignation à comparaître ou à produire des documents."],
+["Successor firm","Firme qui succède à une autre (changement de forme juridique, fusion). Elle dépose une demande et son enregistrement vaut pour le reste de l'année, sans nouveaux frais."],
 ["Suitability","Adéquation au client."],
+["Summarily","Sans audience préalable. L'Administrator peut suspendre ou reporter summarily, sous réserve du droit à une audience rapide."],
 ["Summary order","Ordre sommaire, pris sans audience préalable."],
+["Supervised person","Toute personne (associé, dirigeant, employé) qui fournit du conseil pour le compte d'un adviser et sous son contrôle. Le brochure supplement (Form ADV Part 2B) la décrit."],
 ["Surety bond","Cautionnement."],
 ["Suspend","Suspendre un enregistrement."],
 ["Switching","Changement de fonds sans justification."],
 ["Syndicate","Groupe d'underwriters réunis pour une émission, dirigé par un managing underwriter."],
+["Takeover","Prise de contrôle d'une société par une autre."],
+["Tax status","Situation fiscale du client (tranche d'imposition, type de compte)."],
 ["Tender","Remise du titre lors d'une rescission."],
+["Term life insurance","Assurance décès temporaire : couvre une durée fixée, sans valeur de rachat. Pas une security."],
 ["Test Enrollment Services System (TESS)","Système FINRA par lequel un candidat sans firme s'inscrit à la Series 63."],
 ["Testimonial","Témoignage."],
+["Thinly traded","Se dit d'un titre peu liquide, qui s'échange rarement et en faibles volumes ; son cours est plus facile à manipuler."],
+["Ticker symbol","Code boursier d'un titre."],
 ["Time decay","Érosion de la valeur temps d'une option à l'approche de l'échéance."],
+["Time horizon","Horizon de placement : durée pendant laquelle le client prévoit de laisser son argent investi avant d'en avoir besoin."],
 ["Time value","Valeur temps d'une option : la part de la prime au-delà de la valeur intrinsèque ; elle augmente avec la durée restante et la volatilité."],
 ["Tippee","Personne qui reçoit une information privilégiée."],
 ["Tipper","Personne qui transmet une information privilégiée."],
@@ -4236,22 +4363,35 @@ const GLOSS=[
 ["Trading authorization","Procuration de négociation."],
 ["Treasury stock","Actions rachetées et détenues par la société émettrice ; c'est une security."],
 ["Trust","Patrimoine confié à un trustee, qui le gère pour des bénéficiaires."],
+["Trust company","Société fiduciaire : établissement autorisé à agir comme trustee ; l'USA la traite comme une banque."],
 ["Trusted contact person","Personne de confiance désignée par le client."],
 ["Trustee","Fiduciaire d'un trust."],
 ["Turnover rate","Total des achats d'un an divisé par la valeur moyenne du compte ; indice de churning."],
 ["Unauthorized trading","Transaction sans autorisation du client."],
 ["Uncovered (naked)","À découvert : sans détenir le sous-jacent."],
 ["Underwriter","Preneur ferme, placeur."],
+["Underwriting discount","Écart entre le prix payé à l'émetteur par les underwriters et le prix d'offre au public : c'est leur rémunération (aussi appelé spread)."],
+["Unincorporated organization","Organisation sans personnalité morale ; c'est une person au sens de l'USA."],
+["Unit investment trust (UIT)","Fonds enregistré à portefeuille fixe, non géré après sa constitution, qui émet des parts rachetables. Federal covered security."],
+["Unjustifiable","Injustifiable, sans motif valable (par exemple un retard de paiement ou de livraison)."],
 ["Unsolicited order","Ordre donné par le client sans recommandation."],
+["Vacate","Annuler un ordre. L'Administrator peut vacate ou modifier son ordre quand les conditions qui le justifiaient ont changé."],
 ["Variable annuity","Rente variable ; c'est une security."],
+["Void","Nul, sans effet juridique. Une clause par laquelle le client renonce à la protection de la loi est void."],
 ["Waiver","Renonciation."],
 ["Warrant","Droit de longue durée, émis par la société, d'acheter ses actions à un prix fixé ; c'est une security."],
 ["Wash trade","Transaction sans changement réel de propriétaire."],
+["Watch list","Liste confidentielle, connue du seul service de conformité, des titres dont les opérations sont surveillées sans être interdites."],
+["Whiskey warehouse receipt","Récépissé d'entrepôt représentant des fûts de whisky en vieillissement, vendu comme placement : l'acheteur compte sur le travail d'un tiers. Exemple classique d'investment contract, donc de security."],
+["Whole life insurance","Assurance vie entière, à prime et capital fixes, garantis par l'assureur. Pas une security."],
 ["Willful","Volontaire : en sachant ce que l'on fait."],
+["Wire transfer","Virement électronique de fonds."],
 ["Withdrawal","Retrait volontaire d'un enregistrement."],
 ["Wrap fee","Honoraire unique couvrant conseil et exécution."],
 ["Writer","Vendeur d'une option."],
-["Written supervisory procedures (WSP)","Procédures écrites de supervision."]
+["Written consent","Consentement donné par écrit."],
+["Written supervisory procedures (WSP)","Procédures écrites de supervision."],
+["Yield","Rendement : revenu annuel d'un titre rapporté à son prix. Current yield : rendement courant."]
 ];
 
 /* ---------- référentiel ---------- */

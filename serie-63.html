@@ -478,6 +478,7 @@ td.low{color:var(--bad);font-weight:600}
     <li>avec une attente de profit,</li>
     <li>provenant des efforts d'un tiers (promoteur, gérant).</li>
   </ol>
+  <p>Les options : la définition fédérale (Securities Act § 2(a)(1)) cite expressément les puts, calls, straddles et autres options sur un titre ou un indice de titres, ainsi que les <strong>options sur devises négociées sur une bourse nationale de valeurs</strong>. Les questions d'entraînement de la Series 63 appliquent cette lecture : une option cotée sur le franc suisse est une security ; la devise elle-même, achetée au comptant, n'en est pas une.</p>
   <p>La forme ne compte pas : des rangées d'orangers vendues avec un contrat d'exploitation, des parts de bétail ou de vignes gérés par un promoteur, sont des securities si l'investisseur reste passif. Aucun écrit n'est nécessaire.</p>
   <p>L'affaire d'origine aide à retenir le test. La société Howey possédait des orangeraies en Floride et en vendait des parcelles aux clients de son hôtel, des touristes qui ne connaissaient rien à l'agriculture. Avec chaque parcelle, elle proposait un contrat de service : elle cultivait, récoltait, vendait les oranges et reversait une part du bénéfice. Howey soutenait qu'elle vendait de la terre, pas des titres. La Cour suprême a répondu que la réalité économique compte, pas l'étiquette : les acheteurs apportaient de l'argent, leurs fonds étaient mis en commun dans une même exploitation, ils espéraient un profit, et ce profit dépendait entièrement du travail de Howey. C'était un investment contract, donc une security, qui aurait dû être enregistrée.</p>
   <div class="box ex">
@@ -1276,7 +1277,7 @@ td.low{color:var(--bad);font-weight:600}
     <li>Écrit, indiquant les services, la durée, les honoraires et leur formule de calcul, la part des honoraires prépayés remboursée en cas de résiliation, l'existence ou non d'un pouvoir discrétionnaire.</li>
     <li>Pas d'<strong>assignment</strong> (cession, y compris par transfert d'un bloc de contrôle) sans le consentement du client.</li>
     <li>Partnership : notification au client de tout changement d'associés dans un délai raisonnable. Le départ ou l'arrivée d'associés minoritaires n'est pas un assignment.</li>
-    <li>Pas de rémunération sur les plus-values, sauf <em>qualified clients</em> (chiffres au chapitre 8). Aucune clause de renonciation aux protections de la loi.</li>
+    <li>Pas de rémunération sur les plus-values, sauf <em>qualified clients</em> (chiffres au chapitre 8). Aucune clause de renonciation aux protections de la loi : une <em class="t">hedge clause</em> qui prétend dégager l'adviser de toute responsabilité ou faire renoncer le client à ses droits est nulle (USA § 410(i)) et ne le protège pas.</li>
   </ul>
   <div class="box ex">
     <div class="eyebrow">Exemple déroulé · assignment ou simple notification ?</div>
@@ -1606,6 +1607,7 @@ td.low{color:var(--bad);font-weight:600}
     <li>ventes à des <em>qualified purchasers</em> : des acheteurs très fortunés ou institutionnels, catégorie que la loi fédérale charge la SEC de définir. À ne pas confondre avec l'<em>accredited investor</em> de Regulation D ni avec le <em>qualified client</em> des honoraires de performance ;</li>
     <li>placements privés sous <em class="t">Rule 506</em> de Regulation D, et certaines autres offres exemptées au niveau fédéral.</li>
   </ul>
+  <p>À l'inverse, une action qui n'est négociée que de gré à gré (OTC, par exemple sur les marchés OTC Pink, les anciennes <em>Pink Sheets</em>) n'est pas federal covered à ce titre : sauf exemption, elle doit être enregistrée dans l'État.</p>
   <p><em class="t">Notice filing</em> (USA § 307) : ce n'est <strong>pas</strong> un enregistrement. L'Administrator peut exiger les documents déposés à la SEC, un consent to service of process et des frais. Pour la Rule 506 : notice sur <strong>Form D</strong> au plus tard <strong>15 jours après la première vente</strong> dans l'État. En cas de défaut, il peut émettre un stop order suspendant l'offre (sauf pour les titres cotés). Pour les <strong>titres cotés</strong> (et les titres de rang égal ou supérieur du même émetteur), l'État ne peut exiger ni dépôt ni frais : le notice filing concerne en pratique les fonds et la Rule 506 (Securities Act § 18(c)(2)(D)). L'antifraude reste entière.</p>
   <div class="tw"><table>
     <tr><th></th><th>Registration (titre non couvert)</th><th>Notice filing (federal covered security)</th></tr>
@@ -1631,7 +1633,7 @@ td.low{color:var(--bad);font-weight:600}
   <ul>
     <li>US government et municipal securities (États, subdivisions politiques, agences) ;</li>
     <li>Canada, provinces canadiennes et leurs subdivisions ; autres gouvernements étrangers avec relations diplomatiques, <strong>au niveau national seulement</strong> ;</li>
-    <li>banks, savings institutions, trust companies ; savings and loan associations ; credit unions ;</li>
+    <li>banks, savings institutions, trust companies ; savings and loan associations ; credit unions. C'est la banque elle-même qui est visée : les titres de sa société mère, la <em class="t">bank holding company</em>, ne sont pas exemptés à ce titre ;</li>
     <li>compagnies d'assurance (leurs actions et obligations, <strong>pas</strong> les variable annuities) ;</li>
     <li>railroads, common carriers, public utilities dont les tarifs ou les émissions sont régulés ;</li>
     <li>titres cotés sur les grandes bourses, et titres de rang égal ou supérieur du même émetteur (en pratique, ils sont désormais federal covered) ;</li>
@@ -2629,7 +2631,7 @@ td.low{color:var(--bad);font-weight:600}
   <p>La suitability reste la norme pour les clients qui ne sont pas des particuliers, et sa logique à trois étages structure aussi l'obligation de care de Reg BI. Chaque étage répond à une question : ce produit convient-il à quelqu'un ? convient-il à ce client ? et l'ensemble des opérations, mis bout à bout, lui convient-il ?</p>
   <ul>
     <li><strong>Reasonable-basis</strong> : après une diligence raisonnable, comprendre le produit et croire qu'il convient à au moins certains investisseurs. Recommander un produit qu'on ne comprend pas viole déjà la règle.</li>
-    <li><strong>Customer-specific</strong> : croire que la recommandation convient à <em>ce</em> client, au vu de son <em>investment profile</em> : âge, autres placements, situation et besoins financiers, statut fiscal (<em>tax status</em>), objectifs, expérience, horizon de placement (<em>time horizon</em> : la durée avant que le client ait besoin de son argent), besoins de liquidité (<em>liquidity needs</em> : ce qu'il doit pouvoir récupérer vite en espèces), tolérance au risque (<em>risk tolerance</em>).</li>
+    <li><strong>Customer-specific</strong> : une <em class="t">blanket recommendation</em>, la même recommandation envoyée à tous les clients sans regarder leur situation, viole cette obligation. Il faut croire que la recommandation convient à <em>ce</em> client, au vu de son <em>investment profile</em> : âge, autres placements, situation et besoins financiers, statut fiscal (<em>tax status</em>), objectifs, expérience, horizon de placement (<em>time horizon</em> : la durée avant que le client ait besoin de son argent), besoins de liquidité (<em>liquidity needs</em> : ce qu'il doit pouvoir récupérer vite en espèces), tolérance au risque (<em>risk tolerance</em>).</li>
     <li><strong>Quantitative</strong> : une série de transactions, même adaptées une à une, ne doit pas être excessive. Indicateurs : <em>turnover rate</em>, <em>cost-equity ratio</em>, <em>in-and-out trading</em>.</li>
     <li>Client institutionnel : l'obligation customer-specific est satisfaite si la firme croit raisonnablement qu'il sait évaluer les risques seul et s'il déclare exercer un jugement indépendant.</li>
     <li>Côté État (NASAA 1983) : recommander sans motifs raisonnables, après une enquête raisonnable sur les <strong>objectifs, la situation financière et les besoins</strong> du client, est une pratique malhonnête.</li>

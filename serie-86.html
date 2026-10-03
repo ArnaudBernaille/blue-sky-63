@@ -372,7 +372,7 @@ td.low{color:var(--bad);font-weight:600}
     <tr><td>Taux de chômage, <em>nonfarm payrolls</em></td><td>BLS (rapport « Employment Situation », 1<sup>er</sup> vendredi du mois)</td><td>Le taux de chômage vient de l'enquête auprès des ménages ; les créations d'emplois, de l'enquête auprès des établissements.</td></tr>
     <tr><td><em class="t">Consumer confidence</em> / <em>sentiment</em></td><td>Conference Board / Université du Michigan</td><td>Moral des ménages ; annonce leurs dépenses.</td></tr>
     <tr><td>Revenu disponible, taux d'épargne</td><td>BEA</td><td><em class="t">Disposable income</em> = revenu personnel − impôts. Ce qui reste se consomme ou s'épargne.</td></tr>
-    <tr><td>ISM Manufacturing PMI</td><td>Institute for Supply Management</td><td>Enquête auprès des acheteurs : au-dessus de <strong>50</strong>, l'industrie s'étend ; en dessous, elle se contracte.</td></tr>
+    <tr><td>ISM Manufacturing PMI</td><td>Institute for Supply Management</td><td>Enquête auprès des acheteurs : au-dessus de <strong>50</strong>, l'industrie s'étend ; en dessous, elle se contracte. Les manuels et les questions d'entraînement le classent parmi les indicateurs <strong>avancés</strong> (sa composante « nouvelles commandes » figure dans l'indice avancé du Conference Board).</td></tr>
     <tr><td>Ventes au détail, mises en chantier (<em>housing starts</em>), production industrielle, taux d'utilisation des capacités</td><td>Census Bureau, Fed</td><td>Un taux d'utilisation des capacités élevé annonce de l'investissement et des tensions sur les prix.</td></tr>
   </table></div>
 
@@ -403,6 +403,7 @@ td.low{color:var(--bad);font-weight:600}
   <h2>Le dollar et l'international</h2>
   <ul>
     <li>Un <strong>dollar fort</strong> pénalise les exportateurs américains (leurs produits coûtent plus cher à l'étranger) et réduit, une fois convertis, les profits réalisés à l'étranger par les multinationales. Il favorise les importateurs et les entreprises qui achètent leurs intrants à l'étranger.</li>
+    <li>Trois expositions de change à distinguer : l'exposition de <strong>conversion</strong> (<em class="t">translation exposure</em>), quand les comptes des filiales étrangères sont convertis en dollars pour la consolidation (c'est elle qui fait dire « le dollar fort a réduit notre chiffre d'affaires publié de 5 % ») ; l'exposition de <strong>transaction</strong> (<em class="t">transaction exposure</em>), sur une vente ou un achat libellé en devise et réglé plus tard ; l'exposition <strong>économique</strong> (<em class="t">economic exposure</em>), l'effet durable du change sur la compétitivité et les flux futurs.</li>
     <li>Des taux américains plus élevés que ceux des autres pays attirent les capitaux et tendent à renforcer le dollar.</li>
     <li>La balance des paiements comprend le compte courant (commerce de biens et services, revenus) et le compte financier. Un déficit courant est financé par des entrées de capitaux.</li>
     <li>Les sujets internationaux (droits de douane, conflits, croissance chinoise, prix du pétrole) se traduisent pour l'analyste en coûts, en demande et en risque pays.</li>
@@ -547,11 +548,28 @@ td.low{color:var(--bad);font-weight:600}
 
   <h2>D'où viennent les informations</h2>
   <ul>
-    <li>Documents des sociétés : 10-K (section « Business » et facteurs de risque), présentations aux investisseurs, conférences de résultats.</li>
-    <li>Statistiques publiques (chapitre 1), associations professionnelles, cabinets d'études.</li>
-    <li>Recherche primaire : enquêtes auprès des clients et distributeurs (<em class="t">channel checks</em>), visites, experts. Prudence : l'information obtenue ne doit jamais être une information privilégiée (<em>material nonpublic information</em>) ; ce point est développé en Series 87.</li>
+    <li><strong>Recherche secondaire</strong> (<em class="t">secondary research</em>) : l'information déjà publiée par d'autres. Documents des sociétés (10-K avec sa section « Business » et ses facteurs de risque, 10-Q, 8-K, proxy, présentations aux investisseurs, transcriptions des conférences de résultats), statistiques publiques (chapitre 1), associations professionnelles, presse spécialisée, cabinets d'études.</li>
+    <li><strong>Recherche primaire</strong> (<em class="t">primary research</em>) : l'information que l'analyste collecte lui-même. Entretiens avec la direction, visites de sites (une usine qui tourne bien en dessous de sa capacité annoncée met en doute les prévisions de production), enquêtes auprès des clients, distributeurs et fournisseurs (<em class="t">channel checks</em>), experts.</li>
+    <li><strong>Fournisseurs de données</strong> : terminaux et bases comme <strong>Bloomberg</strong> (données de marché en temps réel, nouvelles et analyses sur terminal), FactSet, S&amp;P Capital IQ, LSEG (ex-Refinitiv) ; Morningstar et Value Line pour la recherche sur titres ; EDGAR, la base publique des dépôts SEC.</li>
     <li>La <em class="t">mosaic theory</em> autorise l'analyste à assembler des informations publiques et des informations non publiques <strong>non significatives</strong> pour en tirer une conclusion significative.</li>
   </ul>
+  <h3>Vérifier ce qu'on collecte</h3>
+  <ul>
+    <li>La source la plus fiable pour l'historique financier est celle qui engage juridiquement la société et que l'auditeur a vue : les <strong>10-K et 10-Q</strong>. Viennent ensuite les communiqués de résultats, puis les présentations de la direction, enfin les estimations de tiers.</li>
+    <li>Une information de la direction se recoupe avec les comptes, les pairs et la recherche primaire. Elle exige une vérification supplémentaire quand elle est <strong>nettement plus optimiste que les tendances du secteur</strong>.</li>
+    <li>Une annonce (un 8-K sur un gros contrat, par exemple) se recoupe avec d'autres sources pour en vérifier l'exactitude et en mesurer l'effet financier.</li>
+    <li>Une enquête n'est exploitable que si l'<strong>échantillon est représentatif</strong> et les <strong>questions neutres</strong> (sans orienter la réponse).</li>
+  </ul>
+  <div class="box trap">
+    <div class="eyebrow">Information privilégiée : les règles de base</div>
+    <ul>
+      <li>Une <strong>information privilégiée</strong> (<em class="t">material nonpublic information</em>, MNPI) est une information significative (elle changerait la décision d'un investisseur raisonnable) et pas encore publique. L'analyste qui en reçoit une, par exemple un projet d'acquisition, la garde <strong>confidentielle</strong>, ne négocie pas, ne la transmet à personne (ni au desk de négociation, ni aux clients) et prévient le service conformité.</li>
+      <li>Les firmes séparent les équipes qui détiennent de la MNPI (banque d'affaires) des autres (recherche, vente, négociation) par des <strong>barrières d'information</strong> (<em class="t">information barriers</em>, <em>Chinese walls</em>). Un analyste qui apprend par la banque d'affaires qu'une émission se prépare ne publie rien et ne change ni sa note ni ses prévisions tant que l'information n'est pas publique.</li>
+      <li><strong>Regulation FD</strong> (<em>Fair Disclosure</em>, SEC) interdit à l'émetteur de communiquer une information significative à certains analystes ou investisseurs seulement. Une divulgation sélective doit être rendue publique (en même temps si elle est intentionnelle, rapidement sinon). L'analyste qui reçoit une telle information ne s'en sert pas et attend la publication.</li>
+      <li>Une enquête de terrain ne doit jamais acheter une information confidentielle : <strong>payer un fournisseur</strong> pour obtenir les chiffres de ventes d'un client est interdit. Demander des tendances générales et agréger plusieurs sources est permis.</li>
+      <li>Ces règles sont détaillées dans la Series 87 (FINRA Rule 2241, Regulation FD, Regulation AC), mais des questions d'entraînement de la Series 86 les testent aussi.</li>
+    </ul>
+  </div>
 
   <div class="box case">
     <div class="eyebrow">Cas pratiques · cyclique ou séculaire ?</div>
@@ -590,7 +608,7 @@ td.low{color:var(--bad);font-weight:600}
     <tr><th>Document</th><th>Contenu</th><th>Délai de dépôt</th></tr>
     <tr><td><em class="t">Form 10-K</em></td><td>Rapport annuel complet : activité, facteurs de risque, MD&amp;A, états financiers <strong>audités</strong> et notes</td><td class="num">60, 75 ou 90 jours après la clôture (grands, moyens, petits émetteurs)</td></tr>
     <tr><td><em class="t">Form 10-Q</em></td><td>Rapport trimestriel, états financiers <strong>non audités</strong> (revus par l'auditeur) ; trois par an, le 4<sup>e</sup> trimestre étant couvert par le 10-K</td><td class="num">40 ou 45 jours</td></tr>
-    <tr><td><em class="t">Form 8-K</em></td><td>Événement important : résultats, acquisition, départ d'un dirigeant, changement d'auditeur, faillite</td><td class="num">4 jours ouvrés</td></tr>
+    <tr><td><em class="t">Form 8-K</em></td><td>Événement important : résultats, acquisition ou cession significative, changement de contrôle, départ d'un dirigeant, changement d'auditeur, faillite</td><td class="num">4 jours ouvrés</td></tr>
     <tr><td><em class="t">Proxy statement</em> (DEF 14A)</td><td>Convocation à l'assemblée : élection des administrateurs, rémunération des dirigeants, transactions avec des parties liées, propositions d'actionnaires</td><td>Avant l'assemblée</td></tr>
     <tr><td><em class="t">Form 4</em></td><td>Achats et ventes des dirigeants, administrateurs et actionnaires de plus de 10 %</td><td class="num">2 jours ouvrés</td></tr>
     <tr><td><em class="t">Schedule 13D</em> / <em class="t">13G</em></td><td>Franchissement de 5 % du capital : 13D si l'investisseur veut influencer la société, 13G s'il est passif</td><td>Chapitre 9</td></tr>
@@ -773,7 +791,7 @@ td.low{color:var(--bad);font-weight:600}
 
   <h2>Les impôts</h2>
   <ul>
-    <li><strong>Taux effectif</strong> (<em class="t">effective tax rate</em>) = charge d'impôt ÷ résultat avant impôt. Le taux fédéral légal est de <strong>21 %</strong> depuis 2018, auquel s'ajoutent les impôts des États et étrangers. Un taux effectif très inférieur au taux légal vient de pays à faible fiscalité, de crédits d'impôt ou de déficits reportables : l'analyste se demande s'il durera.</li>
+    <li><strong>Taux effectif</strong> (<em class="t">effective tax rate</em>) = charge d'impôt ÷ résultat avant impôt. Le taux fédéral légal est de <strong>21 %</strong> depuis 2018, auquel s'ajoutent les impôts des États et étrangers. Un taux effectif très inférieur au taux légal vient de pays à faible fiscalité, de crédits d'impôt ou de déficits reportables : l'analyste se demande s'il durera. Ce qui fait durablement différer le taux effectif du taux légal, ce sont les <strong>différences permanentes</strong> (<em class="t">permanent differences</em> : crédits d'impôt, charges non déductibles, produits exonérés) et les écarts de taux entre pays. Les <strong>différences temporaires</strong> (<em>temporary differences</em>), elles, créent des impôts différés et se retournent.</li>
     <li>Les règles fiscales et comptables diffèrent. Un <strong>impôt différé passif</strong> (<em class="t">deferred tax liability</em>) naît quand l'impôt payé est inférieur à l'impôt comptable, typiquement avec un amortissement accéléré pour l'impôt et linéaire dans les comptes : l'impôt est reporté, pas supprimé.</li>
     <li>Un <strong>impôt différé actif</strong> (<em class="t">deferred tax asset</em>) naît quand l'impôt payé d'avance dépasse l'impôt comptable : déficits reportables (<em>net operating loss carryforwards</em>), provisions non encore déductibles. S'il est plus probable qu'improbable (<em>more likely than not</em>) qu'une partie ne soit jamais récupérée, faute de bénéfices futurs suffisants, on constitue une <em class="t">valuation allowance</em>, qui réduit le résultat.</li>
   </ul>
@@ -781,7 +799,7 @@ td.low{color:var(--bad);font-weight:600}
   <h2>Fusions, acquisitions et restructurations</h2>
   <ul>
     <li>En <strong>acquisition</strong>, l'acquéreur réévalue à leur juste valeur les actifs et passifs de la cible ; l'excédent du prix payé est le <em class="t">goodwill</em>. En US GAAP, le goodwill d'une société cotée n'est <strong>pas amorti</strong> ; il est testé au moins une fois par an et déprécié si besoin.</li>
-    <li>Participation de plus de 50 % : <strong>consolidation</strong> intégrale, la part des autres actionnaires figurant en intérêts minoritaires (<em class="t">noncontrolling interest</em>). Entre 20 et 50 % (influence notable) : <strong>mise en équivalence</strong> (<em class="t">equity method</em>), une seule ligne de résultat. Moins de 20 % : juste valeur.</li>
+    <li>Participation de plus de 50 % : <strong>consolidation</strong> intégrale, la part des autres actionnaires figurant en intérêts minoritaires (<em class="t">noncontrolling interest</em>). Les opérations entre la société mère et ses filiales (ventes, prêts, dividendes internes) sont <strong>éliminées</strong> en consolidation, pour ne pas compter deux fois les mêmes produits et charges. Entre 20 et 50 % (influence notable) : <strong>mise en équivalence</strong> (<em class="t">equity method</em>), une seule ligne de résultat. Moins de 20 % : juste valeur.</li>
     <li>Les <strong>cessions</strong> d'activités sont présentées en activités abandonnées (<em class="t">discontinued operations</em>), séparément : l'analyste les exclut des prévisions.</li>
     <li>Les <strong>restructurations</strong> (fermetures, licenciements) sont des charges présentées comme exceptionnelles. Une société qui en annonce chaque année n'a pas de charges exceptionnelles : elle a des coûts récurrents mal classés.</li>
     <li>Une <strong>fusion</strong> crée des synergies (de coûts, plus fiables ; de revenus, plus incertaines) et souvent de la dette ; l'analyste vérifie si l'opération est relutive ou dilutive sur l'EPS (<em>accretive / dilutive</em>).</li>
@@ -799,6 +817,7 @@ td.low{color:var(--bad);font-weight:600}
   <ul>
     <li><strong>CFO ÷ résultat net</strong> : durablement inférieur à 1, il signale des bénéfices qui ne deviennent pas du cash.</li>
     <li><strong>Accruals</strong> : la part du résultat qui ne vient pas du cash. Plus elle est grande, plus le résultat est fragile.</li>
+    <li>Des <strong>plus-values ponctuelles</strong> (cession d'actif, gain exceptionnel) incluses dans le résultat d'exploitation : elles le gonflent sans se répéter. Un résultat tiré par l'activité courante est, à l'inverse, de bonne qualité.</li>
     <li>DSO et jours de stock en hausse ; provisions qui baissent alors que l'activité monte ; changement d'auditeur ou de méthode ; résultats toujours pile au-dessus du consensus.</li>
     <li><em class="t">Big bath</em> : passer d'un coup toutes les charges possibles (souvent à l'arrivée d'un nouveau dirigeant) pour flatter les années suivantes. <em class="t">Cookie jar reserves</em> : surprovisionner les bonnes années pour reprendre les provisions les mauvaises.</li>
   </ul>
@@ -951,7 +970,7 @@ td.low{color:var(--bad);font-weight:600}
     <tr><th>Ligne</th><th>Moteur habituel</th></tr>
     <tr><td>Chiffre d'affaires</td><td>Volume × prix, par segment ou par zone ; ou part de marché × taille du marché ; ou nombre de magasins × ventes par magasin</td></tr>
     <tr><td>Marge brute</td><td>% des ventes, ajusté du coût des matières, du mix produit, du levier sur les coûts fixes</td></tr>
-    <tr><td>SG&amp;A, R&amp;D</td><td>% des ventes, ou croissance propre (une partie est fixe)</td></tr>
+    <tr><td>SG&amp;A, R&amp;D</td><td>% des ventes, ou modèle <strong>semi-variable</strong> : montant fixe + % des ventes (<em class="t">semi-variable cost</em>). Certains coûts évoluent <em>par paliers</em> (<em>step costs</em>) : ils sautent quand on ouvre un site ou recrute une équipe</td></tr>
     <tr><td>Amortissements</td><td>% des immobilisations brutes ou du capex passé</td></tr>
     <tr><td>Intérêts</td><td>Taux × dette moyenne (et produits financiers sur la trésorerie)</td></tr>
     <tr><td>Impôt</td><td>Taux effectif normalisé</td></tr>
@@ -975,7 +994,7 @@ td.low{color:var(--bad);font-weight:600}
   <h2>Projeter le bilan</h2>
   <ul>
     <li><strong>Fonds de roulement</strong> : on projette les postes en jours. Créances = ventes × DSO ÷ 365 ; stocks = COGS × DIO ÷ 365 ; fournisseurs = COGS × DPO ÷ 365. Une croissance des ventes mobilise donc du BFR, qui pèse sur le cash-flow.</li>
-    <li><strong>Immobilisations</strong> : PP&amp;E de fin = début + capex − amortissements. Un capex durablement inférieur aux amortissements signale un sous-investissement (la base d'actifs vieillit).</li>
+    <li><strong>Immobilisations</strong> : PP&amp;E de fin = début + capex − amortissements. Un capex durablement inférieur aux amortissements signale un sous-investissement (la base d'actifs vieillit). Le premier moteur du capex est le <strong>taux d'utilisation des capacités</strong> : une usine qui tourne à 95 % ne peut pas absorber 10 % de croissance sans investir.</li>
     <li><strong>Capitaux propres</strong> : début + résultat net − dividendes − rachats + émissions.</li>
     <li><strong>Dette et trésorerie</strong> : l'une des deux sert de variable d'équilibrage (<em class="t">plug</em>). Si le modèle produit un excédent de cash, il s'ajoute à la trésorerie ; s'il manque du cash, le modèle tire sur une ligne de crédit (<em>revolver</em>). Comme les intérêts dépendent de la dette, qui dépend du cash, qui dépend des intérêts, le modèle est <strong>circulaire</strong> : on calcule les intérêts sur la dette moyenne, avec itération.</li>
   </ul>
@@ -997,13 +1016,14 @@ td.low{color:var(--bad);font-weight:600}
   <h2>Tester les hypothèses</h2>
   <ul>
     <li><strong>Analyse de sensibilité</strong> : faire varier une hypothèse à la fois (croissance, marge, taux d'actualisation) pour voir l'effet sur le BPA ou la valeur. Les sociétés à fort levier opérationnel ou financier sont les plus sensibles.</li>
-    <li><strong>Scénarios</strong> : un scénario central (<em>base case</em>), un optimiste (<em>bull</em>) et un pessimiste (<em>bear</em>), chacun cohérent dans toutes ses hypothèses. La valeur attendue pondère les scénarios par leur probabilité.</li>
+    <li><strong>Scénarios</strong> : un scénario central (<em>base case</em>), un optimiste (<em>bull</em>) et un pessimiste (<em>bear</em>), chacun cohérent dans toutes ses hypothèses. La valeur attendue = somme des valeurs de chaque scénario × sa probabilité. Le but est de mesurer l'<strong>éventail</strong> des valeurs possibles, pas de trouver « la » valeur exacte.</li>
+    <li><strong>Simulation de Monte Carlo</strong> : au lieu de trois scénarios, l'ordinateur tire au hasard des milliers de combinaisons d'hypothèses selon des lois de probabilité et produit une distribution des valeurs possibles.</li>
     <li><strong>Comparaison</strong> avec l'historique (le modèle prolonge-t-il une tendance ou la rompt-il ?), avec les pairs, avec la guidance et avec le consensus. Les marges exceptionnelles ont tendance à revenir vers la moyenne (<em class="t">mean reversion</em>) : la concurrence les érode.</li>
     <li><strong>Saisonnalité</strong> : un distributeur fait une grande part de ses ventes au 4<sup>e</sup> trimestre ; on compare un trimestre au même trimestre de l'année précédente (<em>year over year</em>), pas au trimestre précédent.</li>
   </ul>
 
   <h2>Les bénéfices normalisés des sociétés cycliques</h2>
-  <p>Pour une société cyclique, le bénéfice d'une seule année n'est pas représentatif. On utilise un <strong>bénéfice normalisé</strong>, soit au <strong>milieu du cycle</strong> (moyenne sur un cycle complet, marge moyenne × ventes actuelles), soit sur la <strong>tendance</strong> (droite de régression des bénéfices passés). Le chapitre 7 montre pourquoi c'est indispensable pour lire un P/E.</p>
+  <p>« Normaliser » un bénéfice, au sens général, c'est retirer les éléments non récurrents ou inhabituels (plus-values de cession, charges de restructuration, litiges ponctuels) pour isoler le bénéfice durable. Pour une société cyclique, on va plus loin, car le bénéfice d'une seule année n'est pas représentatif. On utilise un <strong>bénéfice normalisé</strong>, soit au <strong>milieu du cycle</strong> (moyenne sur un cycle complet, marge moyenne × ventes actuelles), soit sur la <strong>tendance</strong> (droite de régression des bénéfices passés). Le chapitre 7 montre pourquoi c'est indispensable pour lire un P/E.</p>
 
   <h2>Suivre et ajuster le modèle</h2>
   <p>Le modèle vit : après chaque publication trimestrielle, chaque événement (acquisition, nouvelle guidance, changement de taux), l'analyste met à jour ses chiffres, explique l'écart entre sa prévision et le réel, et décide si la thèse tient. Un écart dû à un facteur ponctuel (météo, change) ne change pas la thèse ; un écart dû à une perte de parts de marché la change. Une modification de prévision ou d'objectif de cours donne lieu à une nouvelle note de recherche (son régime réglementaire relève de la Series 87).</p>
@@ -1034,6 +1054,7 @@ td.low{color:var(--bad);font-weight:600}
   <h2>Equity value et enterprise value</h2>
   <p>La <strong>valeur des capitaux propres</strong> (<em class="t">equity value</em>, <em>market capitalization</em>) = cours × nombre d'actions diluées. Elle revient aux seuls actionnaires.</p>
   <p class="num" style="font-size:16px">Enterprise value (EV) = capitalisation + dette + actions préférentielles + intérêts minoritaires − trésorerie et équivalents</p>
+  <p>En théorie, la dette se prend à sa <strong>valeur de marché</strong> (une obligation cotée à 90 % du nominal compte pour 90 %) ; en pratique, on utilise souvent sa valeur comptable, proche de la valeur de marché quand le crédit est sain. Lis bien l'énoncé : s'il donne le cours de la dette, c'est qu'il attend sans doute la valeur de marché. Pour passer à une valeur par action, on divise par le nombre d'actions <strong>diluées</strong>.</p>
   <p>L'<strong>EV</strong> est la valeur de l'activité pour <strong>tous</strong> les apporteurs de capital : c'est, en gros, ce que coûterait le rachat de toute l'entreprise, en reprenant sa dette et en récupérant sa trésorerie. On retranche la trésorerie parce que l'acheteur la récupère ; on ajoute les minoritaires parce que l'EBITDA consolidé inclut 100 % des filiales.</p>
   <div class="box trap">
     <div class="eyebrow">La règle de cohérence</div>
@@ -1085,7 +1106,7 @@ td.low{color:var(--bad);font-weight:600}
   <h2>Relative valuation : par rapport à l'histoire et aux pairs</h2>
   <ul>
     <li><strong>Par rapport à l'historique</strong> : la société se traite-t-elle au-dessus ou en dessous de son P/E moyen des dix dernières années ? On trace souvent des bandes à ± 1 écart-type. Un multiple bas n'est une opportunité que si les fondamentaux n'ont pas changé.</li>
-    <li><strong>Par rapport aux pairs</strong> : on choisit des sociétés comparables (même activité, même taille, même croissance, même risque) et on applique leur multiple médian. Une <strong>prime</strong> ou une <strong>décote</strong> se justifie par un écart de croissance, de rentabilité (ROIC), de risque ou de qualité de gestion.</li>
+    <li><strong>Par rapport aux pairs</strong> (<em class="t">comparable company analysis</em>) : on choisit des sociétés comparables (même secteur et même modèle économique d'abord, puis croissance, risque, taille, rentabilité ; la localisation du siège compte peu), on retraite leurs chiffres des éléments exceptionnels de la même façon, et on applique leur multiple médian. Une <strong>prime</strong> ou une <strong>décote</strong> se justifie par un écart de croissance, de rentabilité (ROIC), de risque ou de qualité de gestion.</li>
     <li><strong>Par rapport au marché</strong> : P/E de la société ÷ P/E du S&amp;P 500 (P/E relatif).</li>
   </ul>
 
@@ -1140,11 +1161,13 @@ td.low{color:var(--bad);font-weight:600}
     <li><strong>β</strong> (bêta) : la sensibilité de l'action au marché, pente de la régression de ses rendements sur ceux de l'indice. β = 1 : bouge comme le marché ; β = 1,5 : amplifie de 50 % ; β &lt; 1 : défensif. Le bêta ne mesure que le risque <strong>systématique</strong> (de marché) : le risque spécifique se diversifie et n'est pas rémunéré.</li>
   </ul>
   <p>Exemple : r<sub>f</sub> 4 %, prime de risque 5,5 %, β 1,2 → r<sub>e</sub> = 4 % + 1,2 × 5,5 % = <strong>10,6 %</strong>.</p>
+  <p>Le CAPM est la méthode la plus courante. Il existe deux alternatives : le rendement des obligations de la société plus une prime de risque (<em class="t">bond yield plus risk premium</em>), et le rendement implicite du modèle de Gordon (D<sub>1</sub> ÷ P<sub>0</sub> + g).</p>
 
   <h2>Le coût moyen pondéré du capital (WACC)</h2>
   <p class="num" style="font-size:16px">WACC = E/V × r<sub>e</sub> + D/V × r<sub>d</sub> × (1 − t)</p>
   <ul>
     <li>E et D sont les valeurs <strong>de marché</strong> des fonds propres et de la dette ; V = E + D. S'il y a des préférentielles, on ajoute leur poids × leur coût.</li>
+    <li>Le coût de la dette avant impôt est le taux auquel la société emprunterait <strong>aujourd'hui</strong> : le <strong>rendement actuariel</strong> (<em class="t">yield to maturity</em>) de sa dette existante, pas le coupon fixé à l'émission.</li>
     <li>Le coût de la dette est pris <strong>après impôt</strong> parce que les intérêts sont déductibles : 6 % avant impôt avec 25 % d'impôt coûtent 4,5 %.</li>
     <li>Le coût de la dette est toujours inférieur au coût des fonds propres (le prêteur passe avant l'actionnaire). Mais ajouter de la dette n'abaisse pas indéfiniment le WACC : au-delà d'un certain niveau, le risque de faillite fait monter r<sub>e</sub> et r<sub>d</sub>.</li>
   </ul>
@@ -1183,7 +1206,7 @@ td.low{color:var(--bad);font-weight:600}
   </div>
 
   <h2>Le DCF : actualiser les free cash flows</h2>
-  <p>Le <em class="t">discounted cash flow</em> se fait en deux versions, qu'il ne faut jamais mélanger :</p>
+  <p>Le <em class="t">discounted cash flow</em> se fait en deux versions, qu'il ne faut jamais mélanger. Le FCFF est aussi appelé <em class="t">unlevered free cash flow</em> : il est calculé <strong>avant</strong> intérêts (on applique l'impôt à l'EBIT, on ne retranche pas les intérêts), parce qu'il revient à tous les apporteurs de capital. Le choix d'une méthode d'amortissement comptable ne change pas le FCFF : seul l'amortissement fiscal, par l'impôt payé, a un effet sur le cash.</p>
   <div class="tw"><table>
     <tr><th></th><th>FCFF (à l'entreprise)</th><th>FCFE (aux actionnaires)</th></tr>
     <tr><td>Flux</td><td class="num">EBIT × (1 − t) + D&amp;A − capex − ΔBFR</td><td class="num">FCFF − intérêts × (1 − t) + emprunts nets</td></tr>
@@ -1217,7 +1240,8 @@ td.low{color:var(--bad);font-weight:600}
   <h2>La somme des parties et la valeur pour un acquéreur</h2>
   <ul>
     <li>La <strong>somme des parties</strong> (<em class="t">sum of the parts</em>, SOTP) valorise chaque division séparément, avec le multiple de ses propres pairs, puis additionne, retire la dette nette et les coûts centraux capitalisés. Elle convient aux conglomérats. Si la SOTP dépasse nettement la capitalisation, le marché applique une <em class="t">conglomerate discount</em> ; une scission (<em>spin-off</em>) ou une cession peut la réduire, c'est un catalyseur.</li>
-    <li>La <strong>valeur de private equity</strong> (analyse LBO) estime ce qu'un fonds de rachat pourrait payer : il finance l'achat avec beaucoup de dette, rembourse avec les flux, revend au bout de 3 à 7 ans et exige un taux de rendement interne de l'ordre de 20 %. Le prix maximal compatible avec ce rendement donne un <strong>plancher</strong> de valorisation : si l'action cote en dessous, un rachat devient plausible.</li>
+    <li>La <strong>valeur de private equity</strong> (analyse LBO) estime ce qu'un fonds de rachat pourrait payer : il finance l'achat avec beaucoup de dette, rembourse avec les flux, revend au bout de 3 à 7 ans et exige un taux de rendement interne de l'ordre de 20 %. Ce TRI dépend surtout du <strong>prix d'achat</strong>, du <strong>multiple de sortie</strong>, du <strong>remboursement de la dette</strong> et de la <strong>performance opérationnelle</strong>. Le prix maximal compatible avec ce rendement donne un <strong>plancher</strong> de valorisation : si l'action cote en dessous, un rachat devient plausible.</li>
+    <li>Les <strong>transactions comparables</strong> (<em class="t">precedent transactions</em>) appliquent les multiples (le plus souvent EV/EBITDA) payés lors de rachats récents de sociétés comparables. Ces multiples incluent une prime de contrôle : ils sont en général <strong>plus élevés</strong> que ceux des sociétés cotées comparables. La prime se mesure par rapport au <strong>cours non affecté</strong> (<em class="t">unaffected price</em>), le cours avant toute rumeur d'offre. Exemple : une action cote 50 $, déjà 20 % au-dessus de son cours non affecté ; celui-ci vaut 50 ÷ 1,2 = 41,67 $ ; une prime de 30 % donne 41,67 × 1,3 = 54,17 $.</li>
     <li>La <strong>valeur de contrôle</strong> (<em class="t">private market value</em>, valeur en cas d'offre) inclut une <strong>prime de contrôle</strong>, souvent de 20 à 40 % au-dessus du cours, que l'acquéreur paie pour les synergies et le pouvoir de décider.</li>
   </ul>
   <div class="box ex">
@@ -1229,6 +1253,12 @@ td.low{color:var(--bad);font-weight:600}
     </ol>
   </div>
 
+  <h2>Deux autres approches</h2>
+  <ul>
+    <li><strong>Valorisation par l'actif</strong> (<em class="t">asset-based valuation</em>, <em>net asset value</em>) : on réévalue chaque actif à sa valeur de marché et on retire les dettes. Elle convient aux sociétés dont la valeur tient à des actifs identifiables et cessibles : <strong>immobilier</strong> (REIT), <strong>ressources naturelles</strong> (réserves de pétrole, mines), holdings. La <em>valeur de liquidation</em> en est la version la plus prudente.</li>
+    <li><strong>Options réelles</strong> (<em class="t">real options</em>) : une société qui a le <strong>droit, sans l'obligation</strong>, d'investir plus tard selon les conditions (développer un gisement si le prix monte, lancer une phase 2 si l'essai réussit) possède une option qui a de la valeur. Le DCF classique, qui suppose un scénario figé, la sous-estime.</li>
+  </ul>
+
   <h2>Choisir la méthode</h2>
   <div class="tw"><table>
     <tr><th>Situation</th><th>Méthode privilégiée</th></tr>
@@ -1239,6 +1269,8 @@ td.low{color:var(--bad);font-weight:600}
     <tr><td>Cyclique</td><td>P/E normalisé, EV/EBITDA de milieu de cycle, P/B</td></tr>
     <tr><td>Conglomérat</td><td>Somme des parties</td></tr>
     <tr><td>Cible potentielle</td><td>Valeur LBO, transactions comparables avec prime de contrôle</td></tr>
+    <tr><td>Foncière, ressources naturelles, holding</td><td>Valeur des actifs (NAV)</td></tr>
+    <tr><td>Projets à options (exploration, biotech)</td><td>DCF complété par les options réelles</td></tr>
   </table></div>
 
   <div class="box keep">
@@ -1348,7 +1380,7 @@ td.low{color:var(--bad);font-weight:600}
     <li>Choisir une <strong>note</strong> selon le système de la firme (achat / neutre / vente, ou surpondérer / sous-pondérer), en fonction du potentiel, du risque et des catalyseurs.</li>
     <li>Identifier les <strong>risques pour l'objectif</strong> et les événements à surveiller. Revoir la note quand le cours atteint l'objectif ou quand la thèse change.</li>
   </ul>
-  <p>Le contenu obligatoire des rapports, les règles de diffusion et les conflits d'intérêts sont l'objet de la Series 87.</p>
+  <p>Le contenu obligatoire des rapports, les règles de diffusion et les conflits d'intérêts sont l'objet de la Series 87. Retiens au moins ceci, que des questions d'entraînement de la Series 86 testent aussi : selon <strong>Regulation AC</strong> (SEC), l'analyste certifie dans <strong>chaque rapport</strong>, au moment de sa publication, que le rapport reflète fidèlement ses opinions personnelles, et indique s'il a été rémunéré pour une recommandation précise.</p>
 
   <div class="box keep">
     <div class="eyebrow">À retenir</div>
@@ -1753,7 +1785,13 @@ const Q=[
 {"i": 199, "s": "f3", "c": 9, "x": 1, "q": "Form 13F must be filed by:", "o": ["Any investor owning more than 5% of a company", "Institutional investment managers with at least $100 million in qualifying securities, quarterly", "Company officers who trade their company's stock", "Companies announcing earnings"], "a": 1, "e": "Les gérants institutionnels qui détiennent au moins 100 M$ de titres concernés déclarent leurs positions chaque trimestre, dans les 45 jours.", "w": ["C'est le 13D ou le 13G.", "", "C'est le Form 4.", "C'est le 8-K."]},
 {"i": 200, "s": "f3", "c": 9, "x": 1, "q": "A bear market is conventionally defined as a decline from a recent peak of at least:", "o": ["5%", "10%", "20%", "50%"], "a": 2, "e": "Marché baissier : baisse d'au moins 20 % depuis le sommet. Une baisse de 10 % est une correction.", "w": ["Simple repli.", "C'est une correction.", "", "Bien au-delà du seuil conventionnel."]},
 {"i": 201, "s": "f3", "c": 9, "x": 1, "q": "A 'cup and handle' pattern is generally considered:", "o": ["A bearish reversal pattern", "A bullish continuation pattern", "A measure of market breadth", "A momentum oscillator"], "a": 1, "e": "Le cup and handle est une figure de continuation haussière.", "w": ["Ce serait la tête et épaules.", "", "La largeur se mesure par la ligne advance-decline.", "Le RSI ou le MACD sont des oscillateurs."]},
-{"i": 202, "s": "f3", "c": 9, "x": 1, "q": "A stock's short interest has risen to an unusually high level relative to its trading volume. A contrarian analyst would most likely view this as:", "o": ["Bearish, because many investors expect the price to fall", "Potentially bullish, because short sellers must eventually buy back shares", "Irrelevant to future price movements", "Evidence of insider selling"], "a": 1, "e": "Un short interest élevé représente des achats futurs obligés : lecture contrarienne haussière, avec un risque de short squeeze.", "w": ["C'est la lecture non contrarienne.", "", "Le short interest est un indicateur de sentiment suivi.", "La vente à découvert n'est pas une vente d'initié."]}
+{"i": 202, "s": "f3", "c": 9, "x": 1, "q": "A stock's short interest has risen to an unusually high level relative to its trading volume. A contrarian analyst would most likely view this as:", "o": ["Bearish, because many investors expect the price to fall", "Potentially bullish, because short sellers must eventually buy back shares", "Irrelevant to future price movements", "Evidence of insider selling"], "a": 1, "e": "Un short interest élevé représente des achats futurs obligés : lecture contrarienne haussière, avec un risque de short squeeze.", "w": ["C'est la lecture non contrarienne.", "", "Le short interest est un indicateur de sentiment suivi.", "La vente à découvert n'est pas une vente d'initié."]},
+{"i": 203, "s": "f1", "c": 2, "x": 0, "q": "A research analyst learns from the firm's investment banking department that a covered company is preparing a secondary equity offering that has not been announced. The analyst should:", "o": ["Upgrade the stock before the announcement to support the offering", "Refrain from publishing or changing research on the company until the information is public", "Share the information with institutional clients who own the stock", "Downgrade the stock to protect existing holders"], "a": 1, "e": "L'information est privilégiée (MNPI) et la barrière d'information a été franchie : l'analyste ne publie rien et ne change ni note ni prévision tant que l'information n'est pas publique.", "w": ["Ce serait utiliser une information privilégiée, et un conflit d'intérêts.", "", "Transmettre une MNPI aux clients est interdit.", "Changer la note sur la base d'une MNPI est aussi interdit."]},
+{"i": 204, "s": "f1", "c": 2, "x": 0, "q": "Interviewing a company's management and visiting its plants is an example of:", "o": ["Secondary research", "Primary research", "Technical analysis", "Quantitative screening"], "a": 1, "e": "La recherche primaire est l'information collectée par l'analyste lui-même : entretiens, visites, enquêtes.", "w": ["La recherche secondaire utilise l'information déjà publiée par d'autres.", "", "L'analyse technique étudie les prix et les volumes.", "Un filtre quantitatif trie des bases de données."]},
+{"i": 205, "s": "f1", "c": 1, "x": 0, "q": "A U.S. company reports that the stronger dollar reduced its reported revenue by 4% when its European subsidiaries' results were converted into dollars. This is an example of:", "o": ["Transaction exposure", "Translation exposure", "Economic exposure", "Interest rate exposure"], "a": 1, "e": "La conversion des comptes des filiales étrangères en dollars pour la consolidation relève de l'exposition de conversion (translation).", "w": ["L'exposition de transaction porte sur une opération libellée en devise et réglée plus tard.", "", "L'exposition économique est l'effet durable du change sur la compétitivité.", "Sans rapport avec les taux d'intérêt."]},
+{"i": 206, "s": "f3", "c": 8, "x": 0, "q": "In estimating the pre-tax cost of debt for a WACC calculation, the analyst should generally use:", "o": ["The coupon rate on the company's existing bonds", "The yield to maturity on the company's existing debt", "The federal funds rate", "The company's dividend yield"], "a": 1, "e": "Le coût de la dette est le taux auquel la société emprunterait aujourd'hui : le rendement actuariel (YTM) de sa dette, pas le coupon fixé à l'émission.", "w": ["Le coupon reflète les conditions de l'émission passée.", "", "Le taux des fed funds n'intègre pas le risque de crédit de la société.", "Le dividend yield concerne les actions."]},
+{"i": 207, "s": "f3", "c": 8, "x": 0, "q": "Valuation multiples derived from precedent transactions are typically higher than those of comparable publicly traded companies because:", "o": ["Precedent transactions use book values", "They include a control premium paid by the acquirer", "Public companies have more debt", "Precedent transactions exclude synergies"], "a": 1, "e": "L'acquéreur paie une prime de contrôle (synergies, pouvoir de décision) : les multiples de transactions dépassent ceux des sociétés cotées comparables.", "w": ["Ils reposent sur les prix payés, pas sur les valeurs comptables.", "", "Le levier n'explique pas l'écart systématique.", "Les synergies attendues expliquent au contraire une partie de la prime."]},
+{"i": 208, "s": "f3", "c": 8, "x": 0, "q": "Asset-based (net asset value) valuation is most commonly used for:", "o": ["Software companies", "Real estate and natural resource companies", "Early-stage biotechnology companies", "Consulting firms"], "a": 1, "e": "La valorisation par l'actif convient aux sociétés dont la valeur tient à des actifs identifiables et cessibles : immobilier, ressources naturelles, holdings.", "w": ["Leur valeur tient à des actifs immatériels.", "", "Leur valeur tient à des projets et des options.", "Leur valeur tient au capital humain."]}
 ];
 
 const CARDS=[
@@ -1832,7 +1870,13 @@ const CARDS=[
 [9, "RSI", "> 70 suracheté ; < 30 survendu."],
 [9, "Indicateurs contrariens", "Put/call élevé, short interest élevé : signaux haussiers pour le contrarien."],
 [9, "Days to cover", "Short interest ÷ volume quotidien moyen."],
-[9, "Sharpe", "(R − rf) ÷ écart-type."]
+[9, "Sharpe", "(R − rf) ÷ écart-type."],
+[2, "MNPI et barrières", "Information privilégiée : la garder, ne pas négocier, ne pas la transmettre, prévenir la conformité. Barrières d'information entre banque d'affaires et recherche."],
+[2, "Regulation FD", "L'émetteur ne divulgue pas sélectivement une info significative ; sinon publication. L'analyste attend la publication."],
+[1, "Expositions de change", "Translation (conversion des comptes), transaction (opération en devise), economic (compétitivité)."],
+[8, "Precedent transactions", "Multiples payés lors de rachats : prime de contrôle incluse, donc plus élevés que les comparables cotés. Prime calculée sur le cours non affecté."],
+[8, "Coût de la dette", "Rendement actuariel (YTM) de la dette existante, pas le coupon ; puis × (1 − t)."],
+[8, "NAV / options réelles", "NAV : immobilier, ressources naturelles, holdings. Options réelles : droit sans obligation d'investir plus tard."]
 ];
 
 const GLOSS=[
@@ -1849,11 +1893,14 @@ const GLOSS=[
 ["AOCI", "Accumulated other comprehensive income : autres éléments du résultat global, dans les capitaux propres."],
 ["ARPU", "Average revenue per user : revenu moyen par abonné."],
 ["Asset turnover", "Rotation de l'actif : ventes ÷ actif total."],
+["Asset-based valuation (NAV)", "Valorisation par l'actif net réévalué ; immobilier, ressources naturelles, holdings."],
 ["Backlog", "Carnet de commandes non encore livrées."],
 ["Balance sheet", "Bilan."],
 ["Basic / diluted EPS", "BPA de base / dilué (avec actions potentielles)."],
 ["Beta", "Bêta : sensibilité d'une action au marché ; mesure du risque systématique."],
 ["Big bath", "Comptabilisation massive de charges en une fois pour flatter les périodes suivantes."],
+["Bloomberg terminal", "Terminal de données de marché en temps réel, nouvelles et analyses."],
+["Bond yield plus risk premium", "Coût des fonds propres estimé par le rendement des obligations de la société + une prime."],
 ["Book value", "Valeur comptable des capitaux propres."],
 ["Book-to-bill", "Commandes reçues ÷ facturations."],
 ["Bottom-up", "Approche partant de la société pour remonter vers le secteur et l'économie."],
@@ -1869,6 +1916,7 @@ const GLOSS=[
 ["Channel stuffing", "Gonfler les ventes en poussant des stocks chez les distributeurs."],
 ["Churn", "Taux de départ des abonnés."],
 ["Combined ratio", "Ratio combiné d'un assureur : (sinistres + frais) ÷ primes."],
+["Comparable company analysis", "Valorisation par les multiples de sociétés cotées comparables."],
 ["Consensus estimate", "Moyenne des prévisions des analystes."],
 ["Control premium", "Prime de contrôle payée au-dessus du cours lors d'une acquisition."],
 ["Cost of goods sold (COGS)", "Coût des produits vendus."],
@@ -1898,6 +1946,7 @@ const GLOSS=[
 ["EBIT", "Résultat d'exploitation, avant intérêts et impôts."],
 ["EBITDA", "EBIT + dotations aux amortissements."],
 ["Economic profit (EVA)", "Profit économique : NOPAT − WACC × capital investi."],
+["EDGAR", "Base publique des dépôts déposés à la SEC."],
 ["Effective tax rate", "Taux d'impôt effectif : charge d'impôt ÷ résultat avant impôt."],
 ["Efficient market hypothesis", "Hypothèse d'efficience des marchés (faible, semi-forte, forte)."],
 ["Elasticity", "Élasticité : sensibilité d'une quantité à une variation de prix ou de revenu."],
@@ -1924,6 +1973,8 @@ const GLOSS=[
 ["HHI", "Indice Herfindahl-Hirschman de concentration."],
 ["Impairment", "Dépréciation d'un actif."],
 ["Income statement", "Compte de résultat."],
+["Information barrier", "Barrière d'information (Chinese wall) entre équipes qui détiennent de la MNPI et les autres."],
+["Intercompany elimination", "Élimination en consolidation des opérations entre sociétés du groupe."],
 ["Interest coverage", "Couverture des intérêts : EBIT ÷ intérêts."],
 ["Inventory turnover", "Rotation des stocks : COGS ÷ stock moyen."],
 ["Investment grade", "Catégorie de crédit de qualité (BBB− / Baa3 et au-dessus)."],
@@ -1935,8 +1986,10 @@ const GLOSS=[
 ["Load factor", "Taux de remplissage (aérien)."],
 ["Lockup period", "Période de blocage après une introduction en Bourse, en général 180 jours."],
 ["MACD", "Indicateur de tendance fondé sur l'écart entre deux moyennes mobiles exponentielles."],
+["Material nonpublic information (MNPI)", "Information privilégiée : significative et pas encore publique."],
 ["MD&A", "Management's Discussion and Analysis : commentaire de la direction dans le 10-K et le 10-Q."],
 ["Mean reversion", "Retour vers la moyenne."],
+["Monte Carlo simulation", "Simulation tirant au hasard des milliers de combinaisons d'hypothèses."],
 ["Mosaic theory", "Théorie de la mosaïque : assemblage d'infos publiques et non publiques non significatives."],
 ["Moving average", "Moyenne mobile."],
 ["Net debt", "Dette nette : dette − trésorerie."],
@@ -1953,12 +2006,18 @@ const GLOSS=[
 ["PBO", "Projected benefit obligation : engagement de retraite actualisé."],
 ["PCE price index", "Indice des prix des dépenses de consommation, référence de la Fed."],
 ["PEG ratio", "P/E ÷ croissance attendue."],
+["Permanent / temporary differences", "Écarts fiscaux définitifs (crédits, charges non déductibles) / qui se retournent (impôts différés)."],
+["Precedent transactions", "Transactions comparables : multiples payés lors de rachats récents, prime de contrôle incluse."],
 ["Price target", "Objectif de cours."],
 ["Pricing power", "Pouvoir de fixer les prix."],
+["Primary / secondary research", "Recherche primaire (collectée par l'analyste : entretiens, visites, enquêtes) / secondaire (déjà publiée par d'autres)."],
 ["Proxy fight", "Bataille de procurations pour le contrôle du conseil."],
 ["Proxy statement", "Document de convocation à l'assemblée (DEF 14A)."],
 ["Put/call ratio", "Rapport entre volumes d'options de vente et d'achat ; indicateur de sentiment."],
 ["Quick ratio", "Ratio de liquidité immédiate, sans les stocks."],
+["Real options", "Options réelles : droit sans obligation d'investir plus tard selon les conditions."],
+["Regulation AC", "Règle SEC : l'analyste certifie dans chaque rapport qu'il reflète ses opinions personnelles."],
+["Regulation FD", "Règle SEC interdisant la divulgation sélective d'une information significative par l'émetteur."],
 ["Regulation G", "Règle SEC sur la publication des indicateurs non GAAP."],
 ["Relative strength", "Force relative : performance d'une action par rapport à son indice."],
 ["Resistance", "Résistance : niveau où les vendeurs ont arrêté la hausse."],
@@ -1972,6 +2031,7 @@ const GLOSS=[
 ["Schedule 13D / 13G", "Déclaration de franchissement de 5 % (actif / passif)."],
 ["Secular", "Séculaire : tendance de long terme, indépendante du cycle."],
 ["Segment reporting", "Information par secteur d'activité."],
+["Semi-variable cost", "Coût semi-variable : part fixe + part proportionnelle aux ventes."],
 ["Sensitivity analysis", "Analyse de sensibilité."],
 ["SG&A", "Frais commerciaux, généraux et administratifs."],
 ["Shakeout", "Phase de consolidation d'un secteur."],
@@ -1980,6 +2040,7 @@ const GLOSS=[
 ["Short squeeze", "Hausse brutale provoquée par les rachats des vendeurs à découvert."],
 ["Staggered board", "Conseil à mandats échelonnés."],
 ["Statement of cash flows", "Tableau des flux de trésorerie."],
+["Step cost", "Coût par paliers, qui saute à certains niveaux d'activité."],
 ["Sum of the parts", "Somme des parties."],
 ["Support", "Support : niveau où les acheteurs ont arrêté la baisse."],
 ["Sustainable growth rate", "Croissance soutenable : ROE × taux de rétention."],
@@ -1988,13 +2049,17 @@ const GLOSS=[
 ["Top-down", "Approche partant de l'économie pour descendre au secteur puis à la société."],
 ["Total addressable market (TAM)", "Taille totale du marché accessible."],
 ["Trailing / forward P/E", "P/E sur bénéfices passés / prévus."],
+["Translation / transaction / economic exposure", "Exposition de change de conversion des comptes / sur une opération en devise / sur la compétitivité à long terme."],
 ["Treasury stock", "Actions autodétenues."],
 ["Treasury stock method", "Méthode du rachat d'actions pour le BPA dilué."],
+["Unaffected price", "Cours non affecté : cours avant toute rumeur d'offre, base de calcul de la prime."],
+["Unlevered free cash flow", "Autre nom du FCFF : flux avant intérêts, pour tous les apporteurs de capital."],
 ["Valuation allowance", "Provision réduisant un impôt différé actif douteux."],
 ["VIX", "Indice de volatilité implicite du S&P 500."],
 ["WACC", "Coût moyen pondéré du capital."],
 ["Working capital", "Fonds de roulement : actif courant − passif courant."],
-["Yield curve", "Courbe des taux."]
+["Yield curve", "Courbe des taux."],
+["Yield to maturity", "Rendement actuariel d'une obligation ; base du coût de la dette avant impôt."]
 ];
 
 /* ---------- référentiel ---------- */

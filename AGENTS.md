@@ -13,6 +13,18 @@ Site de préparation aux examens FINRA / NASAA, en français, une page HTML auto
 
 Chaque page de série contient le cours (chapitres), les quiz, les examens blancs, les fiches, le glossaire et la page « À retravailler ». La progression est enregistrée dans le navigateur sous la clé `bluesky<numéro>` (par exemple `bluesky86`).
 
+## Agents du projet
+
+Définis dans `.claude/agents/` :
+
+| Agent | Rôle |
+|---|---|
+| `relecteur-series` | Relecteur indépendant, en lecture seule, de n'importe quel cours (`serie-*.html`) : couverture du programme officiel, exactitude du cours, justesse de chaque corrigé et de chaque calcul. Préciser la série à relire. Son rapport est appliqué par la session qui gère le contenu. |
+| `prof-serie-63` | Rédige et corrige le cours Series 63. |
+| `controleur-serie-63` | Contrôleur historique du cours Series 63 (lecture seule). |
+
+Après toute création ou modification importante d'un cours, lancer `relecteur-series` sur cette série, puis appliquer son rapport (en vérifiant chaque point avant de le corriger).
+
 ## Règle absolue : ne jamais inventer
 
 - N'écris jamais un fait (règle, chiffre, délai, seuil, format d'examen) que tu n'as pas vérifié.

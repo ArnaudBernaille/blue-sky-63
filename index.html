@@ -189,11 +189,14 @@ td.low{color:var(--bad);font-weight:600}
   em.t,.t{white-space:normal;-webkit-box-decoration-break:clone;box-decoration-break:clone}
 }
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+.lang{align-self:flex-start;font-family:var(--mono);font-size:12px;color:var(--blue);text-decoration:none;border:1px solid var(--line);border-radius:999px;padding:3px 10px}
+.lang:hover{border-color:var(--blue)}
 </style>
 
 <div class="shell">
 <aside>
   <div class="brand">Blue Sky <span>63</span></div>
+  <a class="lang" href="en.html" hreflang="en" lang="en">English version</a>
   <div class="meter"><span id="meterTxt">0 chapitre lu sur 9</span><i><b id="meterBar"></b></i></div>
   <div class="srch"><input class="inp" id="search" type="search" placeholder="Rechercher dans le cours" aria-label="Rechercher dans le cours"><div id="searchRes" aria-live="polite"></div></div>
   <nav id="nav" aria-label="Sommaire"></nav>

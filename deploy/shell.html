@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="__LANG__">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Blue Sky</title>
+<link rel="icon" href="data:,">
+<style>
+:root{--sky:#e9f1fa;--paper:#f8fbfe;--ink:#0f2440;--muted:#52647d;--line:#c9d8ea;--blue:#1257c4}
+@media (prefers-color-scheme:dark){:root{color-scheme:dark;--sky:#0a1626;--paper:#101f35;--ink:#e4edf9;--muted:#95a8c3;--line:#243a59;--blue:#7fb0ff}}
+body{margin:0;min-height:100vh;display:grid;place-items:center;background:var(--sky);color:var(--ink);font:17px/1.5 "Segoe UI",system-ui,sans-serif;padding:0 16px;box-sizing:border-box}
+.box{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:32px 28px;max-width:380px;width:100%;text-align:center}
+h1{margin:0 0 8px;font-size:28px;letter-spacing:-.02em}
+p{margin:0 0 20px;color:var(--muted)}
+button{font:inherit;font-weight:600;background:var(--blue);color:#fff;border:0;border-radius:999px;padding:10px 22px;cursor:pointer}
+@media (prefers-color-scheme:dark){button{color:#0a1626}}
+</style>
+<div class="box">
+  <h1>Blue Sky</h1>
+  <p id="bsMsg" aria-live="polite"></p>
+  <button id="bsBtn" type="button" hidden></button>
+</div>
+<script>window.BS_BOOT=__BOOT__;</script>
+<script type="module" src="/bs/loader.js"></script>

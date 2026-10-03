@@ -1,0 +1,20 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Liste des comptes autorisés : document config/access, champ emails (tableau d'adresses en minuscules).
+    // Elle se modifie dans la console Firebase ; aucun client ne peut la lire ni l'écrire.
+    function allowed() {
+      return request.auth != null
+        && request.auth.token.email_verified == true
+        && request.auth.token.email in get(/databases/$(database)/documents/config/access).data.emails;
+    }
+    // Clé de déchiffrement du cours.
+    match /config/key {
+      allow read: if allowed();
+    }
+    // Progression : chacun ne lit et n'écrit que son propre document.
+    match /users/{uid} {
+      allow read, write: if allowed() && request.auth.uid == uid;
+    }
+  }
+}

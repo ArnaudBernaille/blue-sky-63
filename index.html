@@ -35,7 +35,7 @@ h1{font-family:var(--display);font-weight:800;font-size:clamp(34px,5vw,52px);lin
 h2{font-family:var(--display);font-weight:700;font-size:25px;line-height:1.15;margin:0}
 p{margin:0}
 .lede{font-size:21px;color:var(--muted);line-height:1.45;max-width:720px}
-.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(400px,1fr));gap:18px}
 .card{background:var(--paper);border:1.5px solid var(--line);border-top:6px solid var(--blue);border-radius:10px;padding:22px;display:flex;flex-direction:column;gap:12px}
 .card.soon{border-top-color:var(--line);opacity:.8}
 .num{font-family:var(--display);font-weight:800;font-size:64px;line-height:.9;letter-spacing:-.04em}
@@ -78,6 +78,15 @@ p{margin:0}
     </article>
 
     <article class="card">
+      <div class="num"><small>Series</small>65</div>
+      <div class="who">Uniform Investment Adviser Law Exam</div>
+      <p class="desc">Économie, produits d'investissement, gestion de portefeuille, fiscalité et retraite, puis le droit et l'éthique des conseillers (Uniform Securities Act, Advisers Act). Examen NASAA, requis pour être investment adviser representative.</p>
+      <div class="facts"><span>140 questions</span><span>180 min</span><span>92/130 pour réussir</span></div>
+      <div class="prog" data-key="bluesky65" data-n="13"></div>
+      <div class="go"><a class="btn" href="serie-65.html">Ouvrir le cours</a></div>
+    </article>
+
+    <article class="card">
       <div class="num"><small>Series</small>86</div>
       <div class="who">Research Analyst · partie I : analyse</div>
       <p class="desc">Macroéconomie, analyse sectorielle, états financiers, ratios, prévisions et valorisation (multiples, DCF, DDM), analyse technique. Examen FINRA.</p>
@@ -99,6 +108,7 @@ p{margin:0}
   <div class="box">
     <div class="eyebrow">Quelle série pour quel métier ?</div>
     <p><strong>Series 63</strong> : vendre des titres comme agent d'un broker-dealer, dans un État américain. Se passe en général avec le SIE et la Series 7.</p>
+    <p><strong>Series 65</strong> : conseiller des clients contre honoraires comme investment adviser representative. Aucun prérequis ni parrainage. La Series 66 (non couverte ici) combine 63 et 65 pour les titulaires de la Series 7.</p>
     <p><strong>Series 86 et 87</strong> : publier de la recherche actions comme <em>research analyst</em> (FINRA Rule 1220(b)(6)). Il faut réussir les deux parties et le SIE. Les titulaires des niveaux I et II du CFA, ou I et II du CMT, peuvent demander à être dispensés de la Series 86, mais jamais de la 87.</p>
   </div>
 </div>

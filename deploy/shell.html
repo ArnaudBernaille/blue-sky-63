@@ -5,20 +5,97 @@
 <meta name="robots" content="noindex, nofollow">
 <title>Blue Sky</title>
 <link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Newsreader:opsz,wght@6..72,400;6..72,600&family=IBM+Plex+Mono:wght@500;600&display=swap">
 <style>
-:root{--sky:#e9f1fa;--paper:#f8fbfe;--ink:#0f2440;--muted:#52647d;--line:#c9d8ea;--blue:#1257c4}
-@media (prefers-color-scheme:dark){:root{color-scheme:dark;--sky:#0a1626;--paper:#101f35;--ink:#e4edf9;--muted:#95a8c3;--line:#243a59;--blue:#7fb0ff}}
-body{margin:0;min-height:100vh;display:grid;place-items:center;background:var(--sky);color:var(--ink);font:17px/1.5 "Segoe UI",system-ui,sans-serif;padding:0 16px;box-sizing:border-box}
-.box{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:32px 28px;max-width:380px;width:100%;text-align:center}
-h1{margin:0 0 8px;font-size:28px;letter-spacing:-.02em}
-p{margin:0 0 20px;color:var(--muted)}
-button{font:inherit;font-weight:600;background:var(--blue);color:#fff;border:0;border-radius:999px;padding:10px 22px;cursor:pointer}
-@media (prefers-color-scheme:dark){button{color:#0a1626}}
+/* Page de connexion : même palette et mêmes polices que les cours. Textes français et anglais, l'un masqué selon lang. */
+:root{
+  --sky:#e9f1fa;--paper:#f8fbfe;--ink:#0f2440;--muted:#52647d;--line:#c9d8ea;--blue:#1257c4;--blue-soft:#d7e6fb;--seal:#a4660a;
+  --g-bg:#fff;--g-line:#747775;--g-ink:#1f1f1f;--g-hover:#f2f5f8;
+  --display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;--body:"Newsreader",Georgia,serif;--mono:"IBM Plex Mono",Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root{color-scheme:dark;
+  --sky:#0a1626;--paper:#101f35;--ink:#e4edf9;--muted:#95a8c3;--line:#243a59;--blue:#7fb0ff;--blue-soft:#17305a;--seal:#f0b955;
+  --g-bg:#131314;--g-line:#8e918f;--g-ink:#e3e3e3;--g-hover:#1f2023}}
+html[lang="en"] .fr,html:not([lang="en"]) .en{display:none!important}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;background:var(--sky);color:var(--ink);font:18px/1.55 var(--body);
+  background-image:radial-gradient(1200px 500px at 85% -10%,var(--blue-soft),transparent 70%)}
+.wrap{max-width:1080px;margin:0 auto;padding-inline:24px;padding-block:40px 56px;display:grid;grid-template-columns:1fr 380px;gap:48px;align-items:start}
+.brand{font:800 26px/1 var(--display);letter-spacing:-.02em;margin-bottom:36px}
+.brand span{color:var(--blue)}
+.eyebrow{font:600 12px/1.4 var(--mono);text-transform:uppercase;letter-spacing:.12em;color:var(--seal);margin-bottom:12px}
+h1{font:800 clamp(36px,5.2vw,58px)/1.02 var(--display);letter-spacing:-.035em;margin:0 0 18px;text-wrap:balance}
+h1 em{font-style:normal;color:var(--blue)}
+.lede{font-size:21px;line-height:1.45;color:var(--muted);margin:0 0 30px;max-width:600px}
+.feats{list-style:none;margin:0 0 30px;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.feats li{background:var(--paper);border:1.5px solid var(--line);border-radius:10px;padding:16px 18px;font-size:16px;line-height:1.45;color:var(--muted)}
+.feats b{display:block;font:700 17px/1.25 var(--display);color:var(--ink);margin-bottom:4px}
+.feats i{font-style:normal;font-family:var(--mono);font-size:13px;color:var(--blue);margin-right:6px}
+.series{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.series small{font:600 12px var(--mono);text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-right:4px}
+.series span{font:500 13px/1 var(--mono);background:var(--blue-soft);border-radius:4px;padding:6px 9px}
+.series span b{font-family:var(--display);font-weight:800;font-size:15px;margin-right:4px}
+.card{position:sticky;top:calc(32px + env(safe-area-inset-top,0px));background:var(--paper);border:1.5px solid var(--line);border-top:6px solid var(--blue);border-radius:12px;padding:30px 26px 24px;margin-top:62px;box-shadow:0 18px 40px -24px rgba(15,36,64,.35)}
+.card h2{font:800 26px/1.1 var(--display);letter-spacing:-.02em;margin:0 0 6px}
+.card .sub{color:var(--muted);font-size:16px;margin:0 0 22px}
+#bsMsg{min-height:1.5em;margin:0 0 14px;font-size:16px;color:var(--muted)}
+#bsMsg:empty{display:none}
+/* Bouton « Continuer avec Google » selon les consignes de Google : fond blanc, bord gris, logo G en couleur. */
+#bsBtn{width:100%;display:flex;align-items:center;justify-content:center;gap:12px;font:500 16px/1 "Segoe UI",Roboto,system-ui,sans-serif;
+  background:var(--g-bg);color:var(--g-ink);border:1px solid var(--g-line);border-radius:999px;padding:13px 20px;cursor:pointer;transition:background .15s,box-shadow .15s}
+#bsBtn::before{content:"";width:20px;height:20px;flex:none;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath fill='%23EA4335' d='M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z'/%3E%3Cpath fill='%234285F4' d='M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z'/%3E%3Cpath fill='%23FBBC05' d='M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z'/%3E%3Cpath fill='%2334A853' d='M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z'/%3E%3C/svg%3E") center/contain no-repeat}
+#bsBtn:hover{background:var(--g-hover);box-shadow:0 1px 3px rgba(0,0,0,.18)}
+#bsBtn:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+.note{margin:20px 0 0;padding-top:16px;border-top:1px solid var(--line);font-size:14px;line-height:1.5;color:var(--muted)}
+@media (max-width:860px){
+  .wrap{grid-template-columns:1fr;gap:28px;padding-block:28px 40px}
+  .brand{margin-bottom:22px}
+  .lede{margin-bottom:0}
+  .card{position:static;margin-top:0;order:-1}
+  .hero{display:contents}
+  .hero>.intro{order:-2}
+}
+@media (max-width:560px){.feats{grid-template-columns:1fr}.lede{font-size:19px}}
 </style>
-<div class="box">
-  <h1>Blue Sky</h1>
-  <p id="bsMsg" aria-live="polite"></p>
-  <button id="bsBtn" type="button" hidden></button>
+
+<div class="wrap">
+  <div class="hero">
+    <div class="intro">
+      <div class="brand">Blue <span>Sky</span></div>
+      <div class="eyebrow fr">Préparation aux examens</div>
+      <div class="eyebrow en">Exam prep</div>
+      <h1 class="fr">Vos licences <em>FINRA.</em></h1>
+      <h1 class="en">Your <em>FINRA</em> licenses.</h1>
+      <p class="lede fr">Tout le programme officiel, des quiz corrigés et des examens blancs. Rien d'autre à réviser.</p>
+      <p class="lede en">The whole official outline, explained quizzes and practice exams. Nothing else to study.</p>
+    </div>
+    <ul class="feats fr">
+      <li><b><i>01</i>Un cours complet</b>Chaque thème du programme officiel, avec exemples et pièges.</li>
+      <li><b><i>02</i>Des quiz corrigés</b>Chaque réponse expliquée, y compris les mauvais choix.</li>
+      <li><b><i>03</i>Des examens blancs</b>Chronométrés, au format de l'examen réel.</li>
+      <li><b><i>04</i>Une révision ciblée</b>Fiches, glossaire et vos erreurs regroupées.</li>
+    </ul>
+    <ul class="feats en">
+      <li><b><i>01</i>A complete course</b>Every topic of the official outline, with examples and traps.</li>
+      <li><b><i>02</i>Explained quizzes</b>Every answer explained, wrong choices included.</li>
+      <li><b><i>03</i>Practice exams</b>Timed, in the format of the real exam.</li>
+      <li><b><i>04</i>Targeted review</b>Flashcards, a glossary and your mistakes in one place.</li>
+    </ul>
+    <div class="series">
+      <span><b>63</b>State Law</span><span><b>65</b>Investment Adviser</span><span><b>86</b>Research Analyst I</span><span><b>87</b>Research Analyst II</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2 class="fr">Connexion</h2><h2 class="en">Sign in</h2>
+    <p class="sub fr">Reprenez là où vous vous étiez arrêté.</p>
+    <p class="sub en">Pick up where you left off.</p>
+    <p id="bsMsg" aria-live="polite"></p>
+    <button id="bsBtn" type="button" hidden></button>
+    <p class="note fr">Accès sur invitation. Votre progression vous suit sur tous vos appareils.</p>
+    <p class="note en">Invitation only. Your progress follows you across devices.</p>
+  </div>
 </div>
 <script>window.BS_BOOT=__BOOT__;</script>
 <script type="module" src="/bs/loader.js"></script>

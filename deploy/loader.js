@@ -10,8 +10,8 @@ import {decryptPage,mergeRemote,localKeys,stampKey} from "./core.js";
 
 const BOOT=window.BS_BOOT; // {blob, lang} écrit par build.mjs dans chaque page
 const T=BOOT.lang==="en"
-  ?{load:"Loading…",need:"Sign in to access the course.",btn:"Sign in with Google",denied:"This account does not have access. Sign in with an authorized Google account.",err:"Something went wrong: ",out:"Sign out"}
-  :{load:"Chargement…",need:"Connecte-toi pour accéder au cours.",btn:"Se connecter avec Google",denied:"Ce compte n'a pas accès. Connecte-toi avec un compte Google autorisé.",err:"Erreur : ",out:"Se déconnecter"};
+  ?{load:"Loading…",need:"",btn:"Continue with Google",denied:"This account does not have access. Sign in with an authorized Google account.",err:"Something went wrong: ",out:"Sign out"}
+  :{load:"Chargement…",need:"",btn:"Continuer avec Google",denied:"Ce compte n'a pas accès. Connectez-vous avec un compte Google autorisé.",err:"Erreur : ",out:"Se déconnecter"};
 const $=id=>document.getElementById(id);
 const msg=t=>{$("bsMsg").textContent=t};
 
